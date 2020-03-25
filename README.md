@@ -1,2 +1,2 @@
 # checking_papi
-small collection of test programs for checking PAPI libraries
+collection of test scripts and programs for checking PAPI libraries

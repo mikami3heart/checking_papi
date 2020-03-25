@@ -1,0 +1,779 @@
+Available native events and hardware information.
+--------------------------------------------------------------------------------
+PAPI Version             : 4.1.3.0
+Vendor string and code   : Sun (5)
+Model string and code    : FUJITSU SPARC64 XIfx (0)
+CPU Revision             : 0.000000
+CPU Megahertz            : 1975.000000
+CPU Clock Megahertz      : 1975
+Hdw Threads per core     : 1
+Cores per Socket         : 1
+NUMA Nodes               : 2
+CPU's per Node           : 17
+Total CPU's              : 34
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+The following correspond to fields in the PAPI_event_info_t structure.
+
+Event Code   Symbol  | Long Description |
+--------------------------------------------------------------------------------
+0x40000000   CYCLE_COUNTS  | Counts the number of cycles when the performance  |
+           | counter is enabled.                                               |
+  Register[0] Name: Event Code            Value: 0x0                           |
+  Register[1] Name: Event Code            Value: 0x0                           |
+  Register[2] Name: Event Code            Value: 0x0                           |
+  Register[3] Name: Event Code            Value: 0x0                           |
+  Register[4] Name: Event Code            Value: 0x0                           |
+  Register[5] Name: Event Code            Value: 0x0                           |
+  Register[6] Name: Event Code            Value: 0x0                           |
+  Register[7] Name: Event Code            Value: 0x0                           |
+0x40000001   INSTRUCTION_COUNTS  | Counts the number of committed instructions |
+           | , including SXAR1 and SXAR2.                                      |
+  Register[0] Name: Event Code            Value: 0x1                           |
+  Register[1] Name: Event Code            Value: 0x1                           |
+  Register[2] Name: Event Code            Value: 0x1                           |
+  Register[3] Name: Event Code            Value: 0x1                           |
+  Register[4] Name: Event Code            Value: 0x1                           |
+  Register[5] Name: Event Code            Value: 0x1                           |
+  Register[6] Name: Event Code            Value: 0x1                           |
+  Register[7] Name: Event Code            Value: 0x1                           |
+0x40000002   INSTRUCTION_FLOW_COUNTS  | Counts the number of committed instruc |
+           | tion flows.                                                       |
+  Register[0] Name: Event Code            Value: 0x2                           |
+  Register[1] Name: Event Code            Value: 0x2                           |
+0x40000003   D_MOVE_WAIT  | No instruction is committed waiting for register w |
+           | indow, regardless of a given thread having commit priority.       |
+  Register[0] Name: Event Code            Value: 0x2                           |
+0x40000004   IWR_EMPTY  | Counts the number of cycles that the IWR (Issue Word |
+           |  Register) is empty.                                              |
+  Register[0] Name: Event Code            Value: 0x3                           |
+  Register[1] Name: Event Code            Value: 0x3                           |
+0x40000005   OP_STV_WAIT  | Counts the number of cycles where no instructions  |
+           | are committed because the oldest, uncommitted instruction is a me |
+           | mory access waiting for data.                                     |
+  Register[0] Name: Event Code            Value: 0x5                           |
+  Register[1] Name: Event Code            Value: 0x5                           |
+  Register[2] Name: Event Code            Value: 0x5                           |
+  Register[3] Name: Event Code            Value: 0x5                           |
+  Register[4] Name: Event Code            Value: 0x5                           |
+  Register[5] Name: Event Code            Value: 0x5                           |
+  Register[6] Name: Event Code            Value: 0x5                           |
+  Register[7] Name: Event Code            Value: 0x5                           |
+0x40000006   EFFECTIVE_INSTRUCTION_COUNTS  | Counts the number of committed in |
+           | structions. SXAR1 and SXAR2 are not included.                     |
+  Register[0] Name: Event Code            Value: 0x6                           |
+  Register[1] Name: Event Code            Value: 0x6                           |
+  Register[2] Name: Event Code            Value: 0x6                           |
+  Register[3] Name: Event Code            Value: 0x6                           |
+  Register[4] Name: Event Code            Value: 0x6                           |
+  Register[5] Name: Event Code            Value: 0x6                           |
+  Register[6] Name: Event Code            Value: 0x6                           |
+  Register[7] Name: Event Code            Value: 0x6                           |
+0x40000007   SIMD_LOAD_STORE_INSTRUCTIONS  | Counts the number of committed "S |
+           | IMD load/store" instructions.                                     |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x40000008   SIMD_FLOATING_INSTRUCTIONS  | Counts the number of committed "SIM |
+           | D floating point" instructions.                                   |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x40000009   SIMD_FMA_INSTRUCTIONS  | Counts the number of committed "SIMD flo |
+           | ating-point multiply and add/sub" and "SIMD floating point trigon |
+           | ometric" instructions.                                            |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x4000000a   SXAR1_INSTRUCTIONS  | Counts the number of committed "SXAR1" inst |
+           | ructions.                                                         |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x4000000b   SXAR2_INSTRUCTIONS  | Counts the number of committed "SXAR2" inst |
+           | ructions.                                                         |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x4000000c   UNPACK_SXAR1  | Counts the number of unpacked SXAR1 instructions  |
+           | that are committed.                                               |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x4000000d   UNPACK_SXAR2  | Counts the number of unpacked SXAR2 instructions  |
+           | that are committed.                                               |
+  Register[0] Name: Event Code            Value: 0x7                           |
+0x4000000e   LOAD_STORE_INSTRUCTIONS  | Counts the number of committed "load/s |
+           | tore" instructions.                                               |
+  Register[0] Name: Event Code            Value: 0x8                           |
+  Register[1] Name: Event Code            Value: 0x8                           |
+  Register[2] Name: Event Code            Value: 0x8                           |
+  Register[3] Name: Event Code            Value: 0x8                           |
+  Register[4] Name: Event Code            Value: 0x8                           |
+  Register[5] Name: Event Code            Value: 0x8                           |
+  Register[6] Name: Event Code            Value: 0x8                           |
+  Register[7] Name: Event Code            Value: 0x8                           |
+0x4000000f   BRANCH_INSTRUCTIONS  | Counts the number of committed "branch" in |
+           | structions.                                                       |
+  Register[0] Name: Event Code            Value: 0x9                           |
+  Register[1] Name: Event Code            Value: 0x9                           |
+  Register[2] Name: Event Code            Value: 0x9                           |
+  Register[3] Name: Event Code            Value: 0x9                           |
+  Register[4] Name: Event Code            Value: 0x9                           |
+  Register[5] Name: Event Code            Value: 0x9                           |
+  Register[6] Name: Event Code            Value: 0x9                           |
+  Register[7] Name: Event Code            Value: 0x9                           |
+0x40000010   FLOATING_INSTRUCTIONS  | Counts the number of committed "floating |
+           |  point" instructions.                                             |
+  Register[0] Name: Event Code            Value: 0xa                           |
+  Register[1] Name: Event Code            Value: 0xa                           |
+  Register[2] Name: Event Code            Value: 0xa                           |
+  Register[3] Name: Event Code            Value: 0xa                           |
+  Register[4] Name: Event Code            Value: 0xa                           |
+  Register[5] Name: Event Code            Value: 0xa                           |
+  Register[6] Name: Event Code            Value: 0xa                           |
+  Register[7] Name: Event Code            Value: 0xa                           |
+0x40000011   FMA_INSTRUCTIONS  | Counts the number of committed "floating poin |
+           | t multiply and add/sub" and "floating point trigonometric" instru |
+           | ctions.                                                           |
+  Register[0] Name: Event Code            Value: 0xb                           |
+  Register[1] Name: Event Code            Value: 0xb                           |
+  Register[2] Name: Event Code            Value: 0xb                           |
+  Register[3] Name: Event Code            Value: 0xb                           |
+  Register[4] Name: Event Code            Value: 0xb                           |
+  Register[5] Name: Event Code            Value: 0xb                           |
+  Register[6] Name: Event Code            Value: 0xb                           |
+  Register[7] Name: Event Code            Value: 0xb                           |
+0x40000012   PREFETCH_INSTRUCTIONS  | Counts the number of committed "prefetch |
+           | " instructions.                                                   |
+  Register[0] Name: Event Code            Value: 0xc                           |
+  Register[1] Name: Event Code            Value: 0xc                           |
+  Register[2] Name: Event Code            Value: 0xc                           |
+  Register[3] Name: Event Code            Value: 0xc                           |
+  Register[4] Name: Event Code            Value: 0xc                           |
+  Register[5] Name: Event Code            Value: 0xc                           |
+  Register[6] Name: Event Code            Value: 0xc                           |
+  Register[7] Name: Event Code            Value: 0xc                           |
+0x40000013   EX_LOAD_INSTRUCTIONS  | Counts the number of committed "integer l |
+           | oad" instructions.                                                |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000014   EX_STORE_INSTRUCTIONS  | Counts the number of committed "integer  |
+           | store and atomic" instructions.                                   |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000015   FL_LOAD_INSTRUCTIONS  | Counts the number of committed "floating  |
+           | point load" instructions.                                         |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000016   FL_STORE_INSTRUCTIONS  | Counts the number of committed "floating |
+           |  point store" instructions.                                       |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000017   SIMD_FL_LOAD_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  floating point load" instructions.                               |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000018   SIMD_FL_STORE_INSTRUCTIONS  | Counts the number of committed "SIM |
+           | D floating point store" instructions.                             |
+  Register[0] Name: Event Code            Value: 0xd                           |
+0x40000019   RS1  | Counts the number of cycles when the instruction execution |
+           |  stopped by the following factors. Trap or interrupt, update of p |
+           | rivilege registers, assurance of memory order, hardware retry.    |
+  Register[0] Name: Event Code            Value: 0x12                          |
+0x4000001a   FLUSH_RS  | Counts the number of pipeline flushes due to mispredi |
+           | ction.                                                            |
+  Register[0] Name: Event Code            Value: 0x12                          |
+0x4000001b   1IID_USE  | Counts the number of cycles where one instruction is  |
+           | issued.                                                           |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x4000001c   2IID_USE  | Counts the number of cycles where two instructions ar |
+           | e issued.                                                         |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x4000001d   3IID_USE  | Counts the number of cycles where three instructions  |
+           | are issued.                                                       |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x4000001e   4IID_USE  | Counts the number of cycles where four instructions a |
+           | re issued.                                                        |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x4000001f   SYNC_INTLK  | Counts the number of cycles where instruction issue |
+           |  is inhibited by a pipeline sync.                                 |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x40000020   REGWIN_INTLK  | Counts the number of cycles where instruction iss |
+           | ue is inhibited by a register window switch.                      |
+  Register[0] Name: Event Code            Value: 0x13                          |
+0x40000021   TOQ_RSBR_PHANTOM  | Counts the number of instructions that are pr |
+           | edicted taken but are not actually branch instructions.           |
+  Register[0] Name: Event Code            Value: 0x15                          |
+0x40000022   FLUSH_RS_B  | Counts the number of pipeline flushes due to mispre |
+           | diction.                                                          |
+  Register[0] Name: Event Code            Value: 0x15                          |
+0x40000023   RS1_B  | Counts the number of cycles when the instruction executi |
+           | on stopped by the following factors. Trap or interrupt, update of |
+           |  privilege registers, assurance of memory order, hardware retry.  |
+  Register[0] Name: Event Code            Value: 0x15                          |
+0x40000024   TRAP_ALL  | Counts the occurrences of all trap events.            |
+  Register[0] Name: Event Code            Value: 0x16                          |
+0x40000025   TRAP_INT_LEVEL  | Counts the occurrences of interrupt_level_n.    |
+  Register[0] Name: Event Code            Value: 0x16                          |
+0x40000026   TRAP_SPILL  | Counts the occurrences of spill_n_normal and spill_ |
+           | n_other.                                                          |
+  Register[0] Name: Event Code            Value: 0x16                          |
+0x40000027   TRAP_FILL  | Counts the occurrences of fill_n_normal and fill_n_o |
+           | ther.                                                             |
+  Register[0] Name: Event Code            Value: 0x16                          |
+0x40000028   TRAP_TRAP_INST  | Counts the occurrences of trap_instruction.     |
+  Register[0] Name: Event Code            Value: 0x16                          |
+0x40000029   OP_STV_WAIT_PFP_BUSY_SWPF  | Counts op_stv_wait caused by a prefe |
+           | tch instruction that cannot be executed due to the lack of an ava |
+           | ilable prefetch port.                                             |
+  Register[0] Name: Event Code            Value: 0x18                          |
+0x4000002a   OP_STV_WAIT_SXMISS  | Counts op_stv_wait caused by an L2$ miss.   |
+  Register[0] Name: Event Code            Value: 0x18                          |
+0x4000002b   SINGLE_SXAR_COMMIT  | Counts the number of cycles where the only  |
+           | instruction committed is an unpacked SXAR instruction.            |
+  Register[0] Name: Event Code            Value: 0x1a                          |
+0x4000002c   SUSPEND_CYCLE  | Counts the number of cycles where the instructio |
+           | n unit is halted by a SUSPEND or SLEEP instruction.               |
+  Register[0] Name: Event Code            Value: 0x1a                          |
+0x4000002d   RSF_PMMI  | Counts the number of cycles where mixing single-preci |
+           | sion and double-precision floatingpoint operations prevents instr |
+           | uctions from issuing.                                             |
+  Register[0] Name: Event Code            Value: 0x1b                          |
+0x4000002e   OP_STV_WAIT_NC_PEND  | Counts op_stv_wait for noncacheable access |
+           | es.                                                               |
+  Register[0] Name: Event Code            Value: 0x1b                          |
+0x4000002f   FLUSH_RS_C  | Counts the number of pipeline flushes due to mispre |
+           | diction.                                                          |
+  Register[0] Name: Event Code            Value: 0x1b                          |
+0x40000030   OP_STV_WAIT_NC_PEND_B  | Counts op_stv_wait for noncacheable acce |
+           | sses.                                                             |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000031   0IID_USE  | Counts the number of cycles where no instruction is i |
+           | ssued.                                                            |
+  Register[0] Name: Event Code            Value: 0x1b                          |
+0x40000032   DECODE_ALL_INTLK  | Counts the number of cycles where instruction |
+           |  issue is inhibited by a static interlock condition at the decode |
+           |  stage.                                                           |
+  Register[0] Name: Event Code            Value: 0x1b                          |
+0x40000033   OP_STV_WAIT_PFP_BUSY_EX  | Counts op_stv_wait caused by an intege |
+           | r memory access instruction that cannot be executed due to the la |
+           | ck of an available prefetch port.                                 |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000034   OP_STV_WAIT_L1D_CACHE_MISS  | Counts op_stv_wait caused by an L1D |
+           | $ miss.                                                           |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000035   OP_STV_WAIT_L1D_CACHE_MISS_EX  | Counts op_stv_wait caused by an  |
+           | integer-load L1$ miss.                                            |
+  Register[0] Name: Event Code            Value: 0x1f                          |
+0x40000036   OP_STV_WAIT_SXMISS_EX  | Counts op_stv_wait caused by an integer- |
+           | load L2$ miss.                                                    |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000037   CSE_WINDOW_EMPTY_SP_FULL  | Counts the number of cycles where no  |
+           | instructions are committed because the CSE is empty and the store |
+           |  ports are full.                                                  |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000038   OP_STV_WAIT_PFP_BUSY  | Counts op_stv_wait caused by a memory acc |
+           | ess instruction that cannot be executed due to the lack of an ava |
+           | ilable prefetch port.                                             |
+  Register[0] Name: Event Code            Value: 0x1d                          |
+0x40000039   CSE_WINDOW_EMPTY  | Counts the number of cycles where no instruct |
+           | ions are committed because the CSE is empty.                      |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003a   EU_COMP_WAIT  | Counts the number of cycles where no instructions |
+           |  are committed and the oldest, uncommitted instruction is an inte |
+           | ger or floating-point instruction.                                |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003b   BRANCH_COMP_WAIT  | Counts the number of cycles where no instruct |
+           | ions are committed and the oldest, uncommitted instruction is a b |
+           | ranch instruction.                                                |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003c   0ENDOP  | Counts the number of cycles where no instructions are c |
+           | ommitted.                                                         |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003d   OP_STV_WAIT_EX  | Counts op_stv_wait for integer memory access in |
+           | structions.                                                       |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003e   FL_COMP_WAIT  | Counts the number of cycles where no instructions |
+           |  are committed and the oldest, uncommitted instruction is a float |
+           | ing-point instruction.                                            |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x4000003f   1ENDOP  | Counts the number of cycles where one instruction is co |
+           | mmitted.                                                          |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x40000040   2ENDOP  | Counts the number of cycles where two instructions are  |
+           | committed.                                                        |
+  Register[0] Name: Event Code            Value: 0x1e                          |
+0x40000041   3ENDOP  | Counts the number of cycles where three instructions ar |
+           | e committed.                                                      |
+  Register[0] Name: Event Code            Value: 0x1f                          |
+0x40000042   SLEEP_CYCLE  | Counts the number of cycles where the instruction  |
+           | unit is halted by a SLEEP instruction.                            |
+  Register[0] Name: Event Code            Value: 0x1f                          |
+0x40000043   OP_STV_WAIT_SWPF  | Counts op_stv_wait caused by a prefetch instr |
+           | uction.                                                           |
+  Register[0] Name: Event Code            Value: 0x1f                          |
+0x40000044   ITLB_WRITE  | Counts the number of ITLB write via the Hardware Ta |
+           | blealk caused by an instruction fetch ITLB miss.                  |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x40000045   DTLB_WRITE  | Counts the number of DTLB write via the Hardware Ta |
+           | blealk caused by a data access DTLB miss.                         |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x40000046   UITLB_MISS  | Counts the occurrences of instruction uTLB misses.  |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x40000047   UDTLB_MISS  | Counts the occurrences of data uTLB misses.         |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x40000048   L1I_MISS  | Counts the occurrences of I1 cache misses.            |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x40000049   L1D_MISS  | Counts the occurrences of D1 cache misses.            |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x4000004a   L1I_WAIT_ALL  | Counts the total time spent processing L1 instruc |
+           | tion cache misses, i.e. the total miss latency.                   |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x4000004b   L1D_WAIT_ALL  | Counts the total time spent processing L1 data ca |
+           | che misses, i.e. the total miss latency.                          |
+  Register[0] Name: Event Code            Value: 0x20                          |
+0x4000004c   L1D_MISS_QPF  | Counts the occurrences of D1 cache misses by hard |
+           | ware prefetch request.                                            |
+  Register[0] Name: Event Code            Value: 0x21                          |
+0x4000004d   L1I_THRASHING  | Counts the occurrences of an L2 read request bei |
+           | ng issued twice in the period between acquiring and releasing a s |
+           | tore port.                                                        |
+  Register[0] Name: Event Code            Value: 0x23                          |
+0x4000004e   L1D_THRASHING  | Counts the occurrences of an L2 read request bei |
+           | ng issued twice in the period between acquiring and releasing a s |
+           | tore port.                                                        |
+  Register[0] Name: Event Code            Value: 0x23                          |
+0x4000004f   L1D_MISS_DM  | Counts the occurrences of D1 cache misses by a loa |
+           | d/store instruction.                                              |
+  Register[0] Name: Event Code            Value: 0x23                          |
+0x40000050   L1D_MISS_PF  | Counts the occurrences of D1 cache misses by a pre |
+           | fetch instruction.                                                |
+  Register[0] Name: Event Code            Value: 0x23                          |
+0x40000051   SWPF_SUCCESS_ALL  | Counts the number of PREFETCH instructions no |
+           | t lost in the SU and sent to the SX .                             |
+  Register[0] Name: Event Code            Value: 0x24                          |
+0x40000052   SWPF_FAIL_ALL  | Counts the number of prefetch instructions lost  |
+           | in the SU.                                                        |
+  Register[0] Name: Event Code            Value: 0x24                          |
+0x40000053   SWPF_LBS_HIT  | Counts the number of prefetch instructions that h |
+           | it in the L1 cache.                                               |
+  Register[0] Name: Event Code            Value: 0x24                          |
+0x40000054   L1D_PIPE0_VALID  | Counts the number of D1 cache busy at pipeline |
+           | 0.                                                                |
+  Register[0] Name: Event Code            Value: 0x28                          |
+0x40000055   L1D_PIPE1_VALID  | Counts the number of D1 cache busy at pipeline |
+           | 1.                                                                |
+  Register[0] Name: Event Code            Value: 0x28                          |
+0x40000056   L2_MISS_DM  | Counts the number of L2 cache misses caused by dema |
+           | nd requests.                                                      |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x40000057   L2_MISS_PF  | Counts the number of L2 cache misses caused by pref |
+           | etch requests.                                                    |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x40000058   L2_READ_DM  | Counts the number of L2 cache references by demand  |
+           | requests.                                                         |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x40000059   L2_READ_PF  | Counts L2 cache references by prefetch requests.    |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x4000005a   L2_WB_DM  | Counts the occurrences of writeback by demand L2-cach |
+           | e misses.                                                         |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x4000005b   L2_WB_PF  | Counts the occurrences of writeback by prefetch L2-ca |
+           | che misses.                                                       |
+  Register[0] Name: Event Code            Value: 0x30                          |
+0x4000005c   BI_COUNTS  | Counts the number of inter-CMG or I/O cache-invalida |
+           | te requests received by the CMG.                                  |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x4000005d   CPI_COUNTS  | Counts the number of inter-CMG cache-copy-and-inval |
+           | idate requests received by the CMG.                               |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x4000005e   CPB_COUNTS  | Counts the number of inter-CMG cache-copyback reque |
+           | sts received by the CMG.                                          |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x4000005f   CPD_COUNTS  | Counts the number of I/O cache-read requests(DMA re |
+           | ad requests) received by the CMG.                                 |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x40000060   CPU_MEM_READ_COUNTS  | Counts the number of memory read requests  |
+           | issued by VCPUs (both intra- and inter-CMG requests).             |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x40000061   CPU_MEM_WRITE_COUNTS  | Counts the number of memory write request |
+           | s issued by VCPUs (both intra- and inter-CMG requests).           |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x40000062   IO_MEM_READ_COUNTS  | Counts the number of memory read requests i |
+           | ssued by I/O.                                                     |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x40000063   IO_MEM_WRITE_COUNTS  | Counts the number of memory write requests |
+           |  issued by I/O.                                                   |
+  Register[0] Name: Event Code            Value: 0x31                          |
+0x40000064   L2_MISS_WAIT_DM_BANK0  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by demand requests, i.e. the  |
+           | total miss latency for each bank.                                 |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x40000065   L2_MISS_WAIT_PF_BANK0  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by prefetch requests, i.e. th |
+           | e total miss latency for each bank.                               |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x40000066   L2_MISS_COUNTS_DM_BANK0  | Counts the number of L2 cache misses f |
+           | or each bank caused by demand requests.                           |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x40000067   L2_MISS_COUNTS_PF_BANK0  | Counts the number of L2 cache misses f |
+           | or each bank caused by prefetch requests.                         |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x40000068   L2_MISS_WAIT_DM_BANK1  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by demand requests, i.e. the  |
+           | total miss latency for each bank.                                 |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x40000069   L2_MISS_WAIT_PF_BANK1  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by prefetch requests, i.e. th |
+           | e total miss latency for each bank.                               |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x4000006a   L2_MISS_COUNTS_DM_BANK1  | Counts the number of L2 cache misses f |
+           | or each bank caused by demand requests.                           |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x4000006b   L2_MISS_COUNTS_PF_BANK1  | Counts the number of L2 cache misses f |
+           | or each bank caused by prefetch requests.                         |
+  Register[0] Name: Event Code            Value: 0x32                          |
+0x4000006c   L2_MISS_WAIT_DM_BANK2  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by demand requests, i.e. the  |
+           | total miss latency for each bank.                                 |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x4000006d   L2_MISS_WAIT_PF_BANK2  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by prefetch requests, i.e. th |
+           | e total miss latency for each bank.                               |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x4000006e   L2_MISS_COUNTS_DM_BANK2  | Counts the number of L2 cache misses f |
+           | or each bank caused by demand requests.                           |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x4000006f   L2_MISS_COUNTS_PF_BANK2  | Counts the number of L2 cache misses f |
+           | or each bank caused by prefetch requests.                         |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x40000070   L2_MISS_WAIT_DM_BANK3  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by demand requests, i.e. the  |
+           | total miss latency for each bank.                                 |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x40000071   L2_MISS_WAIT_PF_BANK3  | Counts the total time spent processing L |
+           | 2 cache misses for each bank caused by prefetch requests, i.e. th |
+           | e total miss latency for each bank.                               |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x40000072   L2_MISS_COUNTS_DM_BANK3  | Counts the number of L2 cache misses f |
+           | or each bank caused by demand requests.                           |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x40000073   L2_MISS_COUNTS_PF_BANK3  | Counts the number of L2 cache misses f |
+           | or each bank caused by prefetch requests.                         |
+  Register[0] Name: Event Code            Value: 0x33                          |
+0x40000074   LOST_PF_PFP_FULL  | Counts the number of weak prefetch requests l |
+           | ost due to PF port full.                                          |
+  Register[0] Name: Event Code            Value: 0x34                          |
+0x40000075   LOST_PF_BY_ABORT  | Counts the number of weak prefetch requests l |
+           | ost due to L2- pipe abort.                                        |
+  Register[0] Name: Event Code            Value: 0x34                          |
+0x40000076   IO_PST_COUNTS  | Counts the number of memory write requests (IO-P |
+           | ST) issued by I/O.                                                |
+  Register[0] Name: Event Code            Value: 0x34                          |
+0x40000077   1FLOPS_INSTRUCTIONS  | Counts the number of operations is obtaine |
+           | d by multiplying by 1.                                            |
+  Register[0] Name: Event Code            Value: 0x40                          |
+0x40000078   2FLOPS_INSTRUCTIONS  | Counts the number of operations is obtaine |
+           | d by multiplying by 2.                                            |
+  Register[0] Name: Event Code            Value: 0x40                          |
+0x40000079   4FLOPS_INSTRUCTIONS  | Counts the number of operations is obtaine |
+           | d by multiplying by 4.                                            |
+  Register[0] Name: Event Code            Value: 0x40                          |
+0x4000007a   8FLOPS_INSTRUCTIONS  | Counts the number of operations is obtaine |
+           | d by multiplying by 8.                                            |
+  Register[0] Name: Event Code            Value: 0x40                          |
+0x4000007b   16FLOPS_INSTRUCTIONS  | Counts the number of operations is obtain |
+           | ed by multiplying by 16.                                          |
+  Register[0] Name: Event Code            Value: 0x40                          |
+0x4000007c   4SIMD_LOAD_STORE_INSTRUCTIONS  | Counts the number of committed " |
+           | 4SIMD load/store" instructions.The counted instructions are the s |
+           | ame as load_store_instructions.                                   |
+  Register[0] Name: Event Code            Value: 0x41                          |
+  Register[1] Name: Event Code            Value: 0x41                          |
+0x4000007d   4SIMD_FLOATING_INSTRUCTIONS  | Counts the number of committed "4S |
+           | IMD floating point" instructions.The counted instructions are the |
+           |  same as floating_instructions.                                   |
+  Register[0] Name: Event Code            Value: 0x41                          |
+0x4000007e   4SIMD_FMA_INSTRUCTIONS  | Counts the number of committed "4SIMD f |
+           | loating point multiply and add/sub" and "4SIMD floating point tri |
+           | gonometric" instructions.                                         |
+  Register[0] Name: Event Code            Value: 0x41                          |
+0x4000007f   4SIMD_FL_LOAD_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD floating point load" instructions.                             |
+  Register[0] Name: Event Code            Value: 0x41                          |
+0x40000080   4SIMD_FL_STORE_INSTRUCTIONS  | Counts the number of committed "4S |
+           | IMD floating point store" instructions.                           |
+  Register[0] Name: Event Code            Value: 0x41                          |
+0x40000081   FLOATING_DSP_INSTRUCTIONS  | Counts the number of committed "floa |
+           | ting_point Dual Single Precision" instructions.                   |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000082   FMA_DSP_INSTRUCTIONS  | Counts the number of committed "floating  |
+           | point multiply and_add/sub Dual Single Precision" instructions.   |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000083   FL_MOVE_INSTRUCTIONS  | Counts the number of committed "floating  |
+           | point move" instructions.                                         |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000084   FL_MOVCC_R_SEL_INSTRUCTIONS  | Counts the number of committed "fl |
+           | oating point movecc,mover and selmov" instructions.               |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000085   FIXED_POINT_INSTRUCTIONS  | Counts the number of committed "fixed |
+           |  point partitioned add/sub and integer multiply-add" instructions |
+           | .                                                                 |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000086   FEPERMD_INSTRUCTIONS  | Counts the number of committed "full elem |
+           | ent permutation" instructions.                                    |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000087   ELEMENT_SUMMASK_COMP_INSTRUCTIONS  | Counts the number of committ |
+           | ed "element sum mask" and "element compress" instructions.        |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000088   FECSLD_INSTRUCTIONS  | Counts the number of committed "4SIMD elem |
+           | ent concatenate shift left" instructions.                         |
+  Register[0] Name: Event Code            Value: 0x42                          |
+0x40000089   FRCPA_INSTRUCTIONS  | Counts the number of committed "reciprocal  |
+           | approximation" instructions.                                      |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008a   FRSQRTA_INSTRUCTIONS  | Counts the number of committed "reciproca |
+           | l square approximation" instructions.                             |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008b   TRIGONOMETRIC_EXPONENTIAL_INSTRUCTIONS  | Counts the number of co |
+           | mmitted "trigonometric" and "exponential auxiliary" instructions. |
+           |                                                                   |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008c   XMA_INST  | Counts the number of committed "integer multiply add" |
+           |  instructions.                                                    |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008d   FLOGICAL_INSTRUCTIONS  | Counts the number of committed "floating |
+           |  register logical operate" instructions.                          |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008e   FPCMP_INSTRUCTIONS  | Counts the number of committed "SIMD comper |
+           | e" instructions.                                                  |
+  Register[0] Name: Event Code            Value: 0x43                          |
+0x4000008f   INDIRECT_LOAD_FL_INSTRUCTIONS  | Counts the number of committed " |
+           | indirect load floating point" instructions.                       |
+  Register[0] Name: Event Code            Value: 0x44                          |
+0x40000090   INDIRECT_STORE_FL_INSTRUCTIONS  | Counts the number of committed  |
+           | "indirect store floating point" instructions.                     |
+  Register[0] Name: Event Code            Value: 0x44                          |
+0x40000091   STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number of committed |
+           |  "store floating point register on register condition" instructio |
+           | ns.                                                               |
+  Register[0] Name: Event Code            Value: 0x44                          |
+0x40000092   STFRUW_INSTRUCTION  | Counts the number of committed "store float |
+           | ing point register on register condition unsigned word data" inst |
+           | ructions.                                                         |
+  Register[0] Name: Event Code            Value: 0x44                          |
+0x40000093   INDIRECT_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number of  |
+           | committed "indirect store floating point register on register con |
+           | dition" instructions.                                             |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000094   LDFUW_SW_IB_INSTRUCTIONS  | Counts the number of committed "load  |
+           | floating point register on unsigned and signed word date" and "lo |
+           | ad floating point register on internal broadcast" instructions.   |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000095   STFUW_INSTRUCTION  | Counts the number of committed "store floati |
+           | ng point register on unsigned word date" instructions.            |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000096   LDDFDS_INSTRUCTION  | Counts the number of committed "load dual s |
+           | ingle-floating point register" instruction.                       |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000097   STDFDS_INSTRUCTION  | Counts the number of committed "store dual  |
+           | floating-point register for double single floating" instruction.  |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000098   INDIRECT_PREFETCH_INSTRUCTIONS  | Counts the number of committed  |
+           | "indirect prefetch" instructions.                                 |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x40000099   STORE_WITH_XFILL_INSTRUCTIONS  | Counts the number of committed " |
+           | cache line fill with undetermined values" instructions.           |
+  Register[0] Name: Event Code            Value: 0x45                          |
+0x4000009a   SIMD_FLOATING_DSP_INSTRUCTIONS  | Counts the number of committed  |
+           | "SIMD floating_point Dual Single Precision" instructions.         |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x4000009b   SIMD_FMA_DSP_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  floating_point multiply and add/sub Dual Single Precision" instr |
+           | uctions.                                                          |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x4000009c   SIMD_FL_MOVE_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  floating point move" instructions.                               |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x4000009d   SIMD_FSELMOV_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  floating point selmov" instructions.                             |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x4000009e   SIMD_FIXED_POINT_INSTRUCTIONS  | Counts the number of committed " |
+           | SIMD fixed point partitioned add/sub and integer multiply add" in |
+           | structions.                                                       |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x4000009f   SIMD_FEPERMD_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  full element permutation" instructions.                          |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x400000a0   SIMD_ELEMENT_SUMMASK_COMP_INSTRUCTIONS  | Counts the number of co |
+           | mmitted "SIMD element sum mask" and "SIMD element compress" instr |
+           | uctions.                                                          |
+  Register[0] Name: Event Code            Value: 0x46                          |
+0x400000a1   SIMD_FRCPA_INSTRUCTIONS  | Counts the number of committed "SIMD r |
+           | eciprocal approximation" instructions.                            |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a2   SIMD_FRSQRTA_INSTRUCTIONS  | Counts the number of committed "SIMD |
+           |  reciprocal square approximation" instructions.                   |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a3   SIMD_TRIGONOMETRIC_EXPONENTIAL_INSTRUCTIONS  | Counts the number  |
+           | of committed "SIMD trigonometric" and "SIMD exponential auxiliary |
+           | " instructions.                                                   |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a4   SIMD_XMA_INST  | Counts the number of committed "integer multiply |
+           |  add" instructions.                                               |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a5   SIMD_FLOGICAL_INSTRUCTIONS  | Counts the number of committed "SIM |
+           | D floating register logical operate" instructions.                |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a6   SIMD_FPCMP_INSTRUCTIONS  | Counts the number of committed "SIMD c |
+           | ompere" instructions.                                             |
+  Register[0] Name: Event Code            Value: 0x47                          |
+0x400000a7   SIMD_INDIRECT_LOAD_FL_INSTRUCTIONS  | Counts the number of commit |
+           | ted "SIMD indirect load floating point" instructions.             |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000a8   SIMD_STRIDE_LOAD_FL_INSTRUCTIONS  | Counts the number of committe |
+           | d "SIMD stride load floating point" instructions.                 |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000a9   SIMD_BROADCAST_LOAD_FL_INSTRUCTIONS  | Counts the number of commi |
+           | tted "SIMD broadcast load floating-point" instructions.           |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000aa   SIMD_STRIDE_STORE_FL_INSTRUCTIONS  | Counts the number of committ |
+           | ed "SIMD stride store floating point" instructions.               |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000ab   SIMD_INDIRECT_STORE_FL_INSTRUCTIONS  | Counts the number of commi |
+           | tted "SIMD indirect store floating-point" instructions.           |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000ac   SIMD_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number of comm |
+           | itted "SIMD store floating point register on register condition"  |
+           | instructions.                                                     |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000ad   SIMD_STFRUW_INSTRUCTION  | Counts the number of committed "SIMD s |
+           | tore floating point register on register condition unsigned word  |
+           | data" instructions.                                               |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000ae   SIMD_STRIDE_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number  |
+           | of committed "SIMD stride store floating point register on regist |
+           | er condition" instructions.                                       |
+  Register[0] Name: Event Code            Value: 0x48                          |
+0x400000af   SIMD_INDIRECT_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the numbe |
+           | r of committed "SIMD indirect store floating point register on re |
+           | gister condition" instructions.                                   |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b0   SIMD_LDFUW_SW_IB_INSTRUCTIONS  | Counts the number of committed " |
+           | SIMD load floating point register on unsigned and signed word dat |
+           | e" and "SIMD load floating point register on internal broadcast"  |
+           | instructions.                                                     |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b1   SIMD_STFUW_INSTRUCTION  | Counts the number of committed "SIMD st |
+           | ore floating point register on unsigned word data" instructions.  |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b2   SIMD_LDDFDS_INSTRUCTION  | Counts the number of committed "SIMD l |
+           | oad dual single-floating point register" instruction. SIMD versio |
+           | n of LDDFDS instruction is counted.                               |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b3   SIMD_STDFDS_INSTRUCTION  | Counts the number of committed "SIMD s |
+           | tore dual floating-point register for double single floating" ins |
+           | truction.                                                         |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b4   SIMD_INDIRECT_PREFETCH_INSTRUCTIONS  | Counts the number of commi |
+           | tted "SIMD indirect prefetch" instructions.                       |
+  Register[0] Name: Event Code            Value: 0x49                          |
+0x400000b5   4SIMD_FLOATING_DSP_INSTRUCTIONS  | Counts the number of committed |
+           |  "4SIMD floating point Dual Single Precision" instructions.       |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000b6   4SIMD_FMA_DSP_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD floating point multiply and_add/sub Dual Single Precision" ins |
+           | tructions.                                                        |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000b7   4SIMD_FL_MOVE_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD floating point move" instructions.                             |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000b8   4SIMD_FSELMOV_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD floating point selmov" instructions.                           |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000b9   4SIMD_FIXED_POINT_INSTRUCTIONS  | Counts the number of committed  |
+           | "4SIMD fixed point partitioned add/sub and integer multiply add"  |
+           | instructions.                                                     |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000ba   4SIMD_FEPERMD_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD full element permutation" instructions.                        |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000bb   4SIMD_ELEMENT_SUMMASK_COMP_INSTRUCTIONS  | Counts the number of c |
+           | ommitted "4SIMD element sum mask" and "4SIMD element compress" in |
+           | structions.                                                       |
+  Register[0] Name: Event Code            Value: 0x4a                          |
+0x400000bc   4SIMD_FRCPA_INSTRUCTIONS  | Counts the number of committed "4SIMD |
+           |  reciprocal approximation" instructions.                          |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000bd   4SIMD_FRSQRTA_INSTRUCTIONS  | Counts the number of committed "4SI |
+           | MD reciprocal square approximation" instructions.                 |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000be   4SIMD_TRIGONOMETRIC_EXPONENTIAL_INSTRUCTIONS  | Counts the number |
+           |  of committed "4SIMD trigonometric" and "4SIMD exponential auxili |
+           | ary" instructions.                                                |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000bf   4SIMD_XMA_INST  | Counts the number of committed "integer multipl |
+           | y add" instructions.                                              |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000c0   4SIMD_FLOGICAL_INSTRUCTIONS  | Counts the number of committed "4S |
+           | IMD floating register logical operate" instructions.              |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000c1   4SIMD_FPCMP_INSTRUCTIONS  | Counts the number of committed "4SIMD |
+           |  reciprocal square approximation" instructions.                   |
+  Register[0] Name: Event Code            Value: 0x4b                          |
+0x400000c2   4SIMD_INDIRECT_LOAD_FL_INSTRUCTIONS  | Counts the number of commi |
+           | tted "4SIMD indirect load floating point" instructions.           |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c3   4SIMD_STRIDE_LOAD_FL_INSTRUCTIONS  | Counts the number of committ |
+           | ed "4SIMD stride load floating point" instructions.               |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c4   4SIMD_BROADCAST_LOAD_FL_INSTRUCTIONS  | Counts the number of comm |
+           | itted "4SIMD broadcast load floating-point" instructions.         |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c5   4SIMD_STRIDE_STORE_FL_INSTRUCTIONS  | Counts the number of commit |
+           | ted "4SIMD stride store floating-point" instructions.             |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c6   4SIMD_INDIRECT_STORE_FL_INSTRUCTIONS  | Counts the number of comm |
+           | itted "4SIMD indirect store floating point" instructions.         |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c7   4SIMD_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number of com |
+           | mitted "4SIMD store floating point register on register condition |
+           | " instructions.                                                   |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c8   4SIMD_STFRUW_INSTRUCTION  | Counts the number of committed "4SIMD |
+           |  store floating point register on register condition unsigned wor |
+           | d data" instructions.                                             |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000c9   4SIMD_STRIDE_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the number |
+           |  of committed "4SIMD stride store floating point register on regi |
+           | ster condition" instructions.                                     |
+  Register[0] Name: Event Code            Value: 0x4c                          |
+0x400000ca   4SIMD_INDIRECT_STORE_FL_CONDITION_INSTRUCTIONS  | Counts the numb |
+           | er of committed "4SIMD indirect store floating point register on  |
+           | register condition" instructions.                                 |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000cb   4SIMD_LDFUW_SW_IB_INSTRUCTIONS  | Counts the number of committed  |
+           | "SIMD load floating point register on unsigned and signed word da |
+           | te" and "SIMD load floating point register on internal broadcast" |
+           |  instructions.                                                    |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000cc   4SIMD_STFUW_INSTRUCTION  | Counts the number of committed "4SIMD  |
+           | store floating point register on unsigned word data" instructions |
+           | .                                                                 |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000cd   4SIMD_LDDFDS_INSTRUCTION  | Counts the number of committed "4SIMD |
+           |  load dual single-floating point register" instruction.           |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000ce   4SIMD_STDFDS_INSTRUCTION  | Counts the number of committed "4SIMD |
+           |  store dual floating-point register for double single floating" i |
+           | nstruction.                                                       |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000cf   4SIMD_INDIRECT_PREFETCH_INSTRUCTIONS  | Counts the number of comm |
+           | itted "4SIMD indirect prefetch" instructions.                     |
+  Register[0] Name: Event Code            Value: 0x4d                          |
+0x400000d0   XSIMD_LOAD_STORE_INSTRUCTIONS  | Counts the number of committed " |
+           | SIMD and 4SIMD load/store" instructions.                          |
+  Register[0] Name: Event Code            Value: 0x4e                          |
+0x400000d1   XSIMD_FLOATING_INSTRUCTIONS  | Counts the number of committed "SI |
+           | MD and 4SIMD floating point" instructions.                        |
+  Register[0] Name: Event Code            Value: 0x4e                          |
+0x400000d2   XSIMD_FMA_INSTRUCTIONS  | Counts the number of committed "SIMD an |
+           | d 4SIMD floating point multiply and add/sub" and "SIMD and 4SIMD  |
+           | floating point trigonometric" instructions.                       |
+  Register[0] Name: Event Code            Value: 0x4e                          |
+0x400000d3   XSIMD_FIXED_POINT_INSTRUCTIONS  | Counts the number of committed  |
+           | "SIMD and 4SIMD fixed point partitioned add/sub and integer multi |
+           | ply add" instructions.                                            |
+  Register[0] Name: Event Code            Value: 0x4e                          |
+0x400000d4   NONSIMD_XSIMD_INDIRECT_PREFETCH_INSTRUCTIONS  | Counts the number |
+           |  of committed "NonSIMD, SIMD and 4SIMD of indirect prefetch" inst |
+           | ructions.                                                         |
+  Register[0] Name: Event Code            Value: 0x4e                          |
+--------------------------------------------------------------------------------
+Total events reported: 213
+native_avail.c                           PASSED

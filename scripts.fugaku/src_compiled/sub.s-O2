@@ -1,0 +1,383 @@
+	.ident	"$Compiler: FUJITSU CONFIDENTIAL $"
+..text.b:
+	.ident	"$Options: Fujitsu C/C++ Compiler 4.0.0 (Jul 30 2019 17:15:53) --preinclude /opt/FJSVxtclanga/fujitsu_compilers_sve_own_20190731/sve_own/bin/../lib/fcc.pre --gcc -Dunix -Dlinux -D__FUJITSU -D__aarch64__ -D__unix -D__fcc_version__=0x800 -D__fcc_version=800 -D__USER_LABEL_PREFIX__= -D__OPTIMIZE__ -D__ARM_ARCH=8 -D__ARM_FEATURE_SVE -D__FP_FAST_FMA -D__ELF__ -D__unix__ -D__linux__ -D__linux -Asystem(unix) -D__LIBC_6B -D__LP64__ -D_LP64 -w -I/opt/FJSVxtclanga/.common/MECA008/include/mpi/fujitsu -D_REENTRANT --K=noocl --zmode=64 --sys_include=/opt/FJSVxtclanga/fujitsu_compilers_sve_own_20190731/sve_own/bin/../include --K=opt sub.c -- -ncmdname=fcc -nspopt=\"-Kident_mpi -c -O2 -Knounroll,noswp,noopenmp -w -S -Nlst=t -I/opt/FJSVxtclanga/.common/MECA008/include/mpi/fujitsu -pthread\" -zcfc=target_sve -O2 -Knounroll,noswp -w0 -Nlst=t -Kthreadsafe -Klargepage -zsrc=sub.c sub.s $"
+	.file	"sub.c"
+	.ident	"$Compiler: Fujitsu C/C++ Compiler 4.0.0 (Jul 30 2019 17:15:53) sub.c subkernel $"
+	.text
+	.align	2
+	.global	subkernel
+	.type	subkernel, %function
+subkernel:
+	.file 1 "/usr/include/bits/stdio.h"
+	.file 2 "/opt/FJSVxtclanga/fujitsu_compilers_sve_own_20190731/sve_own/bin/../include/stdarg.h"
+	.file 3 "/usr/include/bits/types/FILE.h"
+	.file 4 "/usr/include/bits/types/struct_FILE.h"
+	.file 5 "sub.c"
+	.loc 5 16 0
+..LDL1:
+.LFB0:
+	.cfi_startproc
+/*     16 */	sub	sp, sp, 16
+/*    ??? */	stp	x29, x30, [sp]	//  (*)
+/*     16 */	add	x29, sp, 0
+	.cfi_def_cfa 29, 16
+	.cfi_offset 29, -16
+	.cfi_offset 30, -8
+/*     16 */	sub	sp, sp, 16
+/*    ??? */	str	x19, [x29, -8]	//  (*)
+	.cfi_offset 19, -24
+/*     16 */	add	x19, sp, 0
+	.loc 5 22 0
+..LDL2:
+/*     22 */	adrp	x1, matrix
+/*     22 */	mov	w4, 1000
+	.loc 5 24 0
+..LDL3:
+	.loc 5 28 0 is_stmt 0
+..LDL4:
+/*     28 */	index	z0.d, 0, 1
+	.loc 5 30 0
+..LDL5:
+/*     30 */	mov	x0, 15990784
+	.loc 5 22 0 is_stmt 1
+..LDL6:
+/*     22 */	add	x3, x1, :lo12:matrix
+	.loc 5 24 0
+..LDL7:
+	.loc 5 29 0 is_stmt 0
+..LDL8:
+/*     29 */	ptrue	p0.d, ALL
+/*     29 */	mov	x1, 7995392
+	.loc 5 30 0
+..LDL9:
+/*     30 */	fmov	z4.d, 0.000000e+00
+	.loc 5 22 0 is_stmt 1
+..LDL10:
+/*     22 */	str	w4, [x3]	//  "matrix"
+	.loc 5 24 0
+..LDL11:
+	.loc 5 30 0 is_stmt 0
+..LDL12:
+/*     30 */	movk	x0, 9224, lsl #0
+	.loc 5 29 0
+..LDL13:
+/*     29 */	movk	x1, 4616, lsl #0
+	.loc 5 30 0
+..LDL14:
+/*     30 */	add	x0, x0, x3
+	.loc 5 29 0
+..LDL15:
+/*     29 */	add	x1, x1, x3
+	.loc 5 28 0
+..LDL16:
+/*     28 */	add	x2, x3, 8
+	.loc 5 24 0
+..LDL17:
+/*     24 */	mov	w5, 0
+.L77:					// :entr
+	.loc 5 25 0 is_stmt 1
+..LDL18:
+	.loc 5 28 0 is_stmt 0
+..LDL19:
+/*     28 */	sxtw	x6, w5
+	.loc 5 29 0
+..LDL20:
+/*     29 */	scvtf	d1, w5
+	.loc 5 25 0
+..LDL21:
+/*     25 */	mov	w7, 125
+	.loc 5 28 0
+..LDL22:
+/*     28 */	lsl	x9, x6, 6
+	.loc 5 25 0
+..LDL23:
+/*     25 */	mov	w8, 0
+	.loc 5 28 0
+..LDL24:
+/*     28 */	sub	x9, x9, x6
+/*     28 */	add	x9, x9, x9
+/*     28 */	sub	x6, x9, x6
+/*     28 */	lsl	x6, x6, 3
+/*     28 */	dup	z3.d, x6
+	.loc 5 29 0
+..LDL25:
+/*     29 */	dup	z5.d, z1.d[0]
+/*     29 */	mov	w6, 0
+	.p2align 5
+.L80:					// :entr:term
+	.loc 5 29 0 is_stmt 1
+..LDL26:
+	.loc 5 28 0 is_stmt 0
+..LDL27:
+/*     28 */	dup	z2.s, w6
+/*     28 */	add	w6, w6, 8
+	.loc 5 29 0
+..LDL28:
+/*     29 */	subs	w7, w7, 1
+	.loc 5 28 0 is_stmt 1
+..LDL29:
+/*     28 */	dup	z1.s, w8
+/*     28 */	add	w8, w8, 8
+	.loc 5 29 0
+..LDL30:
+	.loc 5 28 0 is_stmt 0
+..LDL31:
+/*     28 */	add	z2.s, z2.s, z0.s
+	.loc 5 28 0 is_stmt 1
+..LDL32:
+/*     28 */	add	z1.s, z1.s, z0.s
+	.loc 5 29 0
+..LDL33:
+	.loc 5 28 0 is_stmt 0
+..LDL34:
+/*     28 */	scvtf	z2.d, p0/m, z2.s
+	.loc 5 28 0 is_stmt 1
+..LDL35:
+/*     28 */	adr	z1.d, [z3.d, z1.d, sxtw]
+	.loc 5 30 0
+..LDL36:
+/*     30 */	st1d	{z4.d}, p0, [x0, z1.d, lsl #3]	//  "matrix"
+	.loc 5 29 0
+..LDL37:
+/*     29 */	st1d	{z5.d}, p0, [x1, z1.d, lsl #3]	//  "matrix"
+	.loc 5 28 0 is_stmt 0
+..LDL38:
+/*     28 */	st1d	{z2.d}, p0, [x2, z1.d, lsl #3]	//  "matrix"
+	.loc 5 29 0
+..LDL39:
+/*     29 */	bne	.L80
+	.loc 5 32 0 is_stmt 1
+..LDL40:
+/*     32 */	add	w5, w5, 1
+/*     32 */	subs	w4, w4, 1
+/*     32 */	bne	.L77
+	.loc 5 35 0
+..LDL41:
+	.loc 5 41 0 is_stmt 0
+..LDL42:
+/*     41 */	mov	x1, 7995392
+/*     41 */	mov	x0, 15990784
+/*     41 */	movk	x1, 4616, lsl #0
+/*     41 */	movk	x0, 9224, lsl #0
+/*     41 */	add	x1, x1, x3
+/*     41 */	add	x0, x0, x3
+	.loc 5 35 0
+..LDL43:
+/*     35 */	mov	w3, 0
+/*     35 */	mov	w5, 1000
+.L85:					// :entr
+	.loc 5 39 0 is_stmt 1
+..LDL44:
+/*     39 */	mov	w7, 0
+	.loc 5 41 0 is_stmt 0
+..LDL45:
+/*     41 */	sxtw	x4, w3
+	.loc 5 39 0
+..LDL46:
+/*     39 */	mov	w6, 1000
+	.loc 5 41 0
+..LDL47:
+/*     41 */	lsl	x8, x4, 6
+/*     41 */	sub	x8, x8, x4
+/*     41 */	add	x8, x8, x8
+/*     41 */	sub	x4, x8, x4
+/*     41 */	lsl	x4, x4, 3
+/*     41 */	dup	z3.d, x4
+.L89:					// :entr
+	.loc 5 40 0 is_stmt 1
+..LDL48:
+	.loc 5 41 0 is_stmt 0
+..LDL49:
+/*     41 */	sxtw	x4, w7
+	.loc 5 40 0
+..LDL50:
+/*     40 */	mov	w9, 125
+	.loc 5 41 0
+..LDL51:
+/*     41 */	lsl	x8, x4, 6
+/*     41 */	sub	x8, x8, x4
+/*     41 */	add	x8, x8, x8
+/*     41 */	sub	x4, x8, x4
+	.loc 5 40 0
+..LDL52:
+/*     40 */	mov	w8, 0
+	.loc 5 41 0
+..LDL53:
+/*     41 */	lsl	x4, x4, 3
+/*     41 */	dup	z5.d, x4
+	.p2align 5
+.L92:					// :entr:term
+	.loc 5 41 0 is_stmt 1
+..LDL54:
+/*     41 */	dup	z1.s, w8
+/*     41 */	add	w8, w8, 8
+/*     41 */	subs	w9, w9, 1
+/*     41 */	add	z1.s, z1.s, z0.s
+/*     41 */	sxtw	z1.d, p0/m, z1.d
+/*     41 */	add	z2.d, z1.d, z5.d
+/*     41 */	add	z1.d, z1.d, z3.d
+/*     41 */	ld1d	{z4.d}, p0/z, [x1, z2.d, lsl #3]	//  "matrix"
+/*     41 */	ld1d	{z1.d}, p0/z, [x2, z1.d, lsl #3]	//  "matrix"
+/*     41 */	ld1d	{z6.d}, p0/z, [x0, z2.d, lsl #3]	//  "matrix"
+/*     41 */	fmul	z4.d, z1.d, z4.d
+/*     41 */	fadd	z6.d, z6.d, z4.d
+/*     41 */	st1d	{z6.d}, p0, [x0, z2.d, lsl #3]	//  "matrix"
+/*     41 */	bne	.L92
+	.loc 5 43 0
+..LDL55:
+/*     43 */	add	w7, w7, 1
+/*     43 */	subs	w6, w6, 1
+/*     43 */	bne	.L89
+	.loc 5 44 0
+..LDL56:
+/*     44 */	add	w3, w3, 1
+/*     44 */	subs	w5, w5, 1
+/*     44 */	bne	.L85
+	.loc 5 45 0
+..LDL57:
+/*    ??? */	ldr	x19, [x29, -8]	//  (*)
+	.cfi_restore 19
+/*    ??? */	add	sp, x29, 0
+/*    ??? */	ldp	x29, x30, [sp]	//  (*)
+	.cfi_restore 29
+	.cfi_restore 30
+/*     45 */	add	sp, sp, 16
+	.cfi_def_cfa_offset 0
+/*     45 */	ret	
+..D1.pchi:
+	.cfi_endproc
+.LFE0:
+	.size	subkernel, .-subkernel
+	.file 6 "/usr/include/stdio.h"
+	.file 7 "/opt/FJSVxtclanga/fujitsu_compilers_sve_own_20190731/sve_own/bin/../include/stddef.h"
+	.file 8 "/usr/include/bits/types.h"
+	.file 9 "/usr/include/bits/types/__fpos_t.h"
+	.file 10 "/usr/include/bits/mathcalls-helper-functions.h"
+	.file 11 "/usr/include/bits/mathcalls.h"
+	.file 12 "/usr/include/bits/types/__mbstate_t.h"
+	.file 13 "/usr/include/bits/types/__fpos64_t.h"
+	.file 14 "/usr/include/bits/types/__FILE.h"
+	.file 15 "/usr/include/bits/floatn.h"
+	.file 16 "/usr/include/bits/floatn-common.h"
+	.file 17 "/usr/include/math.h"
+	.pushsection	.text
+..text.e:
+	.popsection
+	.section	.debug_info
+	.4byte	.LSEdebug_info-.LSBdebug_info	// Length of .debug_info section
+.LSBdebug_info:
+	.2byte	0x4	// Version of DWARF information
+	.4byte	.Ldebug_abbrev	// Offset into .debug_abbrev section
+	.byte	0x8	// Address size
+	.uleb128	0x1	// DW_TAG_compile_unit (0xb)
+	.ascii	"sub.c\0"	// DW_AT_name
+	.4byte	.Ldebug_line	// DW_AT_stmt_list
+	.8byte	..text.b	// DW_AT_low_pc
+	.8byte	..text.e-..text.b	// DW_AT_high_pc
+	.byte	0xc	// DW_AT_language
+	.ascii	"/home/users/ta05/ta0003/tmp/check_papi\0"	// DW_AT_comp_dir
+	.ascii	"ccpcom: Fujitsu C/C++ Compiler 4.0.0 (Jul 30 2019 17:15:53)\0"	// DW_AT_producer
+	.uleb128	0x2	// DW_TAG_subprogram (0x8a)
+	.ascii	"subkernel\0"	// DW_AT_name
+	.8byte	subkernel	// DW_AT_low_pc
+	.8byte	..D1.pchi-subkernel	// DW_AT_high_pc
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x10	// DW_AT_decl_line
+			// DW_AT_external
+	.uleb128	0x1	// DW_AT_frame_base
+	.byte	0x9c	// DW_OP_call_frame_cfa
+	.uleb128	0x3	// DW_TAG_FJ_loop (0xa9)
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x28	// DW_AT_FJ_loop_start_line
+	.byte	0x2a	// DW_AT_FJ_loop_end_line
+	.byte	0x3	// DW_AT_FJ_loop_nest_level
+	.byte	0x5	// DW_AT_FJ_loop_type
+	.uleb128	0x3	// DW_TAG_FJ_loop (0xaf)
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x27	// DW_AT_FJ_loop_start_line
+	.byte	0x2b	// DW_AT_FJ_loop_end_line
+	.byte	0x2	// DW_AT_FJ_loop_nest_level
+	.byte	0x5	// DW_AT_FJ_loop_type
+	.uleb128	0x3	// DW_TAG_FJ_loop (0xb5)
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x23	// DW_AT_FJ_loop_start_line
+	.byte	0x2c	// DW_AT_FJ_loop_end_line
+	.byte	0x1	// DW_AT_FJ_loop_nest_level
+	.byte	0x5	// DW_AT_FJ_loop_type
+	.uleb128	0x3	// DW_TAG_FJ_loop (0xbb)
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x19	// DW_AT_FJ_loop_start_line
+	.byte	0x1f	// DW_AT_FJ_loop_end_line
+	.byte	0x2	// DW_AT_FJ_loop_nest_level
+	.byte	0x5	// DW_AT_FJ_loop_type
+	.uleb128	0x3	// DW_TAG_FJ_loop (0xc1)
+	.byte	0x5	// DW_AT_decl_file
+	.byte	0x18	// DW_AT_FJ_loop_start_line
+	.byte	0x20	// DW_AT_FJ_loop_end_line
+	.byte	0x1	// DW_AT_FJ_loop_nest_level
+	.byte	0x5	// DW_AT_FJ_loop_type
+	.byte	0x0	// End of children (0x8a)
+	.byte	0x0	// End of children (0xb)
+.LSEdebug_info:
+	.section	.debug_abbrev
+.Ldebug_abbrev:
+	.uleb128	0x1	// Abbreviation code
+	.uleb128	0x11	// DW_TAG_compile_unit
+	.byte	0x1	// DW_CHILDREN_yes
+	.uleb128	0x3	// DW_AT_name
+	.uleb128	0x8	// DW_FORM_string
+	.uleb128	0x10	// DW_AT_stmt_list
+	.uleb128	0x17	// DW_FORM_sec_offset
+	.uleb128	0x11	// DW_AT_low_pc
+	.uleb128	0x1	// DW_FORM_addr
+	.uleb128	0x12	// DW_AT_high_pc
+	.uleb128	0x7	// DW_FORM_data8
+	.uleb128	0x13	// DW_AT_language
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x1b	// DW_AT_comp_dir
+	.uleb128	0x8	// DW_FORM_string
+	.uleb128	0x25	// DW_AT_producer
+	.uleb128	0x8	// DW_FORM_string
+	.byte	0x0
+	.byte	0x0
+	.uleb128	0x2	// Abbreviation code
+	.uleb128	0x2e	// DW_TAG_subprogram
+	.byte	0x1	// DW_CHILDREN_yes
+	.uleb128	0x3	// DW_AT_name
+	.uleb128	0x8	// DW_FORM_string
+	.uleb128	0x11	// DW_AT_low_pc
+	.uleb128	0x1	// DW_FORM_addr
+	.uleb128	0x12	// DW_AT_high_pc
+	.uleb128	0x7	// DW_FORM_data8
+	.uleb128	0x3a	// DW_AT_decl_file
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3b	// DW_AT_decl_line
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3f	// DW_AT_external
+	.uleb128	0x19	// DW_FORM_flag_present
+	.uleb128	0x40	// DW_AT_frame_base
+	.uleb128	0x18	// DW_FORM_exprloc
+	.byte	0x0
+	.byte	0x0
+	.uleb128	0x3	// Abbreviation code
+	.uleb128	0xf000	// DW_TAG_FJ_loop
+	.byte	0x0	// DW_CHILDREN_no
+	.uleb128	0x3a	// DW_AT_decl_file
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3300	// DW_AT_FJ_loop_start_line
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3301	// DW_AT_FJ_loop_end_line
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3302	// DW_AT_FJ_loop_nest_level
+	.uleb128	0xb	// DW_FORM_data1
+	.uleb128	0x3303	// DW_AT_FJ_loop_type
+	.uleb128	0xb	// DW_FORM_data1
+	.byte	0x0
+	.byte	0x0
+	.byte	0x0
+	.section	.debug_line
+.Ldebug_line:
+	.comm	matrix,24000008,8
+	.section	.note.GNU-stack,"",%progbits
+	.section	.fj.compile_info, "e"
+	.ascii	"C::trad"

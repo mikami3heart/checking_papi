@@ -1,0 +1,89 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
+++ date
+Tue Feb 25 15:14:26 JST 2020
+++ hostname
+h27-7014c
+++ WKDIR=/home/g9200002/u92028/tmp/check_papi
+++ mkdir -p /home/g9200002/u92028/tmp/check_papi
+++ cd /home/g9200002/u92028/tmp/check_papi
+++ '[' 0 '!=' 0 ']'
+++ rm '/home/g9200002/u92028/tmp/check_papi/*'
+rm: cannot remove '/home/g9200002/u92028/tmp/check_papi/*': No such file or directory
+++ SRCDIR=/home/g9200002/u92028/papi/scripts.fugaku/src_others
+++ cp /home/g9200002/u92028/papi/scripts.fugaku/src_others/call_papi_hl_flops.c main.c
+++ CXXFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ FCFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ CFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ PAPI_DIR=/opt/FJSVxos/devkit/aarch64/rfs/usr
+++ PAPI_LDFLAGS='-L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm '
+++ PAPI_INCLUDES='-I/opt/FJSVxos/devkit/aarch64/rfs/usr/include '
+++ MPI_LDFLAGS='-lmpi '
+++ set -x
+++ mpifcc -c -O2 -Kopenmp -Nnofjprof -Nfjomplib main.c -I/opt/FJSVxos/devkit/aarch64/rfs/usr/include
+"main.c", line 22: warning: variable "tt" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+         ^
+
+"main.c", line 22: warning: variable "t3" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+                     ^
+
+"main.c", line 22: warning: variable "t4" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+                         ^
+
+"main.c", line 23: warning: variable "j" was declared but never referenced
+  int i, j, k, loop;
+         ^
+
+"main.c", line 23: warning: variable "k" was declared but never referenced
+  int i, j, k, loop;
+            ^
+
+"main.c", line 25: warning: variable "fn" was declared but never referenced
+  char fn[]="tmp.cio.###";
+       ^
+
+"main.c", line 27: warning: variable "real_time0" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+        ^
+
+"main.c", line 27: warning: variable "proc_time0" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+                    ^
+
+"main.c", line 27: warning: variable "mflips" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+                                ^
+
+"main.c", line 28: warning: variable "flpins" was declared but never referenced
+  long_long flpops, flpins;
+                    ^
+
+"main.c", line 85: warning: variable "k" was declared but never referenced
+  int i, j, k;
+            ^
+
+"main.c", line 86: warning: variable "f1" was declared but never referenced
+  float f1,f2,f3;
+        ^
+
+"main.c", line 86: warning: variable "f2" was declared but never referenced
+  float f1,f2,f3;
+           ^
+
+"main.c", line 86: warning: variable "f3" was declared but never referenced
+  float f1,f2,f3;
+              ^
+
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib main.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -lmpi
+++ ls -go
+total 2
+-rwxr-xr-x 1 88376 Feb 25 15:14 a.out
+-rw-r--r-- 1  2649 Feb 25 15:14 main.c
+-rw-r--r-- 1 15544 Feb 25 15:14 main.o
+++ xospastop
+++ export OMP_NUM_THREADS=12
+++ OMP_NUM_THREADS=12
+++ mpirun -np 1 ./a.out

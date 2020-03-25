@@ -1,0 +1,47 @@
+PAPI_ROOT=/usr/local/papi/papi-5.3.2/intel
+<main> npes=1 max_threads=2
+Modified STREAM Array size = 10000000
+Number of Threads requested = 2
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       15158.6510       0.0148       0.0106       0.0154
+Scale:      14595.8641       0.0164       0.0110       0.0171
+Add:        18360.1685       0.0196       0.0131       0.0205
+Triad:      18306.7445       0.0200       0.0131       0.0210
+step 1 finished in 7.081875 seconds
+The sum of threads:
+#0, 80000035                      PAPI_LD_INS  3882558690
+#1, 80000036                      PAPI_SR_INS  1545576777
+#2, 40000023     MEM_LOAD_UOPS_RETIRED:L1_HIT  2558153075
+#3, 40000024    MEM_LOAD_UOPS_RETIRED:HIT_LFB  1296734764
+#4, 40000025                L3_LAT_CACHE:MISS   104699772
+#5, 40000026           L3_LAT_CACHE:REFERENCE   515424080
+The sum of threads:
+#0, 40000023     MEM_LOAD_UOPS_RETIRED:L2_HIT    17788567
+#1, 40000024     MEM_LOAD_UOPS_RETIRED:L3_HIT     4118381
+#2, 40000025    MEM_LOAD_UOPS_RETIRED:L3_MISS       86984
+#3, 40000026              HW_PRE_REQ:L1D_MISS   123646576
+The sum of threads:
+#1, 40000004      L2_RQSTS:ALL_DEMAND_DATA_RD   709305072
+#2, 4000001e       L2_RQSTS:ALL_DEMAND_RD_HIT   254386323
+#3, 40000024                  L2_RQSTS:ALL_PF  1059882119
+#4, 40000025                  L2_RQSTS:PF_HIT   147495389
+#5, 40000026                 L2_RQSTS:PF_MISS   912386730
+The sum of threads:
+#2, 40000023                  L2_TRANS:L1D_WB    33749962
+#3, 40000024                    L2_TRANS:LOAD   797805288
+#4, 40000025                 L2_TRANS:L2_FILL   717351215
+#5, 40000026                   L2_TRANS:L2_WB     1940024
+#6, 40000027            L2_TRANS:ALL_PREFETCH  1079373418
+#7, 40000028                     L2_TRANS:RFO       19491
+The sum of threads:
+#0, 40000023     OFFCORE_REQUESTS:ALL_DATA_RD   803282884
+#2, 40000025  OFFCORE_REQUESTS:DEMAND_CODE_RD      105455
+#3, 4000000c  OFFCORE_REQUESTS:DEMAND_DATA_RD   442126470
+#4, 40000026      OFFCORE_REQUESTS:DEMAND_RFO       15425
+
+data rate from L3
+
+L2_RQSTS:ALL_DEMAND_DATA_RD  709305072 - L2_RQSTS:ALL_DEMAND_RD_HIT  254386323 + L2_RQSTS:PF_MISS  912386730
+710 - 250 +  910 = 1370 M
+1.37 x 64 / 7.0 = 12.5 GB/s
+

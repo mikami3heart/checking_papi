@@ -1,0 +1,599 @@
+[mikami@mikami-corot ~]$ ssh r1004@fx100
+Last login: Tue Nov 22 15:36:26 2016 from mikami-corot.aics34.riken.jp
+[r1004@fx100 ~]$ cd papi/scripts/
+[r1004@fx100 scripts]$ ls
+c.papi.c               obsolete                     x.make-pgi.sh
+check_papi_hl.c        sub_stream.c                 x.papi-module.sh
+fx100.papi_events.csv  vsh                          x.run_papi.fx100.sh
+logs                   x.compile-user-cpp.fx100.sh  x.run_testlib.sh
+main_fort_hl.f90       x.intel-wo-module.sh         y.install.sh
+main_papi_events.cpp   x.make-5.4.1-intel.sh        y.make-intel.sh
+mods                   x.make-fx100.sh              y.papi_component.sh
+note.events.vsh        x.make-gnu.sh                y.papi_vtune.sh
+note.link              x.make-intel-root.sh
+note.papi              x.make-intel.sh
+[r1004@fx100 scripts]$ ./x.compile-user-cpp.fx100.sh
+Currently Loaded Modulefiles:
+  1) TCSuite/GM-2.0.0-04
++ date
+2016年 11月 22日 火曜日 18:39:10 JST
++ hostname
+fh01p04
++ WKDIR=/fefs/home/r1004/tmp/check_papi
++ mkdir -p /fefs/home/r1004/tmp/check_papi
++ cd /fefs/home/r1004/tmp/check_papi
++ '[' 0 '!=' 0 ']'
++ rm '/fefs/home/r1004/tmp/check_papi/*'
+rm: cannot remove `/fefs/home/r1004/tmp/check_papi/*': そのようなファイルやディレクトリはありません
++ SRCDIR=/fefs/home/r1004/papi/scripts
++ cp /fefs/home/r1004/papi/scripts/main_papi_events.cpp main.cpp
++ cp /fefs/home/r1004/papi/scripts/sub_stream.c sub.c
++ CXXFLAGS='-Kopenmp,fast -Ntl_notrt -w'
++ CFLAGS='-std=c99 -Kopenmp,fast -Ntl_notrt -w'
++ FCFLAGS='-Cpp -Kopenmp,fast -Ntl_notrt -w'
++ PAPI_LDFLAGS='-lpapi -lpfm '
++ PMLIB_LDFLAGS='-L/fefs/home/r1004/pmlib/install_develop/lib -lPM -lpapi_ext '
++ FCCpx -c -Kopenmp,fast -Ntl_notrt -w main.cpp -lpapi -lpfm
++ fccpx -c -std=c99 -Kopenmp,fast -Ntl_notrt -w sub.c -lpapi -lpfm
+fccpx: warning: -std=c99 is unrecognized option. This option is passed to the linker.
++ FCCpx -Kopenmp,fast -Ntl_notrt -w main.o sub.o -lpapi -lpfm -L/fefs/home/r1004/pmlib/install_develop/lib -lPM -lpapi_ext
+[r1004@fx100 scripts]$ ls -go mods/
+合計 1536
+-rw-r--r-- 1  8593 11月 22 18:40 2016 bug_report.txt
+-rw-r--r-- 1 59056 11月 22 17:57 2016 papi_events.csv
+-rw-r--r-- 1 59102 11月 22 17:57 2016 papi_events_old.csv
+[r1004@fx100 scripts]$ pwd
+/fefs/home/r1004/papi/scripts
+[r1004@fx100 scripts]$ ~/x.interactive.sh 
+[INFO] PJM 0000 pjsub Job 7700 submitted.
+[INFO] PJM 0081 .connected.
+[INFO] PJM 0082 pjsub Interactive job 7700 started.
+[r1004@com scripts]$ pwd
+/fefs/home/r1004/papi/scripts
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+Available events and hardware information.
+--------------------------------------------------------------------------------
+PAPI Version             : 4.1.3.0
+Vendor string and code   : Sun (5)
+Model string and code    : FUJITSU SPARC64 XIfx (0)
+CPU Revision             : 0.000000
+CPU Megahertz            : 1975.000000
+CPU Clock Megahertz      : 1975
+Hdw Threads per core     : 1
+Cores per Socket         : 1
+NUMA Nodes               : 2
+CPU's per Node           : 17
+Total CPU's              : 34
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+The following correspond to fields in the PAPI_event_info_t structure.
+
+    Name        Code    Avail Deriv Description (Note)
+PAPI_L1_DCM  0x80000000  Yes   No   Level 1 data cache misses
+PAPI_L1_ICM  0x80000001  Yes   No   Level 1 instruction cache misses
+PAPI_L2_DCM  0x80000002  No    No   Level 2 data cache misses
+PAPI_L2_ICM  0x80000003  No    No   Level 2 instruction cache misses
+PAPI_L3_DCM  0x80000004  No    No   Level 3 data cache misses
+PAPI_L3_ICM  0x80000005  No    No   Level 3 instruction cache misses
+PAPI_L1_TCM  0x80000006  Yes   Yes  Level 1 cache misses
+PAPI_L2_TCM  0x80000007  Yes   Yes  Level 2 cache misses
+PAPI_L3_TCM  0x80000008  No    No   Level 3 cache misses
+PAPI_CA_SNP  0x80000009  No    No   Requests for a snoop
+PAPI_CA_SHR  0x8000000a  No    No   Requests for exclusive access to shared cache line
+PAPI_CA_CLN  0x8000000b  No    No   Requests for exclusive access to clean cache line
+PAPI_CA_INV  0x8000000c  Yes   No   Requests for cache line invalidation
+PAPI_CA_ITV  0x8000000d  Yes   No   Requests for cache line intervention
+PAPI_L3_LDM  0x8000000e  No    No   Level 3 load misses
+PAPI_L3_STM  0x8000000f  No    No   Level 3 store misses
+PAPI_BRU_IDL 0x80000010  No    No   Cycles branch units are idle
+PAPI_FXU_IDL 0x80000011  No    No   Cycles integer units are idle
+PAPI_FPU_IDL 0x80000012  No    No   Cycles floating point units are idle
+PAPI_LSU_IDL 0x80000013  No    No   Cycles load/store units are idle
+PAPI_TLB_DM  0x80000014  No    No   Data translation lookaside buffer misses
+PAPI_TLB_IM  0x80000015  No    No   Instruction translation lookaside buffer misses
+PAPI_TLB_TL  0x80000016  No    No   Total translation lookaside buffer misses
+PAPI_L1_LDM  0x80000017  No    No   Level 1 load misses
+PAPI_L1_STM  0x80000018  No    No   Level 1 store misses
+PAPI_L2_LDM  0x80000019  No    No   Level 2 load misses
+PAPI_L2_STM  0x8000001a  No    No   Level 2 store misses
+PAPI_BTAC_M  0x8000001b  No    No   Branch target address cache misses
+PAPI_PRF_DM  0x8000001c  No    No   Data prefetch cache misses
+PAPI_L3_DCH  0x8000001d  No    No   Level 3 data cache hits
+PAPI_TLB_SD  0x8000001e  No    No   Translation lookaside buffer shootdowns
+PAPI_CSR_FAL 0x8000001f  No    No   Failed store conditional instructions
+PAPI_CSR_SUC 0x80000020  No    No   Successful store conditional instructions
+PAPI_CSR_TOT 0x80000021  No    No   Total store conditional instructions
+PAPI_MEM_SCY 0x80000022  Yes   No   Cycles Stalled Waiting for memory accesses
+PAPI_MEM_RCY 0x80000023  No    No   Cycles Stalled Waiting for memory Reads
+PAPI_MEM_WCY 0x80000024  No    No   Cycles Stalled Waiting for memory writes
+PAPI_STL_ICY 0x80000025  Yes   No   Cycles with no instruction issue
+PAPI_FUL_ICY 0x80000026  Yes   No   Cycles with maximum instruction issue
+PAPI_STL_CCY 0x80000027  Yes   Yes  Cycles with no instructions completed
+PAPI_FUL_CCY 0x80000028  Yes   Yes  Cycles with maximum instructions completed
+PAPI_HW_INT  0x80000029  No    No   Hardware interrupts
+PAPI_BR_UCN  0x8000002a  No    No   Unconditional branch instructions
+PAPI_BR_CN   0x8000002b  No    No   Conditional branch instructions
+PAPI_BR_TKN  0x8000002c  No    No   Conditional branch instructions taken
+PAPI_BR_NTK  0x8000002d  No    No   Conditional branch instructions not taken
+PAPI_BR_MSP  0x8000002e  Yes   No   Conditional branch instructions mispredicted
+PAPI_BR_PRC  0x8000002f  Yes   Yes  Conditional branch instructions correctly predicted
+PAPI_FMA_INS 0x80000030  Yes   Yes  FMA instructions completed
+PAPI_TOT_IIS 0x80000031  Yes   Yes  Instructions issued
+PAPI_TOT_INS 0x80000032  Yes   No   Instructions completed
+PAPI_INT_INS 0x80000033  No    No   Integer instructions
+PAPI_FP_INS  0x80000034  Yes   Yes  Floating point instructions
+PAPI_LD_INS  0x80000035  Yes   Yes  Load instructions
+PAPI_SR_INS  0x80000036  Yes   Yes  Store instructions
+PAPI_BR_INS  0x80000037  Yes   No   Branch instructions
+PAPI_VEC_INS 0x80000038  Yes   Yes  Vector/SIMD instructions (could include integer)
+PAPI_RES_STL 0x80000039  No    No   Cycles stalled on any resource
+PAPI_FP_STAL 0x8000003a  No    No   Cycles the FP unit(s) are stalled
+PAPI_TOT_CYC 0x8000003b  Yes   No   Total cycles
+PAPI_LST_INS 0x8000003c  Yes   Yes  Load/store instructions completed
+PAPI_SYC_INS 0x8000003d  No    No   Synchronization instructions completed
+PAPI_L1_DCH  0x8000003e  No    No   Level 1 data cache hits
+PAPI_L2_DCH  0x8000003f  No    No   Level 2 data cache hits
+PAPI_L1_DCA  0x80000040  No    No   Level 1 data cache accesses
+PAPI_L2_DCA  0x80000041  No    No   Level 2 data cache accesses
+PAPI_L3_DCA  0x80000042  No    No   Level 3 data cache accesses
+PAPI_L1_DCR  0x80000043  No    No   Level 1 data cache reads
+PAPI_L2_DCR  0x80000044  No    No   Level 2 data cache reads
+PAPI_L3_DCR  0x80000045  No    No   Level 3 data cache reads
+PAPI_L1_DCW  0x80000046  No    No   Level 1 data cache writes
+PAPI_L2_DCW  0x80000047  No    No   Level 2 data cache writes
+PAPI_L3_DCW  0x80000048  No    No   Level 3 data cache writes
+PAPI_L1_ICH  0x80000049  No    No   Level 1 instruction cache hits
+PAPI_L2_ICH  0x8000004a  No    No   Level 2 instruction cache hits
+PAPI_L3_ICH  0x8000004b  No    No   Level 3 instruction cache hits
+PAPI_L1_ICA  0x8000004c  No    No   Level 1 instruction cache accesses
+PAPI_L2_ICA  0x8000004d  No    No   Level 2 instruction cache accesses
+PAPI_L3_ICA  0x8000004e  No    No   Level 3 instruction cache accesses
+PAPI_L1_ICR  0x8000004f  No    No   Level 1 instruction cache reads
+PAPI_L2_ICR  0x80000050  No    No   Level 2 instruction cache reads
+PAPI_L3_ICR  0x80000051  No    No   Level 3 instruction cache reads
+PAPI_L1_ICW  0x80000052  No    No   Level 1 instruction cache writes
+PAPI_L2_ICW  0x80000053  No    No   Level 2 instruction cache writes
+PAPI_L3_ICW  0x80000054  No    No   Level 3 instruction cache writes
+PAPI_L1_TCH  0x80000055  No    No   Level 1 total cache hits
+PAPI_L2_TCH  0x80000056  Yes   Yes  Level 2 total cache hits
+PAPI_L3_TCH  0x80000057  No    No   Level 3 total cache hits
+PAPI_L1_TCA  0x80000058  No    No   Level 1 total cache accesses
+PAPI_L2_TCA  0x80000059  Yes   Yes  Level 2 total cache accesses
+PAPI_L3_TCA  0x8000005a  No    No   Level 3 total cache accesses
+PAPI_L1_TCR  0x8000005b  No    No   Level 1 total cache reads
+PAPI_L2_TCR  0x8000005c  No    No   Level 2 total cache reads
+PAPI_L3_TCR  0x8000005d  No    No   Level 3 total cache reads
+PAPI_L1_TCW  0x8000005e  No    No   Level 1 total cache writes
+PAPI_L2_TCW  0x8000005f  No    No   Level 2 total cache writes
+PAPI_L3_TCW  0x80000060  No    No   Level 3 total cache writes
+PAPI_FML_INS 0x80000061  No    No   Floating point multiply instructions
+PAPI_FAD_INS 0x80000062  No    No   Floating point add instructions
+PAPI_FDV_INS 0x80000063  No    No   Floating point divide instructions
+PAPI_FSQ_INS 0x80000064  No    No   Floating point square root instructions
+PAPI_FNV_INS 0x80000065  No    No   Floating point inverse instructions
+PAPI_FP_OPS  0x80000066  Yes   Yes  Floating point operations
+PAPI_SP_OPS  0x80000067  No    No   Floating point operations; optimized to count scaled single precision vector operations
+PAPI_DP_OPS  0x80000068  No    No   Floating point operations; optimized to count scaled double precision vector operations
+PAPI_VEC_SP  0x80000069  No    No   Single precision vector/SIMD instructions
+PAPI_VEC_DP  0x8000006a  No    No   Double precision vector/SIMD instructions
+-------------------------------------------------------------------------
+Of 107 possible events, 26 are available, of which 15 are derived.
+
+avail.c                                  PASSED
+
+<main> npes=1 max_threads=3
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: XSIMD_FLOATING_INSTRUCTIONS: events:400000d1
+ i= 3: XSIMD_FMA_INSTRUCTIONS: events:400000d2
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 3
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       93077.4813       0.0002       0.0002       0.0002
+Scale:      94652.8406       0.0002       0.0002       0.0002
+Add:        32918.0170       0.0019       0.0007       0.0020
+Triad:      24540.0527       0.0017       0.0010       0.0020
+Finished stream(): summing the events
+The sum of threads:
+#0, 40000010            FLOATING_INSTRUCTIONS  4070
+#1, 40000011                 FMA_INSTRUCTIONS  1220
+#2, 400000d1      XSIMD_FLOATING_INSTRUCTIONS  49999800
+#3, 400000d2           XSIMD_FMA_INSTRUCTIONS  24999900
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: SIMD_FLOATING_INSTRUCTIONS: events:40000008
+ i= 3: SIMD_FMA_INSTRUCTIONS: events:40000009
+ i= 4: 4SIMD_FLOATING_INSTRUCTIONS: events:4000007d
+ i= 5: 4SIMD_FMA_INSTRUCTIONS: events:4000007e
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=6
+<main> <my_papi_add_events> failed for thread=0, code=4
+*** error. <my_papi_bind_start> :: <PAPI_start>
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: SIMD_FLOATING_INSTRUCTIONS: events:40000008
+ i= 3: SIMD_FMA_INSTRUCTIONS: events:40000009
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30897.2670       0.0005       0.0005       0.0006
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38716.6523       0.0006       0.0006       0.0006
+Triad:      38524.0321       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+The sum of threads:
+#0, 40000010            FLOATING_INSTRUCTIONS  3297
+#1, 40000011                 FMA_INSTRUCTIONS  820
+#2, 40000008       SIMD_FLOATING_INSTRUCTIONS  0
+#3, 40000009            SIMD_FMA_INSTRUCTIONS  0
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: 4SIMD_FLOATING_INSTRUCTIONS: events:4000007d
+ i= 3: 4SIMD_FMA_INSTRUCTIONS: events:4000007e
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30826.3041       0.0005       0.0005       0.0006
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38716.6523       0.0006       0.0006       0.0006
+Triad:      38524.0321       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+The sum of threads:
+#0, 40000010            FLOATING_INSTRUCTIONS  3283
+#1, 40000011                 FMA_INSTRUCTIONS  820
+#2, 4000007d      4SIMD_FLOATING_INSTRUCTIONS  50000000
+#3, 4000007e           4SIMD_FMA_INSTRUCTIONS  25000000
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: 4SIMD_FLOATING_INSTRUCTIONS: events:4000007d
+ i= 1: XSIMD_FLOATING_INSTRUCTIONS: events:400000d1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=2
+<main> <my_papi_add_events> failed for thread=0, code=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> <my_papi_bind_start> failed for thread=0, code=-17
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: SIMD_FLOATING_INSTRUCTIONS: events:40000008
+ i= 2: 4SIMD_FLOATING_INSTRUCTIONS: events:4000007d
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=3
+<main> <my_papi_add_events> failed for thread=0, code=2
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> <my_papi_bind_start> failed for thread=0, code=-17
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: PAPI_FP_OPS: events:80000066
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30897.2670       0.0005       0.0005       0.0005
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38776.3082       0.0006       0.0006       0.0006
+Triad:      38583.0954       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 80000066 400002452
+The sum of threads:
+#0, 80000066                      PAPI_FP_OPS  400002452
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FLOATING_INSTRUCTIONS: events:40000010
+ i= 2: FMA_INSTRUCTIONS: events:40000011
+ i= 3: SIMD_FLOATING_INSTRUCTIONS: events:40000008
+ i= 4: SIMD_FMA_INSTRUCTIONS: events:40000009
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=5
+<main> <my_papi_add_events> failed for thread=0, code=3
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> <my_papi_bind_start> failed for thread=0, code=-17
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: SIMD_FLOATING_INSTRUCTIONS: events:40000008
+ i= 3: SIMD_FMA_INSTRUCTIONS: events:40000009
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 4: : events:64ba88
+*** Error. PAPI support is missing for event 4.
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=5
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: 4SIMD_FLOATING_INSTRUCTIONS: events:4000007d
+ i= 3: 4SIMD_FMA_INSTRUCTIONS: events:4000007e
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30840.4706       0.0005       0.0005       0.0005
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38716.6523       0.0006       0.0006       0.0006
+Triad:      38524.0321       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+The sum of threads:
+#0, 40000010            FLOATING_INSTRUCTIONS  3290
+#1, 40000011                 FMA_INSTRUCTIONS  820
+#2, 4000007d      4SIMD_FLOATING_INSTRUCTIONS  50000000
+#3, 4000007e           4SIMD_FMA_INSTRUCTIONS  25000000
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: 1FLOPS_instructions: events:40000077
+ i= 1: 2FLOPS_instructions: events:40000078
+ i= 2: 4FLOPS_instructions: events:40000079
+ i= 3: 8FLOPS_instructions: events:4000007a
+ i= 4: 16FLOPS_instructions: events:4000007b
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30883.0483       0.0005       0.0005       0.0007
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38716.6523       0.0006       0.0006       0.0006
+Triad:      38524.0321       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 40000077 812
+#1, 40000078 820
+#2, 40000079 50000000
+#3, 4000007a 25000000
+#4, 4000007b 0
+The sum of threads:
+#0, 40000077              1FLOPS_instructions  812
+#1, 40000078              2FLOPS_instructions  820
+#2, 40000079              4FLOPS_instructions  50000000
+#3, 4000007a              8FLOPS_instructions  25000000
+#4, 4000007b             16FLOPS_instructions  0
+[r1004@com scripts]$ 
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: floating_DSP_instructions: events:40000081
+ i= 1: fma_DSP_instructions: events:40000082
+ i= 2: SIMD_floating_DSP_instructions: events:4000009a
+ i= 3: SIMD_fma_DSP_instructions: events:4000009b
+ i= 4: 4SIMD_floating_DSP_instructions: events:400000b5
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=5
+<main> <my_papi_add_events> failed for thread=0, code=2
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> <my_papi_bind_start> failed for thread=0, code=-17
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: floating_DSP_instructions: events:40000081
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30840.4706       0.0005       0.0005       0.0005
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38776.3082       0.0006       0.0006       0.0006
+Triad:      38583.0954       0.0006       0.0006       0.0007
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 40000081 0
+The sum of threads:
+#0, 40000081        floating_DSP_instructions  0
+
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: SIMD_floating_DSP_instructions: events:4000009a
+ i= 1: SIMD_fma_DSP_instructions: events:4000009b
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       30883.0483       0.0005       0.0005       0.0006
+Scale:      31011.4898       0.0005       0.0005       0.0005
+Add:        38776.3082       0.0006       0.0006       0.0006
+Triad:      38524.0321       0.0006       0.0006       0.0006
+Finished stream(): summing the events
+event # and code for thread 0:
+The sum of threads:
+#0, 4000009a   SIMD_floating_DSP_instructions  0
+#1, 4000009b        SIMD_fma_DSP_instructions  0
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: floating_DSP_instructions: events:40000081
+ i= 1: fma_DSP_instructions: events:40000082
+ i= 2: SIMD_floating_DSP_instructions: events:4000009a
+ i= 3: SIMD_fma_DSP_instructions: events:4000009b
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=4
+<main> <my_papi_add_events> failed for thread=0, code=2
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> <my_papi_bind_start> failed for thread=0, code=-17
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: floating_DSP_instructions: events:40000081
+ i= 1: fma_DSP_instructions: events:40000082
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       37365.7372       0.0002       0.0002       0.0002
+Scale:      26757.9203       0.0003       0.0003       0.0003
+Add:        41978.0217       0.0003       0.0003       0.0003
+Triad:      29923.6908       0.0004       0.0004       0.0004
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 40000081 0
+#1, 40000082 0
+The sum of threads:
+#0, 40000081        floating_DSP_instructions  0
+#1, 40000082             fma_DSP_instructions  0
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: SIMD_floating_DSP_instructions: events:4000009a
+ i= 1: SIMD_fma_DSP_instructions: events:4000009b
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       37365.7372       0.0002       0.0002       0.0002
+Scale:      26757.9203       0.0003       0.0003       0.0003
+Add:        41978.0217       0.0003       0.0003       0.0003
+Triad:      29923.6908       0.0004       0.0004       0.0004
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 4000009a 0
+#1, 4000009b 0
+The sum of threads:
+#0, 4000009a   SIMD_floating_DSP_instructions  0
+#1, 4000009b        SIMD_fma_DSP_instructions  0
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: 4SIMD_floating_DSP_instructions: events:400000b5
+ i= 1: 4SIMD_fma_DSP_instructions: events:400000b6
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       37365.7372       0.0002       0.0002       0.0002
+Scale:      26757.9203       0.0003       0.0003       0.0003
+Add:        42118.5339       0.0003       0.0003       0.0003
+Triad:      29941.4920       0.0004       0.0004       0.0005
+Finished stream(): summing the events
+event # and code for thread 0:
+#0, 400000b5 12500000
+#1, 400000b6 0
+The sum of threads:
+#0, 400000b5  4SIMD_floating_DSP_instructions  12500000
+#1, 400000b6       4SIMD_fma_DSP_instructions  0
+
+
+
+
+[r1004@com scripts]$ ./x.run_papi.fx100.sh
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+Initial state:
+ i= 0: 4SIMD_floating_DSP_instructions: events:400000b5
+ i= 1: 4SIMD_fma_DSP_instructions: events:400000b6
+Start stream():
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       37407.3935       0.0002       0.0002       0.0002
+Scale:      26757.9203       0.0003       0.0003       0.0003
+Add:        41978.0217       0.0003       0.0003       0.0003
+Triad:      29923.6908       0.0004       0.0004       0.0004
+Finished stream(): summing the events
+event # and code for thread 0:
+The sum of threads:
+#0, 400000b5  4SIMD_floating_DSP_instructions  12500000
+#1, 400000b6       4SIMD_fma_DSP_instructions  0
+[r1004@com scripts]$ 
+
+

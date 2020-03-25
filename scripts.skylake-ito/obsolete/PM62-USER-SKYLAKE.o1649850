@@ -1,0 +1,17 @@
++ mpiicpc -c -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/include
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ mpiicc -c -Ofast -xHost -no-ipo -qopenmp sub.c
+sub.c(43): エラー: omp ディレクティブの後に並列化可能な for ループがありません。
+  	c2[i*MATSIZE+j] = c2[i*MATSIZE+j] +
+  	^
+
+コンパイルは sub.c で異常終了しました (コード 2)。
++ mpiicpc -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-6.2/lib -lPM -lpapi_ext
+icpc: エラー #10236: ファイルが見つかりません: 'sub.o'
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ NPROCS=2
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 2 ./a.out
+[proxy:0:0@sca0440] HYDU_create_process (../../utils/launch/launch.c:825): execvp error on file ./a.out (No such file or directory)
+[proxy:0:0@sca0440] HYDU_create_process (../../utils/launch/launch.c:825): execvp error on file ./a.out (No such file or directory)

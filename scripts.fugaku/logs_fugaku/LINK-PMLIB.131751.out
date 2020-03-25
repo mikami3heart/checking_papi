@@ -1,0 +1,79 @@
+Currently Loaded Modulefiles:
+ 1) lang/tcsds-1.2.24(default)  
+Sun Mar 22 23:53:58 JST 2020
+g27-4214c
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O0  -Kopenmp -w '
+++ mpifcc -c -O0 -Kopenmp -w sub.c
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+step 16384 finished in 26.369305 seconds
+The counted events are:
+#0, 40000022                        FP_SCALE_OPS_SPEC  0
+#1, 40000023                        FP_FIXED_OPS_SPEC  2000000000
+#2, 80000034                              PAPI_FP_INS  2000000000
+#3, 80000038                             PAPI_VEC_INS  5
+#4, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O1 -Knounroll,noswp  -Kopenmp -w '
+++ mpifcc -c -O1 -Knounroll,noswp -Kopenmp -w sub.c
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+step 16384 finished in 3.449612 seconds
+The counted events are:
+#0, 40000022                        FP_SCALE_OPS_SPEC  0
+#1, 40000023                        FP_FIXED_OPS_SPEC  2000000000
+#2, 80000034                              PAPI_FP_INS  2000000000
+#3, 80000038                             PAPI_VEC_INS  5
+#4, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O2 -Knounroll,noswp  -Kopenmp -w '
+++ mpifcc -c -O2 -Knounroll,noswp -Kopenmp -w sub.c
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+step 16384 finished in 0.214679 seconds
+The counted events are:
+#0, 40000022                        FP_SCALE_OPS_SPEC  504000000
+#1, 40000023                        FP_FIXED_OPS_SPEC  0
+#2, 80000034                              PAPI_FP_INS  126000000
+#3, 80000038                             PAPI_VEC_INS  378378113
+#4, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast,nounroll,noswp  -Kopenmp -w '
+++ mpifcc -c -Kfast,nounroll,noswp -Kopenmp -w sub.c
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+step 16384 finished in 0.214741 seconds
+The counted events are:
+#0, 40000022                        FP_SCALE_OPS_SPEC  504000000
+#1, 40000023                        FP_FIXED_OPS_SPEC  0
+#2, 80000034                              PAPI_FP_INS  63000000
+#3, 80000038                             PAPI_VEC_INS  315378113
+#4, 80000030                             PAPI_FMA_INS  63000000
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast  -Kopenmp -w '
+++ mpifcc -c -Kfast -Kopenmp -w sub.c
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+step 16384 finished in 0.193489 seconds
+The counted events are:
+#0, 40000022                        FP_SCALE_OPS_SPEC  504000000
+#1, 40000023                        FP_FIXED_OPS_SPEC  0
+#2, 80000034                              PAPI_FP_INS  63000000
+#3, 80000038                             PAPI_VEC_INS  315378113
+#4, 80000030                             PAPI_FMA_INS  63000000

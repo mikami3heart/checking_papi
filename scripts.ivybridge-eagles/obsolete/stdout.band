@@ -1,0 +1,36 @@
+
++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-4620 v2 @ 2.60GHz
+ i= 0: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:40000023
+ i= 1: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000024
+ i= 2: PAPI_L1_TCM: events:80000006
+ i= 3: PAPI_L2_TCM: events:80000007
+ i= 4: OFFCORE_RESPONSE_0:DMND_DATA_RD: events:40000025
+ i= 5: OFFCORE_RESPONSE_1:DMND_DATA_RD: events:40000026
+ i= 6: OFFCORE_REQUESTS:DEMAND_DATA_RD: events:4000000c
+Modified STREAM Array size = 1000000
+Number of Threads requested = 1
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       21050.4592       0.0008       0.0008       0.0008
+Scale:      14926.3488       0.0011       0.0011       0.0012
+Add:        17093.4447       0.0014       0.0014       0.0016
+Triad:      15800.2348       0.0015       0.0015       0.0016
+step 0 finished in 0.495672 seconds
+The counted events are:
+#0, 40000023            MEM_LOAD_UOPS_RETIRED:HIT_LFB  133450088
+#1, 40000024             MEM_LOAD_UOPS_RETIRED:L1_HIT  66294383
+#2, 80000006                              PAPI_L1_TCM  125087938
+#3, 80000007                              PAPI_L2_TCM  97337580
+#4, 40000025          OFFCORE_RESPONSE_0:DMND_DATA_RD  69754774
+#5, 40000026          OFFCORE_RESPONSE_1:DMND_DATA_RD  69754774
+#6, 4000000c          OFFCORE_REQUESTS:DEMAND_DATA_RD  71489054
+kazunori.mikami@uv01:scripts$ 
+
+#6, 40000027             OFFCORE_REQUESTS:ALL_DATA_RD  100553615
+
+:x
+

@@ -1,0 +1,521 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20190731_05(default)  
++ cat /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 12
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 13
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 14
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 15
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 16
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 17
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 18
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 19
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 20
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 21
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 22
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 23
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 24
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 25
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 26
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 27
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 28
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 29
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 30
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 31
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 32
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 33
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 34
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 35
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 36
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 37
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 38
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 39
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 40
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 41
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 42
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 43
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 44
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 45
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 46
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 47
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 48
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 49
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 50
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 51
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 52
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 53
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 54
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 55
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 56
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 57
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 58
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
+processor	: 59
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm fcma dcpop sve
+CPU implementer	: 0x46
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x001
+CPU revision	: 0
+
++ xospastop
++ papi_avail -a
+Available PAPI preset and user defined events plus hardware information.
+--------------------------------------------------------------------------------
+PAPI version             : 5.6.0.0
+Operating system         : Linux 4.18.0-80.4.2.el8_0.aarch64
+Vendor string and code   : ARM (7, 0x7)
+Model string and code    :  (0, 0x0)
+CPU revision             : 0.000000
+CPU Max MHz              : 2200
+CPU Min MHz              : 1600
+Total cores              : 60
+SMT threads per core     : 1
+Cores per socket         : 1
+Sockets                  : 60
+Cores per NUMA region    : 7
+NUMA regions             : 8
+Running in a VM          : no
+Number Hardware Counters : 8
+Max Multiplex Counters   : 384
+Fast counter read (rdpmc): no
+--------------------------------------------------------------------------------
+
+================================================================================
+  PAPI Preset Events
+================================================================================
+    Name        Code    Deriv Description (Note)
+PAPI_L1_DCM  0x80000000  No   Level 1 data cache misses
+PAPI_L1_ICM  0x80000001  No   Level 1 instruction cache misses
+PAPI_L2_DCM  0x80000002  Yes  Level 2 data cache misses
+PAPI_L1_TCM  0x80000006  Yes  Level 1 cache misses
+PAPI_L2_TCM  0x80000007  Yes  Level 2 cache misses
+PAPI_TLB_DM  0x80000014  No   Data translation lookaside buffer misses
+PAPI_TLB_IM  0x80000015  No   Instruction translation lookaside buffer misses
+PAPI_TLB_TL  0x80000016  Yes  Total translation lookaside buffer misses
+PAPI_PRF_DM  0x8000001c  Yes  Data prefetch cache misses
+PAPI_MEM_SCY 0x80000022  No   Cycles Stalled Waiting for memory accesses
+PAPI_STL_ICY 0x80000025  Yes  Cycles with no instruction issue
+PAPI_STL_CCY 0x80000027  No   Cycles with no instructions completed
+PAPI_FUL_CCY 0x80000028  Yes  Cycles with maximum instructions completed
+PAPI_HW_INT  0x80000029  Yes  Hardware interrupts
+PAPI_BR_MSP  0x8000002e  No   Conditional branch instructions mispredicted
+PAPI_BR_PRC  0x8000002f  Yes  Conditional branch instructions correctly predicted
+PAPI_FMA_INS 0x80000030  No   FMA instructions completed
+PAPI_TOT_INS 0x80000032  No   Instructions completed
+PAPI_FP_INS  0x80000034  No   Floating point instructions
+PAPI_LD_INS  0x80000035  No   Load instructions
+PAPI_SR_INS  0x80000036  No   Store instructions
+PAPI_BR_INS  0x80000037  No   Branch instructions
+PAPI_VEC_INS 0x80000038  No   Vector/SIMD instructions (could include integer)
+PAPI_RES_STL 0x80000039  No   Cycles stalled on any resource
+PAPI_TOT_CYC 0x8000003b  No   Total cycles
+PAPI_LST_INS 0x8000003c  No   Load/store instructions completed
+PAPI_SYC_INS 0x8000003d  Yes  Synchronization instructions completed
+PAPI_L1_DCH  0x8000003e  Yes  Level 1 data cache hits
+PAPI_L2_DCH  0x8000003f  Yes  Level 2 data cache hits
+PAPI_L1_DCA  0x80000040  No   Level 1 data cache accesses
+PAPI_L2_DCA  0x80000041  No   Level 2 data cache accesses
+PAPI_L1_ICH  0x80000049  Yes  Level 1 instruction cache hits
+PAPI_L1_ICA  0x8000004c  No   Level 1 instruction cache accesses
+PAPI_L2_TCH  0x80000056  Yes  Level 2 total cache hits
+PAPI_L2_TCA  0x80000059  No   Level 2 total cache accesses
+PAPI_FP_OPS  0x80000066  Yes  Floating point operations
+PAPI_SP_OPS  0x80000067  Yes  Floating point operations; optimized to count scaled single precision vector operations
+PAPI_DP_OPS  0x80000068  Yes  Floating point operations; optimized to count scaled double precision vector operations
+--------------------------------------------------------------------------------
+Of 38 available events, 17 are derived.
+

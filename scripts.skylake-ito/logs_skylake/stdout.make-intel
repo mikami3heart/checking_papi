@@ -1,0 +1,1101 @@
+Currently Loaded Modulefiles:
+  1) openmpi/3.1.1-nocuda-gcc4.8.5   2) intel/2017
++ date
+2018年  9月 24日 月曜日 10:12:41 JST
++ PREFIX=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel
++ SRCDIR=/home/usr5/m70145b/papi/papi-5.6.0/src
++ cd /home/usr5/m70145b/papi/papi-5.6.0/src
++ '[' 0 '!=' 0 ']'
++ make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' に入ります
+rm -f broken_events nmi_watchdog perf_event_offcore_response perf_event_system_wide perf_event_user_kernel *.o *~
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' に入ります
+rm -f perf_event_uncore perf_event_uncore_attach perf_event_uncore_multiple perf_event_amd_northbridge perf_event_uncore_cbox *.o *~
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' から出ます
+rm -f pfmlib_common.o pfmlib_perf_event_pmu.o pfmlib_perf_event.o pfmlib_perf_event_raw.o pfmlib_intel_x86_perf_event.o pfmlib_amd64_perf_event.o pfmlib_intel_netburst_perf_event.o pfmlib_intel_snbep_unc_perf_event.o pfmlib_amd64.o pfmlib_intel_core.o pfmlib_intel_x86.o pfmlib_intel_x86_arch.o pfmlib_intel_atom.o pfmlib_intel_nhm_unc.o pfmlib_intel_nhm.o pfmlib_intel_wsm.o pfmlib_intel_snb.o pfmlib_intel_snb_unc.o pfmlib_intel_ivb.o pfmlib_intel_ivb_unc.o pfmlib_intel_hsw.o pfmlib_intel_bdw.o pfmlib_intel_skl.o pfmlib_intel_rapl.o pfmlib_intel_snbep_unc.o pfmlib_intel_snbep_unc_cbo.o pfmlib_intel_snbep_unc_ha.o pfmlib_intel_snbep_unc_imc.o pfmlib_intel_snbep_unc_pcu.o pfmlib_intel_snbep_unc_qpi.o pfmlib_intel_snbep_unc_ubo.o pfmlib_intel_snbep_unc_r2pcie.o pfmlib_intel_snbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_cbo.o pfmlib_intel_ivbep_unc_ha.o pfmlib_intel_ivbep_unc_imc.o pfmlib_intel_ivbep_unc_pcu.o pfmlib_intel_ivbep_unc_qpi.o pfmlib_intel_ivbep_unc_ubo.o pfmlib_intel_ivbep_unc_r2pcie.o pfmlib_intel_ivbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_irp.o pfmlib_intel_hswep_unc_cbo.o pfmlib_intel_hswep_unc_ha.o pfmlib_intel_hswep_unc_imc.o pfmlib_intel_hswep_unc_pcu.o pfmlib_intel_hswep_unc_qpi.o pfmlib_intel_hswep_unc_ubo.o pfmlib_intel_hswep_unc_r2pcie.o pfmlib_intel_hswep_unc_r3qpi.o pfmlib_intel_hswep_unc_irp.o pfmlib_intel_hswep_unc_sbo.o pfmlib_intel_bdx_unc_cbo.o pfmlib_intel_bdx_unc_ubo.o pfmlib_intel_bdx_unc_sbo.o pfmlib_intel_bdx_unc_ha.o pfmlib_intel_bdx_unc_imc.o pfmlib_intel_bdx_unc_irp.o pfmlib_intel_bdx_unc_pcu.o pfmlib_intel_bdx_unc_qpi.o pfmlib_intel_bdx_unc_r2pcie.o pfmlib_intel_bdx_unc_r3qpi.o pfmlib_intel_knc.o pfmlib_intel_slm.o pfmlib_intel_knl.o pfmlib_intel_knl_unc_imc.o pfmlib_intel_knl_unc_edc.o pfmlib_intel_knl_unc_cha.o pfmlib_intel_knl_unc_m2pcie.o pfmlib_intel_glm.o pfmlib_intel_netburst.o pfmlib_amd64_k7.o pfmlib_amd64_k8.o pfmlib_amd64_fam10h.o pfmlib_amd64_fam11h.o pfmlib_amd64_fam12h.o pfmlib_amd64_fam14h.o pfmlib_amd64_fam15h.o pfmlib_amd64_fam17h.o pfmlib_amd64_fam16h.o x86_cpuid_info.o papi_libpfm4_events.o
+make -C libpfm4 ARCH="x86_64" clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' に入ります
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' に入ります
+rm -f -f *.o *.lo *.a *.so* *~ *.so
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' に入ります
+rm -f -f *.o validate *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' に入ります
+rm -f -f *.o showevtinfo check_events *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' に入ります
+make[3]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples/x86' に入ります
+rm -f -f *.o  bts_smpl *~
+make[3]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples/x86' から出ます
+rm -f -f *.o self self_basic self_count task task_attach_timeout syst notify_self notify_group task_smpl self_smpl_multi self_pipe syst_count task_cpu syst_smpl evt2raw branch_smpl *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' に入ります
+make[2]: `clean' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' に入ります
+make[2]: `clean' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' から出ます
+rm -rf libpapi.a libpapi.so.5.6.0.0 libpapi.so libpapi.so.5  x86_cpuid_info.o papi_libpfm4_events.o papi.o papi_internal.o papi_hl.o extras.o sw_multiplex.o papi_fwrappers.o papi_fwrappers_.o papi_fwrappers__.o upper_PAPI_FWRAPPERS.o threads.o cpus.o linux-memory.o linux-timer.o linux-common.o  papi_preset.o papi_vector.o papi_memory.o perf_event.o pe_libpfm4_events.o perf_event_uncore.o core rii_files genpapifdef *~ so_locations papi_fwrappers_.c papi_fwrappers__.c upper_PAPI_FWRAPPERS.c 
+cd ../doc; make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/doc' に入ります
+rm -rf man html doxyerror
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/doc' から出ます
+cd ctests; make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' に入ります
+rm -f *.o *.stderr *.stdout core *~ pthrtough pthrtough2 thrspecific profile_pthreads overflow_pthreads zero_pthreads clockres_pthreads overflow3_pthreads locks_pthreads krentel_pthreads all_events all_native_events branches calibrate case1 case2 cmpinfo code2name derived describe memory disable_component dmem_info eventname exeinfo failed_events first flops get_event_component inherit high-level high-level2 hl_rates hwinfo ipc johnmay2 low-level matrix-hl realtime remove_events reset second tenth version virttime zero zero_flip zero_named fork fork2 exec exec2 forkexec forkexec2 forkexec3 forkexec4 fork_overflow exec_overflow child_overflow system_child_overflow system_overflow burn zero_fork fork_overflow exec_overflow child_overflow system_child_overflow system_overflow burn overflow overflow_force_software overflow_single_event overflow_twoevents timer_overflow overflow2 overflow_index overflow_one_and_read overflow_allcounters profile profile_force_software sprofile profile_twoevents byte_profile mpifirst max_multiplex multiplex1 multiplex2 mendes-alt sdsc-mpx sdsc2-mpx sdsc2-mpx-noreset sdsc4-mpx reset_multiplex multiplex1_pthreads multiplex3_pthreads kufrin zero_omp omptough zero_smp zero_shmem shlib earprofile data_range p4_lst_ins multiattach multiattach2 zero_attach attach3 attach2 attach_target attach_cpu api unregister_pthreads
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' から出ます
+cd ftests; make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' に入ります
+rm -f *.o *genmod.f90 *genmod.mod *.stderr *.stdout core *~ strtest zero zeronamed first second tenth description fdmemtest accum highlevel cost case1 case2 clockres eventname fmatrixlowpapi fmatrixpapi fmatrixpapi2 flops fmultiplex1 johnmay2 fmultiplex2 avail
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' から出ます
+cd testlib; make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' に入ります
+rm -f *.o *genmod.f90 *genmod.mod *.stderr *.stdout core *~  libtestlib.a libtestlib.so
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' から出ます
+cd utils;  make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' に入ります
+rm -f *.o *.stderr *.stdout core *~ papi_avail papi_mem_info papi_cost papi_clockres papi_native_avail papi_command_line papi_event_chooser papi_decode papi_xml_event_info papi_version papi_multiplex_cost papi_component_avail papi_error_codes
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' から出ます
+cd validation_tests; make clean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' に入ります
+rm -f *.o *.stderr *.stdout core *~ cycles_validation flops_validation papi_br_cn papi_br_ins papi_br_msp papi_br_ntk papi_br_prc papi_br_tkn papi_br_ucn papi_dp_ops papi_fp_ops papi_sp_ops papi_hw_int papi_l1_dca papi_l1_dcm papi_l2_dca papi_l2_dcm papi_l2_dcr papi_l2_dcw papi_ld_ins papi_sr_ins papi_ref_cyc papi_tot_cyc papi_tot_ins
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' から出ます
+make -C libpfm4 ARCH="x86_64" distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' に入ります
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' に入ります
+rm -f -f *.o *.lo *.a *.so* *~ *.so
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' に入ります
+rm -f -f *.o validate *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' に入ります
+rm -f -f *.o showevtinfo check_events *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' に入ります
+make[3]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples/x86' に入ります
+rm -f -f *.o  bts_smpl *~
+make[3]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples/x86' から出ます
+rm -f -f *.o self self_basic self_count task task_attach_timeout syst notify_self notify_group task_smpl self_smpl_multi self_pipe syst_count task_cpu syst_smpl evt2raw branch_smpl *~
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' に入ります
+make[2]: `clean' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' に入ります
+make[2]: `clean' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' から出ます
+rm -f -f tags
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' から出ます
+cd ../doc; make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/doc' に入ります
+rm -rf man html doxyerror
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/doc' から出ます
+cd ctests; make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' に入ります
+rm -f *.o *.stderr *.stdout core *~ pthrtough pthrtough2 thrspecific profile_pthreads overflow_pthreads zero_pthreads clockres_pthreads overflow3_pthreads locks_pthreads krentel_pthreads all_events all_native_events branches calibrate case1 case2 cmpinfo code2name derived describe memory disable_component dmem_info eventname exeinfo failed_events first flops get_event_component inherit high-level high-level2 hl_rates hwinfo ipc johnmay2 low-level matrix-hl realtime remove_events reset second tenth version virttime zero zero_flip zero_named fork fork2 exec exec2 forkexec forkexec2 forkexec3 forkexec4 fork_overflow exec_overflow child_overflow system_child_overflow system_overflow burn zero_fork fork_overflow exec_overflow child_overflow system_child_overflow system_overflow burn overflow overflow_force_software overflow_single_event overflow_twoevents timer_overflow overflow2 overflow_index overflow_one_and_read overflow_allcounters profile profile_force_software sprofile profile_twoevents byte_profile mpifirst max_multiplex multiplex1 multiplex2 mendes-alt sdsc-mpx sdsc2-mpx sdsc2-mpx-noreset sdsc4-mpx reset_multiplex multiplex1_pthreads multiplex3_pthreads kufrin zero_omp omptough zero_smp zero_shmem shlib earprofile data_range p4_lst_ins multiattach multiattach2 zero_attach attach3 attach2 attach_target attach_cpu api unregister_pthreads
+rm -f Makefile.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' から出ます
+cd ftests; make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' に入ります
+rm -f *.o *genmod.f90 *genmod.mod *.stderr *.stdout core *~ strtest zero zeronamed first second tenth description fdmemtest accum highlevel cost case1 case2 clockres eventname fmatrixlowpapi fmatrixpapi fmatrixpapi2 flops fmultiplex1 johnmay2 fmultiplex2 avail
+rm -f Makefile.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' から出ます
+cd testlib; make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' に入ります
+rm -f *.o *genmod.f90 *genmod.mod *.stderr *.stdout core *~  libtestlib.a libtestlib.so
+rm -f Makefile.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' から出ます
+cd utils;  make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' に入ります
+rm -f *.o *.stderr *.stdout core *~ papi_avail papi_mem_info papi_cost papi_clockres papi_native_avail papi_command_line papi_event_chooser papi_decode papi_xml_event_info papi_version papi_multiplex_cost papi_component_avail papi_error_codes
+rm -f Makefile.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' から出ます
+cd validation_tests; make distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' に入ります
+rm -f *.o *.stderr *.stdout core *~ cycles_validation flops_validation papi_br_cn papi_br_ins papi_br_msp papi_br_ntk papi_br_prc papi_br_tkn papi_br_ucn papi_dp_ops papi_fp_ops papi_sp_ops papi_hw_int papi_l1_dca papi_l1_dcm papi_l2_dca papi_l2_dcm papi_l2_dcr papi_l2_dcw papi_ld_ins papi_sr_ins papi_ref_cyc papi_tot_cyc papi_tot_ins
+rm -f Makefile.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' から出ます
+cd components; make -f Makefile_comp_tests distclean
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components' に入ります
+rm -f Makefile_comp_tests.target
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components' から出ます
+rm -f libpapi.a libpapi.so.5.6.0.0  Makefile config.h libpapi.so papi.pc components_config.h papi_events_table.h
+rm -f config.log config.status f77papi.h f90papi.h fpapi.h
++ export LANG=C
++ LANG=C
++ ./configure F77=ifort CC=icc MPICC=mpiicc --prefix=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel
+checking for architecture... x86_64
+checking for OS... linux
+checking for OS version... 3.10.0-514.26.2.el7.x86_64
+checking for perf_event workaround level... autodetect
+checking for if MIC should be used... no
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether icc accepts -g... yes
+checking for icc option to accept ISO C89... none needed
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether ifort accepts -g... yes
+checking for mpicc... mpiicc
+checking for gawk... gawk
+checking how to run the C preprocessor... icc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... yes
+checking for ranlib... ranlib
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for ANSI C header files... (cached) yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking c_asm.h usability... no
+checking c_asm.h presence... no
+checking for c_asm.h... no
+checking intrinsics.h usability... no
+checking intrinsics.h presence... no
+checking for intrinsics.h... no
+checking mach/mach_time.h usability... no
+checking mach/mach_time.h presence... no
+checking for mach/mach_time.h... no
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for gethrtime... no
+checking for read_real_time... no
+checking for time_base_to_time... no
+checking for clock_gettime... yes
+checking for mach_absolute_time... no
+checking for sched_getcpu... yes
+checking for dlopen and dlerror symbols in base system... found
+checking for debug build... 
+checking for CPU type... x86
+checking for ffsll... yes
+checking for working gettid... no
+checking for working syscall(SYS_gettid)... yes
+checking for working MMTIMER... no
+checking for working CLOCK_REALTIME_HR POSIX 1b timer... no
+checking for working CLOCK_REALTIME POSIX 1b timer... yes
+checking for which real time clock to use... clock_realtime
+checking for working __thread... yes
+checking for high performance thread local storage... __thread
+checking for working CLOCK_THREAD_CPUTIME_ID POSIX 1b timer... yes
+checking for which virtual timer to use... clock_thread_cputime_id
+checking for static user preset events... no
+checking for static PAPI preset events... yes
+checking for whether to build static library... yes
+checking for whether to build shared library... yes
+checking for static compile of tests and utilities... no
+checking for linking with papi shared library of tests and utilities... no
+checking for /sys/class/perfctr... no
+checking for /dev/perfctr... no
+checking for /sys/kernel/perfmon/version... no
+checking for /proc/perfmon... no
+checking for /proc/sys/kernel/perf_event_paranoid... yes
+checking for libpfm4/include/perfmon/perf_event.h... yes
+checking platform... linux-pe
+checking for components to build... perf_event perf_event_uncore
+checking for PAPI event CSV filename to use... papi_events.csv
+configure: Compiling genpapifdef with icc
+configure: Generating fpapi.h
+configure: Generating f77papi.h
+configure: Generating f90papi.h
+configure: Rules.pfm4_pe will be included in the generated Makefile
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating papi.pc
+config.status: creating components/Makefile_comp_tests.target
+config.status: creating testlib/Makefile.target
+config.status: creating utils/Makefile.target
+config.status: creating ctests/Makefile.target
+config.status: creating ftests/Makefile.target
+config.status: creating validation_tests/Makefile.target
+config.status: creating config.h
++ make
+make -C libpfm4 ARCH="x86_64" CC="icc " DBG="-g -Wall -Werror"  lib
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' に入ります
+make -C lib
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' に入ります
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_common.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event_pmu.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event_raw.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86_perf_event.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_perf_event.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_netburst_perf_event.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_perf_event.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_core.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86_arch.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_atom.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_nhm_unc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_nhm.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_wsm.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snb.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snb_unc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivb.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivb_unc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hsw.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdw.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_skl.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_rapl.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_cbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_ha.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_imc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_pcu.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_ubo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_r2pcie.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_r3qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_cbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_ha.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_imc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_pcu.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_ubo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_r2pcie.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_r3qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_irp.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_cbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_ha.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_imc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_pcu.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_ubo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_r2pcie.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_r3qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_irp.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_sbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_cbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_ubo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_sbo.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_ha.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_imc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_irp.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_pcu.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_r2pcie.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_r3qpi.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_slm.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_imc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_edc.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_cha.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_m2pcie.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_glm.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_netburst.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_k7.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_k8.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam10h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam11h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam12h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam14h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam15h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam17h.c
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam16h.c
+rm -f libpfm.a
+ar cq libpfm.a pfmlib_common.o pfmlib_perf_event_pmu.o pfmlib_perf_event.o pfmlib_perf_event_raw.o pfmlib_intel_x86_perf_event.o pfmlib_amd64_perf_event.o pfmlib_intel_netburst_perf_event.o pfmlib_intel_snbep_unc_perf_event.o pfmlib_amd64.o pfmlib_intel_core.o pfmlib_intel_x86.o pfmlib_intel_x86_arch.o pfmlib_intel_atom.o pfmlib_intel_nhm_unc.o pfmlib_intel_nhm.o pfmlib_intel_wsm.o pfmlib_intel_snb.o pfmlib_intel_snb_unc.o pfmlib_intel_ivb.o pfmlib_intel_ivb_unc.o pfmlib_intel_hsw.o pfmlib_intel_bdw.o pfmlib_intel_skl.o pfmlib_intel_rapl.o pfmlib_intel_snbep_unc.o pfmlib_intel_snbep_unc_cbo.o pfmlib_intel_snbep_unc_ha.o pfmlib_intel_snbep_unc_imc.o pfmlib_intel_snbep_unc_pcu.o pfmlib_intel_snbep_unc_qpi.o pfmlib_intel_snbep_unc_ubo.o pfmlib_intel_snbep_unc_r2pcie.o pfmlib_intel_snbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_cbo.o pfmlib_intel_ivbep_unc_ha.o pfmlib_intel_ivbep_unc_imc.o pfmlib_intel_ivbep_unc_pcu.o pfmlib_intel_ivbep_unc_qpi.o pfmlib_intel_ivbep_unc_ubo.o pfmlib_intel_ivbep_unc_r2pcie.o pfmlib_intel_ivbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_irp.o pfmlib_intel_hswep_unc_cbo.o pfmlib_intel_hswep_unc_ha.o pfmlib_intel_hswep_unc_imc.o pfmlib_intel_hswep_unc_pcu.o pfmlib_intel_hswep_unc_qpi.o pfmlib_intel_hswep_unc_ubo.o pfmlib_intel_hswep_unc_r2pcie.o pfmlib_intel_hswep_unc_r3qpi.o pfmlib_intel_hswep_unc_irp.o pfmlib_intel_hswep_unc_sbo.o pfmlib_intel_bdx_unc_cbo.o pfmlib_intel_bdx_unc_ubo.o pfmlib_intel_bdx_unc_sbo.o pfmlib_intel_bdx_unc_ha.o pfmlib_intel_bdx_unc_imc.o pfmlib_intel_bdx_unc_irp.o pfmlib_intel_bdx_unc_pcu.o pfmlib_intel_bdx_unc_qpi.o pfmlib_intel_bdx_unc_r2pcie.o pfmlib_intel_bdx_unc_r3qpi.o pfmlib_intel_knc.o pfmlib_intel_slm.o pfmlib_intel_knl.o pfmlib_intel_knl_unc_imc.o pfmlib_intel_knl_unc_edc.o pfmlib_intel_knl_unc_cha.o pfmlib_intel_knl_unc_m2pcie.o pfmlib_intel_glm.o pfmlib_intel_netburst.o pfmlib_amd64_k7.o pfmlib_amd64_k8.o pfmlib_amd64_fam10h.o pfmlib_amd64_fam11h.o pfmlib_amd64_fam12h.o pfmlib_amd64_fam14h.o pfmlib_amd64_fam15h.o pfmlib_amd64_fam17h.o pfmlib_amd64_fam16h.o
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_common.c -o pfmlib_common.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event_pmu.c -o pfmlib_perf_event_pmu.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event.c -o pfmlib_perf_event.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_perf_event_raw.c -o pfmlib_perf_event_raw.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86_perf_event.c -o pfmlib_intel_x86_perf_event.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_perf_event.c -o pfmlib_amd64_perf_event.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_netburst_perf_event.c -o pfmlib_intel_netburst_perf_event.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_perf_event.c -o pfmlib_intel_snbep_unc_perf_event.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64.c -o pfmlib_amd64.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_core.c -o pfmlib_intel_core.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86.c -o pfmlib_intel_x86.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_x86_arch.c -o pfmlib_intel_x86_arch.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_atom.c -o pfmlib_intel_atom.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_nhm_unc.c -o pfmlib_intel_nhm_unc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_nhm.c -o pfmlib_intel_nhm.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_wsm.c -o pfmlib_intel_wsm.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snb.c -o pfmlib_intel_snb.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snb_unc.c -o pfmlib_intel_snb_unc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivb.c -o pfmlib_intel_ivb.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivb_unc.c -o pfmlib_intel_ivb_unc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hsw.c -o pfmlib_intel_hsw.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdw.c -o pfmlib_intel_bdw.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_skl.c -o pfmlib_intel_skl.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_rapl.c -o pfmlib_intel_rapl.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc.c -o pfmlib_intel_snbep_unc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_cbo.c -o pfmlib_intel_snbep_unc_cbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_ha.c -o pfmlib_intel_snbep_unc_ha.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_imc.c -o pfmlib_intel_snbep_unc_imc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_pcu.c -o pfmlib_intel_snbep_unc_pcu.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_qpi.c -o pfmlib_intel_snbep_unc_qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_ubo.c -o pfmlib_intel_snbep_unc_ubo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_r2pcie.c -o pfmlib_intel_snbep_unc_r2pcie.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_snbep_unc_r3qpi.c -o pfmlib_intel_snbep_unc_r3qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_cbo.c -o pfmlib_intel_ivbep_unc_cbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_ha.c -o pfmlib_intel_ivbep_unc_ha.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_imc.c -o pfmlib_intel_ivbep_unc_imc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_pcu.c -o pfmlib_intel_ivbep_unc_pcu.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_qpi.c -o pfmlib_intel_ivbep_unc_qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_ubo.c -o pfmlib_intel_ivbep_unc_ubo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_r2pcie.c -o pfmlib_intel_ivbep_unc_r2pcie.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_r3qpi.c -o pfmlib_intel_ivbep_unc_r3qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_ivbep_unc_irp.c -o pfmlib_intel_ivbep_unc_irp.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_cbo.c -o pfmlib_intel_hswep_unc_cbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_ha.c -o pfmlib_intel_hswep_unc_ha.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_imc.c -o pfmlib_intel_hswep_unc_imc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_pcu.c -o pfmlib_intel_hswep_unc_pcu.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_qpi.c -o pfmlib_intel_hswep_unc_qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_ubo.c -o pfmlib_intel_hswep_unc_ubo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_r2pcie.c -o pfmlib_intel_hswep_unc_r2pcie.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_r3qpi.c -o pfmlib_intel_hswep_unc_r3qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_irp.c -o pfmlib_intel_hswep_unc_irp.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_hswep_unc_sbo.c -o pfmlib_intel_hswep_unc_sbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_cbo.c -o pfmlib_intel_bdx_unc_cbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_ubo.c -o pfmlib_intel_bdx_unc_ubo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_sbo.c -o pfmlib_intel_bdx_unc_sbo.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_ha.c -o pfmlib_intel_bdx_unc_ha.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_imc.c -o pfmlib_intel_bdx_unc_imc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_irp.c -o pfmlib_intel_bdx_unc_irp.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_pcu.c -o pfmlib_intel_bdx_unc_pcu.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_qpi.c -o pfmlib_intel_bdx_unc_qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_r2pcie.c -o pfmlib_intel_bdx_unc_r2pcie.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_bdx_unc_r3qpi.c -o pfmlib_intel_bdx_unc_r3qpi.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knc.c -o pfmlib_intel_knc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_slm.c -o pfmlib_intel_slm.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl.c -o pfmlib_intel_knl.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_imc.c -o pfmlib_intel_knl_unc_imc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_edc.c -o pfmlib_intel_knl_unc_edc.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_cha.c -o pfmlib_intel_knl_unc_cha.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_knl_unc_m2pcie.c -o pfmlib_intel_knl_unc_m2pcie.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_glm.c -o pfmlib_intel_glm.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_intel_netburst.c -o pfmlib_intel_netburst.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_k7.c -o pfmlib_amd64_k7.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_k8.c -o pfmlib_amd64_k8.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam10h.c -o pfmlib_amd64_fam10h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam11h.c -o pfmlib_amd64_fam11h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam12h.c -o pfmlib_amd64_fam12h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam14h.c -o pfmlib_amd64_fam14h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam15h.c -o pfmlib_amd64_fam15h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam17h.c -o pfmlib_amd64_fam17h.lo
+icc  -fPIC -DPIC  -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I. -c pfmlib_amd64_fam16h.c -o pfmlib_amd64_fam16h.lo
+icc   -g -Wall -Werror -I. -I/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib/../include -DCONFIG_PFMLIB_DEBUG -DCONFIG_PFMLIB_OS_LINUX -D_REENTRANT -I. -fvisibility=hidden -DCONFIG_PFMLIB_ARCH_X86 -DCONFIG_PFMLIB_ARCH_X86_64 -I.  -shared -Wl,-soname -Wl,libpfm.so.4  -o libpfm.so.4.8.0 pfmlib_common.lo pfmlib_perf_event_pmu.lo pfmlib_perf_event.lo pfmlib_perf_event_raw.lo pfmlib_intel_x86_perf_event.lo pfmlib_amd64_perf_event.lo pfmlib_intel_netburst_perf_event.lo pfmlib_intel_snbep_unc_perf_event.lo pfmlib_amd64.lo pfmlib_intel_core.lo pfmlib_intel_x86.lo pfmlib_intel_x86_arch.lo pfmlib_intel_atom.lo pfmlib_intel_nhm_unc.lo pfmlib_intel_nhm.lo pfmlib_intel_wsm.lo pfmlib_intel_snb.lo pfmlib_intel_snb_unc.lo pfmlib_intel_ivb.lo pfmlib_intel_ivb_unc.lo pfmlib_intel_hsw.lo pfmlib_intel_bdw.lo pfmlib_intel_skl.lo pfmlib_intel_rapl.lo pfmlib_intel_snbep_unc.lo pfmlib_intel_snbep_unc_cbo.lo pfmlib_intel_snbep_unc_ha.lo pfmlib_intel_snbep_unc_imc.lo pfmlib_intel_snbep_unc_pcu.lo pfmlib_intel_snbep_unc_qpi.lo pfmlib_intel_snbep_unc_ubo.lo pfmlib_intel_snbep_unc_r2pcie.lo pfmlib_intel_snbep_unc_r3qpi.lo pfmlib_intel_ivbep_unc_cbo.lo pfmlib_intel_ivbep_unc_ha.lo pfmlib_intel_ivbep_unc_imc.lo pfmlib_intel_ivbep_unc_pcu.lo pfmlib_intel_ivbep_unc_qpi.lo pfmlib_intel_ivbep_unc_ubo.lo pfmlib_intel_ivbep_unc_r2pcie.lo pfmlib_intel_ivbep_unc_r3qpi.lo pfmlib_intel_ivbep_unc_irp.lo pfmlib_intel_hswep_unc_cbo.lo pfmlib_intel_hswep_unc_ha.lo pfmlib_intel_hswep_unc_imc.lo pfmlib_intel_hswep_unc_pcu.lo pfmlib_intel_hswep_unc_qpi.lo pfmlib_intel_hswep_unc_ubo.lo pfmlib_intel_hswep_unc_r2pcie.lo pfmlib_intel_hswep_unc_r3qpi.lo pfmlib_intel_hswep_unc_irp.lo pfmlib_intel_hswep_unc_sbo.lo pfmlib_intel_bdx_unc_cbo.lo pfmlib_intel_bdx_unc_ubo.lo pfmlib_intel_bdx_unc_sbo.lo pfmlib_intel_bdx_unc_ha.lo pfmlib_intel_bdx_unc_imc.lo pfmlib_intel_bdx_unc_irp.lo pfmlib_intel_bdx_unc_pcu.lo pfmlib_intel_bdx_unc_qpi.lo pfmlib_intel_bdx_unc_r2pcie.lo pfmlib_intel_bdx_unc_r3qpi.lo pfmlib_intel_knc.lo pfmlib_intel_slm.lo pfmlib_intel_knl.lo pfmlib_intel_knl_unc_imc.lo pfmlib_intel_knl_unc_edc.lo pfmlib_intel_knl_unc_cha.lo pfmlib_intel_knl_unc_m2pcie.lo pfmlib_intel_glm.lo pfmlib_intel_netburst.lo pfmlib_amd64_k7.lo pfmlib_amd64_k8.lo pfmlib_amd64_fam10h.lo pfmlib_amd64_fam11h.lo pfmlib_amd64_fam12h.lo pfmlib_amd64_fam14h.lo pfmlib_amd64_fam15h.lo pfmlib_amd64_fam17h.lo pfmlib_amd64_fam16h.lo
+ln -sf libpfm.so.4.8.0 libpfm.so.4
+ln -sf libpfm.so.4.8.0 libpfm.so
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' から出ます
+make
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src' に入ります
+Host architecture   : Linux with perf_event kernel support and libpfm4
+Host CPU component  : perf_event
+Installation DESTDIR: 
+Installation PREFIX : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel
+Installation EPREFIX: /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel
+Installation INCDIR : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include
+Installation LIBDIR : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+Installation BINDIR : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin
+Installation MANDIR : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man
+Installation DOCDIR : /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/doc/papi
+Installation DATADIR: /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+
+sh papi_events_table.sh papi_events.csv > papi_events_table.h
+icc -E -DFORTRANUNDERSCORE papi_fwrappers.c > papi_fwrappers_.c
+icc -E -DFORTRANDOUBLEUNDERSCORE papi_fwrappers.c > papi_fwrappers__.c
+icc -E -DFORTRANCAPS papi_fwrappers.c > upper_PAPI_FWRAPPERS.c
+rm -f libpapi.so.5.6.0.0 libpapi.so libpapi.so.5; 
+icc -fPIC -DPIC -shared -Wl,-soname -Wl,libpapi.so.5 -Xlinker "-rpath" -Xlinker "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib" -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 x86_cpuid_info.c papi_libpfm4_events.c papi.c papi_internal.c papi_hl.c extras.c sw_multiplex.c papi_fwrappers.c papi_fwrappers_.c papi_fwrappers__.c upper_PAPI_FWRAPPERS.c threads.c cpus.c linux-memory.c linux-timer.c linux-common.c  papi_preset.c papi_vector.c papi_memory.c components/perf_event/perf_event.c components/perf_event/pe_libpfm4_events.c components/perf_event_uncore/perf_event_uncore.c  -o libpapi.so.5.6.0.0 -Bdynamic -Llibpfm4/lib -lpfm 
+ln -sf libpapi.so.5.6.0.0 libpapi.so
+ln -sf libpapi.so.5.6.0.0 libpapi.so.5
+ar xv libpfm4/lib/libpfm.a
+x - pfmlib_common.o
+x - pfmlib_perf_event_pmu.o
+x - pfmlib_perf_event.o
+x - pfmlib_perf_event_raw.o
+x - pfmlib_intel_x86_perf_event.o
+x - pfmlib_amd64_perf_event.o
+x - pfmlib_intel_netburst_perf_event.o
+x - pfmlib_intel_snbep_unc_perf_event.o
+x - pfmlib_amd64.o
+x - pfmlib_intel_core.o
+x - pfmlib_intel_x86.o
+x - pfmlib_intel_x86_arch.o
+x - pfmlib_intel_atom.o
+x - pfmlib_intel_nhm_unc.o
+x - pfmlib_intel_nhm.o
+x - pfmlib_intel_wsm.o
+x - pfmlib_intel_snb.o
+x - pfmlib_intel_snb_unc.o
+x - pfmlib_intel_ivb.o
+x - pfmlib_intel_ivb_unc.o
+x - pfmlib_intel_hsw.o
+x - pfmlib_intel_bdw.o
+x - pfmlib_intel_skl.o
+x - pfmlib_intel_rapl.o
+x - pfmlib_intel_snbep_unc.o
+x - pfmlib_intel_snbep_unc_cbo.o
+x - pfmlib_intel_snbep_unc_ha.o
+x - pfmlib_intel_snbep_unc_imc.o
+x - pfmlib_intel_snbep_unc_pcu.o
+x - pfmlib_intel_snbep_unc_qpi.o
+x - pfmlib_intel_snbep_unc_ubo.o
+x - pfmlib_intel_snbep_unc_r2pcie.o
+x - pfmlib_intel_snbep_unc_r3qpi.o
+x - pfmlib_intel_ivbep_unc_cbo.o
+x - pfmlib_intel_ivbep_unc_ha.o
+x - pfmlib_intel_ivbep_unc_imc.o
+x - pfmlib_intel_ivbep_unc_pcu.o
+x - pfmlib_intel_ivbep_unc_qpi.o
+x - pfmlib_intel_ivbep_unc_ubo.o
+x - pfmlib_intel_ivbep_unc_r2pcie.o
+x - pfmlib_intel_ivbep_unc_r3qpi.o
+x - pfmlib_intel_ivbep_unc_irp.o
+x - pfmlib_intel_hswep_unc_cbo.o
+x - pfmlib_intel_hswep_unc_ha.o
+x - pfmlib_intel_hswep_unc_imc.o
+x - pfmlib_intel_hswep_unc_pcu.o
+x - pfmlib_intel_hswep_unc_qpi.o
+x - pfmlib_intel_hswep_unc_ubo.o
+x - pfmlib_intel_hswep_unc_r2pcie.o
+x - pfmlib_intel_hswep_unc_r3qpi.o
+x - pfmlib_intel_hswep_unc_irp.o
+x - pfmlib_intel_hswep_unc_sbo.o
+x - pfmlib_intel_bdx_unc_cbo.o
+x - pfmlib_intel_bdx_unc_ubo.o
+x - pfmlib_intel_bdx_unc_sbo.o
+x - pfmlib_intel_bdx_unc_ha.o
+x - pfmlib_intel_bdx_unc_imc.o
+x - pfmlib_intel_bdx_unc_irp.o
+x - pfmlib_intel_bdx_unc_pcu.o
+x - pfmlib_intel_bdx_unc_qpi.o
+x - pfmlib_intel_bdx_unc_r2pcie.o
+x - pfmlib_intel_bdx_unc_r3qpi.o
+x - pfmlib_intel_knc.o
+x - pfmlib_intel_slm.o
+x - pfmlib_intel_knl.o
+x - pfmlib_intel_knl_unc_imc.o
+x - pfmlib_intel_knl_unc_edc.o
+x - pfmlib_intel_knl_unc_cha.o
+x - pfmlib_intel_knl_unc_m2pcie.o
+x - pfmlib_intel_glm.o
+x - pfmlib_intel_netburst.o
+x - pfmlib_amd64_k7.o
+x - pfmlib_amd64_k8.o
+x - pfmlib_amd64_fam10h.o
+x - pfmlib_amd64_fam11h.o
+x - pfmlib_amd64_fam12h.o
+x - pfmlib_amd64_fam14h.o
+x - pfmlib_amd64_fam15h.o
+x - pfmlib_amd64_fam17h.o
+x - pfmlib_amd64_fam16h.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c x86_cpuid_info.c -o x86_cpuid_info.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_libpfm4_events.c -o papi_libpfm4_events.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi.c -o papi.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_internal.c -o papi_internal.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_hl.c -o papi_hl.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c extras.c -o extras.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c sw_multiplex.c -o sw_multiplex.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_fwrappers.c -o papi_fwrappers.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_fwrappers_.c -o papi_fwrappers_.o 
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_fwrappers__.c -o papi_fwrappers__.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c upper_PAPI_FWRAPPERS.c -o upper_PAPI_FWRAPPERS.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c threads.c -o threads.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c cpus.c -o cpus.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c linux-memory.c -o linux-memory.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c linux-timer.c -o linux-timer.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c linux-common.c -o linux-common.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_preset.c -o papi_preset.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_vector.c -o papi_vector.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c papi_memory.c -o papi_memory.o
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c components/perf_event/perf_event.c -o perf_event.o 
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -c components/perf_event/pe_libpfm4_events.c -o pe_libpfm4_events.o 
+icc -DPAPI_NO_MEMORY_MANAGEMENT -DSTATIC_PAPI_EVENTS_TABLE  -DUSE_PERFEVENT_RDPMC=1 -DPEINCLUDE=\"libpfm4/include/perfmon/perf_event.h\" -D_REENTRANT -D_GNU_SOURCE -DUSE_COMPILER_TLS -Ilibpfm4/include -fvisibility=hidden -I. -g -diag-disable 188,869,271  -DOSLOCK=\"linux-lock.h\" -DOSCONTEXT=\"linux-context.h\" -O2 -Icomponents/perf_event/ -c components/perf_event_uncore/perf_event_uncore.c -o perf_event_uncore.o 
+rm -f libpapi.a
+ar  rv libpapi.a pfmlib_common.o pfmlib_perf_event_pmu.o pfmlib_perf_event.o pfmlib_perf_event_raw.o pfmlib_intel_x86_perf_event.o pfmlib_amd64_perf_event.o pfmlib_intel_netburst_perf_event.o pfmlib_intel_snbep_unc_perf_event.o pfmlib_amd64.o pfmlib_intel_core.o pfmlib_intel_x86.o pfmlib_intel_x86_arch.o pfmlib_intel_atom.o pfmlib_intel_nhm_unc.o pfmlib_intel_nhm.o pfmlib_intel_wsm.o pfmlib_intel_snb.o pfmlib_intel_snb_unc.o pfmlib_intel_ivb.o pfmlib_intel_ivb_unc.o pfmlib_intel_hsw.o pfmlib_intel_bdw.o pfmlib_intel_skl.o pfmlib_intel_rapl.o pfmlib_intel_snbep_unc.o pfmlib_intel_snbep_unc_cbo.o pfmlib_intel_snbep_unc_ha.o pfmlib_intel_snbep_unc_imc.o pfmlib_intel_snbep_unc_pcu.o pfmlib_intel_snbep_unc_qpi.o pfmlib_intel_snbep_unc_ubo.o pfmlib_intel_snbep_unc_r2pcie.o pfmlib_intel_snbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_cbo.o pfmlib_intel_ivbep_unc_ha.o pfmlib_intel_ivbep_unc_imc.o pfmlib_intel_ivbep_unc_pcu.o pfmlib_intel_ivbep_unc_qpi.o pfmlib_intel_ivbep_unc_ubo.o pfmlib_intel_ivbep_unc_r2pcie.o pfmlib_intel_ivbep_unc_r3qpi.o pfmlib_intel_ivbep_unc_irp.o pfmlib_intel_hswep_unc_cbo.o pfmlib_intel_hswep_unc_ha.o pfmlib_intel_hswep_unc_imc.o pfmlib_intel_hswep_unc_pcu.o pfmlib_intel_hswep_unc_qpi.o pfmlib_intel_hswep_unc_ubo.o pfmlib_intel_hswep_unc_r2pcie.o pfmlib_intel_hswep_unc_r3qpi.o pfmlib_intel_hswep_unc_irp.o pfmlib_intel_hswep_unc_sbo.o pfmlib_intel_bdx_unc_cbo.o pfmlib_intel_bdx_unc_ubo.o pfmlib_intel_bdx_unc_sbo.o pfmlib_intel_bdx_unc_ha.o pfmlib_intel_bdx_unc_imc.o pfmlib_intel_bdx_unc_irp.o pfmlib_intel_bdx_unc_pcu.o pfmlib_intel_bdx_unc_qpi.o pfmlib_intel_bdx_unc_r2pcie.o pfmlib_intel_bdx_unc_r3qpi.o pfmlib_intel_knc.o pfmlib_intel_slm.o pfmlib_intel_knl.o pfmlib_intel_knl_unc_imc.o pfmlib_intel_knl_unc_edc.o pfmlib_intel_knl_unc_cha.o pfmlib_intel_knl_unc_m2pcie.o pfmlib_intel_glm.o pfmlib_intel_netburst.o pfmlib_amd64_k7.o pfmlib_amd64_k8.o pfmlib_amd64_fam10h.o pfmlib_amd64_fam11h.o pfmlib_amd64_fam12h.o pfmlib_amd64_fam14h.o pfmlib_amd64_fam15h.o pfmlib_amd64_fam17h.o pfmlib_amd64_fam16h.o x86_cpuid_info.o papi_libpfm4_events.o papi.o papi_internal.o papi_hl.o extras.o sw_multiplex.o papi_fwrappers.o papi_fwrappers_.o papi_fwrappers__.o upper_PAPI_FWRAPPERS.o threads.o cpus.o linux-memory.o linux-timer.o linux-common.o  papi_preset.o papi_vector.o papi_memory.o perf_event.o pe_libpfm4_events.o perf_event_uncore.o
+ar: libpapi.a を作成しています
+a - pfmlib_common.o
+a - pfmlib_perf_event_pmu.o
+a - pfmlib_perf_event.o
+a - pfmlib_perf_event_raw.o
+a - pfmlib_intel_x86_perf_event.o
+a - pfmlib_amd64_perf_event.o
+a - pfmlib_intel_netburst_perf_event.o
+a - pfmlib_intel_snbep_unc_perf_event.o
+a - pfmlib_amd64.o
+a - pfmlib_intel_core.o
+a - pfmlib_intel_x86.o
+a - pfmlib_intel_x86_arch.o
+a - pfmlib_intel_atom.o
+a - pfmlib_intel_nhm_unc.o
+a - pfmlib_intel_nhm.o
+a - pfmlib_intel_wsm.o
+a - pfmlib_intel_snb.o
+a - pfmlib_intel_snb_unc.o
+a - pfmlib_intel_ivb.o
+a - pfmlib_intel_ivb_unc.o
+a - pfmlib_intel_hsw.o
+a - pfmlib_intel_bdw.o
+a - pfmlib_intel_skl.o
+a - pfmlib_intel_rapl.o
+a - pfmlib_intel_snbep_unc.o
+a - pfmlib_intel_snbep_unc_cbo.o
+a - pfmlib_intel_snbep_unc_ha.o
+a - pfmlib_intel_snbep_unc_imc.o
+a - pfmlib_intel_snbep_unc_pcu.o
+a - pfmlib_intel_snbep_unc_qpi.o
+a - pfmlib_intel_snbep_unc_ubo.o
+a - pfmlib_intel_snbep_unc_r2pcie.o
+a - pfmlib_intel_snbep_unc_r3qpi.o
+a - pfmlib_intel_ivbep_unc_cbo.o
+a - pfmlib_intel_ivbep_unc_ha.o
+a - pfmlib_intel_ivbep_unc_imc.o
+a - pfmlib_intel_ivbep_unc_pcu.o
+a - pfmlib_intel_ivbep_unc_qpi.o
+a - pfmlib_intel_ivbep_unc_ubo.o
+a - pfmlib_intel_ivbep_unc_r2pcie.o
+a - pfmlib_intel_ivbep_unc_r3qpi.o
+a - pfmlib_intel_ivbep_unc_irp.o
+a - pfmlib_intel_hswep_unc_cbo.o
+a - pfmlib_intel_hswep_unc_ha.o
+a - pfmlib_intel_hswep_unc_imc.o
+a - pfmlib_intel_hswep_unc_pcu.o
+a - pfmlib_intel_hswep_unc_qpi.o
+a - pfmlib_intel_hswep_unc_ubo.o
+a - pfmlib_intel_hswep_unc_r2pcie.o
+a - pfmlib_intel_hswep_unc_r3qpi.o
+a - pfmlib_intel_hswep_unc_irp.o
+a - pfmlib_intel_hswep_unc_sbo.o
+a - pfmlib_intel_bdx_unc_cbo.o
+a - pfmlib_intel_bdx_unc_ubo.o
+a - pfmlib_intel_bdx_unc_sbo.o
+a - pfmlib_intel_bdx_unc_ha.o
+a - pfmlib_intel_bdx_unc_imc.o
+a - pfmlib_intel_bdx_unc_irp.o
+a - pfmlib_intel_bdx_unc_pcu.o
+a - pfmlib_intel_bdx_unc_qpi.o
+a - pfmlib_intel_bdx_unc_r2pcie.o
+a - pfmlib_intel_bdx_unc_r3qpi.o
+a - pfmlib_intel_knc.o
+a - pfmlib_intel_slm.o
+a - pfmlib_intel_knl.o
+a - pfmlib_intel_knl_unc_imc.o
+a - pfmlib_intel_knl_unc_edc.o
+a - pfmlib_intel_knl_unc_cha.o
+a - pfmlib_intel_knl_unc_m2pcie.o
+a - pfmlib_intel_glm.o
+a - pfmlib_intel_netburst.o
+a - pfmlib_amd64_k7.o
+a - pfmlib_amd64_k8.o
+a - pfmlib_amd64_fam10h.o
+a - pfmlib_amd64_fam11h.o
+a - pfmlib_amd64_fam12h.o
+a - pfmlib_amd64_fam14h.o
+a - pfmlib_amd64_fam15h.o
+a - pfmlib_amd64_fam17h.o
+a - pfmlib_amd64_fam16h.o
+a - x86_cpuid_info.o
+a - papi_libpfm4_events.o
+a - papi.o
+a - papi_internal.o
+a - papi_hl.o
+a - extras.o
+a - sw_multiplex.o
+a - papi_fwrappers.o
+a - papi_fwrappers_.o
+a - papi_fwrappers__.o
+a - upper_PAPI_FWRAPPERS.o
+a - threads.o
+a - cpus.o
+a - linux-memory.o
+a - linux-timer.o
+a - linux-common.o
+a - papi_preset.o
+a - papi_vector.o
+a - papi_memory.o
+a - perf_event.o
+a - pe_libpfm4_events.o
+a - perf_event_uncore.o
+cd testlib;  make
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' に入ります
+icc -I. -I.. -g -diag-disable 188,869,271  -O1  -c test_utils.c
+ifort -I. -I..   -c ftests_util.F
+ar  rv libtestlib.a test_utils.o ftests_util.o
+ar: libtestlib.a を作成しています
+a - test_utils.o
+a - ftests_util.o
+icc -I. -I.. -g -diag-disable 188,869,271  -O1 -O0 -c do_loops.c
+icc -I. -I.. -g -diag-disable 188,869,271  -O1  -c clockcore.c
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' から出ます
+cd utils && make
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' に入ります
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_avail.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c print_header.c
+icc  -o papi_avail papi_avail.o print_header.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_mem_info.c
+icc  -o papi_mem_info papi_mem_info.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_cost.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c cost_utils.c
+icc  -o papi_cost papi_cost.o cost_utils.o ../libpapi.a -lm
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_clockres.c
+icc  -o papi_clockres papi_clockres.o ../libpapi.a ../testlib/clockcore.o -lm
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_native_avail.c
+icc  -o papi_native_avail papi_native_avail.o ../libpapi.a print_header.o
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_command_line.c
+icc  -o papi_command_line papi_command_line.o ../libpapi.a ../testlib/do_loops.o
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_event_chooser.c
+icc  -o papi_event_chooser papi_event_chooser.o print_header.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_decode.c
+icc  -o papi_decode papi_decode.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_xml_event_info.c
+icc  -o papi_xml_event_info papi_xml_event_info.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_version.c
+icc  -o papi_version papi_version.o ../libpapi.a
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_multiplex_cost.c
+icc  -o papi_multiplex_cost papi_multiplex_cost.o cost_utils.o ../libpapi.a -lm
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_component_avail.c
+icc  -o papi_component_avail papi_component_avail.o ../libpapi.a print_header.o
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_error_codes.c
+icc  -o papi_error_codes papi_error_codes.o ../libpapi.a
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' から出ます
+cd validation_tests; make
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' に入ります
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c cycles_validation.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c display_error.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c instructions_testcode.c
+icc -o cycles_validation cycles_validation.o ../testlib/libtestlib.a display_error.o instructions_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c flops_validation.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c branches_testcode.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c flops_testcode.c
+icc -o flops_validation flops_validation.o ../testlib/libtestlib.a display_error.o branches_testcode.o flops_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_cn.c
+icc -o papi_br_cn papi_br_cn.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a   -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_ins.c
+icc -o papi_br_ins papi_br_ins.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_msp.c
+icc -o papi_br_msp papi_br_msp.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_ntk.c
+icc -o papi_br_ntk papi_br_ntk.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_prc.c
+icc -o papi_br_prc papi_br_prc.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_tkn.c
+icc -o papi_br_tkn papi_br_tkn.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_br_ucn.c
+icc -o papi_br_ucn papi_br_ucn.o ../testlib/libtestlib.a display_error.o branches_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_dp_ops.c
+icc -o papi_dp_ops papi_dp_ops.o ../testlib/libtestlib.a display_error.o branches_testcode.o flops_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_fp_ops.c
+icc -o papi_fp_ops papi_fp_ops.o ../testlib/libtestlib.a display_error.o branches_testcode.o flops_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_sp_ops.c
+icc -o papi_sp_ops papi_sp_ops.o ../testlib/libtestlib.a display_error.o branches_testcode.o flops_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_hw_int.c
+icc -o papi_hw_int papi_hw_int.o ../testlib/libtestlib.a ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l1_dca.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c cache_testcode.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c matrix_multiply.c
+icc -o papi_l1_dca papi_l1_dca.o ../testlib/libtestlib.a cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l1_dcm.c
+icc -I../testlib -I.. -I. -g -diag-disable 188,869,271  -O2  -c cache_helper.c
+icc -o papi_l1_dcm papi_l1_dcm.o ../testlib/libtestlib.a cache_helper.o cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l2_dca.c
+icc -o papi_l2_dca papi_l2_dca.o ../testlib/libtestlib.a cache_helper.o cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l2_dcm.c
+icc -o papi_l2_dcm papi_l2_dcm.o ../testlib/libtestlib.a cache_helper.o cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l2_dcr.c
+icc -o papi_l2_dcr papi_l2_dcr.o ../testlib/libtestlib.a cache_helper.o cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_l2_dcw.c
+icc -o papi_l2_dcw papi_l2_dcw.o ../testlib/libtestlib.a cache_helper.o cache_testcode.o display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_ld_ins.c
+icc -o papi_ld_ins papi_ld_ins.o ../testlib/libtestlib.a display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_sr_ins.c
+icc -o papi_sr_ins papi_sr_ins.o ../testlib/libtestlib.a display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_ref_cyc.c
+icc -o papi_ref_cyc papi_ref_cyc.o ../testlib/libtestlib.a display_error.o flops_testcode.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_tot_cyc.c
+icc -o papi_tot_cyc papi_tot_cyc.o ../testlib/libtestlib.a display_error.o matrix_multiply.o ../libpapi.a  -lrt
+icc -g -diag-disable 188,869,271  -O2  -I../testlib -I.. -I. -c papi_tot_ins.c
+icc -o papi_tot_ins papi_tot_ins.o ../testlib/libtestlib.a display_error.o instructions_testcode.o ../libpapi.a  -lrt
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' から出ます
+cd ctests; make
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' に入ります
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  pthrtough.c ../testlib/libtestlib.a ../libpapi.a  -o pthrtough -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  pthrtough2.c ../testlib/libtestlib.a ../libpapi.a  -o pthrtough2 -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  thrspecific.c ../testlib/libtestlib.a ../libpapi.a  -o thrspecific -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  profile_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o profile_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  clockres_pthreads.c ../testlib/libtestlib.a ../testlib/clockcore.o ../libpapi.a  -o clockres_pthreads -lpthread -lm
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow3_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow3_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  locks_pthreads.c ../testlib/libtestlib.a ../libpapi.a  -o locks_pthreads -lpthread -lm
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  krentel_pthreads.c ../testlib/libtestlib.a ../libpapi.a  -o krentel_pthreads -lpthread
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  all_events.c ../testlib/libtestlib.a ../libpapi.a  -o all_events
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  all_native_events.c ../testlib/libtestlib.a ../libpapi.a  -o all_native_events
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  branches.c ../testlib/libtestlib.a ../libpapi.a ../validation_tests/flops_testcode.o  -lm -o branches
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  calibrate.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o calibrate
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  case1.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o case1
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  case2.c ../testlib/libtestlib.a ../libpapi.a  -o case2
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  cmpinfo.c ../testlib/libtestlib.a ../libpapi.a  -o cmpinfo 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  code2name.c ../testlib/libtestlib.a ../libpapi.a  -o code2name
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  derived.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o derived
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  describe.c ../testlib/libtestlib.a ../libpapi.a  -o describe
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  memory.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o memory
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  disable_component.c ../testlib/libtestlib.a ../libpapi.a  -o disable_component
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  dmem_info.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o dmem_info
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  eventname.c ../testlib/libtestlib.a ../libpapi.a  -o eventname
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  exeinfo.c ../testlib/libtestlib.a ../libpapi.a  -o exeinfo 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  failed_events.c ../testlib/libtestlib.a ../libpapi.a  -o failed_events
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  first.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o first
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  flops.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../validation_tests/display_error.o ../libpapi.a  -o flops
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  get_event_component.c ../testlib/libtestlib.a ../libpapi.a  -o get_event_component
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  inherit.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o inherit
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  high-level.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o high-level
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  high-level2.c ../testlib/libtestlib.a ../libpapi.a  -o high-level2
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  hl_rates.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../libpapi.a  -o hl_rates
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  hwinfo.c ../testlib/libtestlib.a ../libpapi.a  -o hwinfo
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  ipc.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o ipc
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  johnmay2.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o johnmay2
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  low-level.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o low-level
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1   matrix-hl.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o matrix-hl
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  realtime.c ../testlib/libtestlib.a ../libpapi.a  -o realtime
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  remove_events.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o remove_events
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  reset.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o reset 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  second.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o second
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  tenth.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o tenth
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  version.c ../testlib/libtestlib.a ../libpapi.a  -o version
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  virttime.c ../testlib/libtestlib.a ../libpapi.a  -o virttime
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero.c ../testlib/libtestlib.a ../validation_tests/instructions_testcode.o ../libpapi.a  -o zero
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero_flip.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_flip
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero_named.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_named
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  fork.c ../testlib/libtestlib.a ../libpapi.a  -o fork 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  fork2.c ../testlib/libtestlib.a ../libpapi.a  -o fork2 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  exec.c ../testlib/libtestlib.a ../libpapi.a  -o exec 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  exec2.c ../testlib/libtestlib.a ../libpapi.a  -o exec2 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  forkexec.c ../testlib/libtestlib.a ../libpapi.a  -o forkexec 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  forkexec2.c ../testlib/libtestlib.a ../libpapi.a  -o forkexec2 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  forkexec3.c ../testlib/libtestlib.a ../libpapi.a  -o forkexec3 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  forkexec4.c ../testlib/libtestlib.a ../libpapi.a  -o forkexec4 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  fork_overflow.c ../testlib/libtestlib.a ../libpapi.a  -o fork_overflow
+icc -g -diag-disable 188,869,271  -O1   -c -o ../validation_tests/busy_work.o ../validation_tests/busy_work.c
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DPEXEC exec_overflow.c ../testlib/libtestlib.a ../libpapi.a ../validation_tests/busy_work.o  -o exec_overflow
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DPCHILD child_overflow.c ../testlib/libtestlib.a ../libpapi.a ../validation_tests/busy_work.o  -o child_overflow
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DSYSTEM system_child_overflow.c ../testlib/libtestlib.a ../libpapi.a  -o system_child_overflow
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DSYSTEM2 system_overflow.c ../testlib/libtestlib.a ../libpapi.a  -o system_overflow
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  burn.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o burn
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero_fork.c ../testlib/do_loops.o ../testlib/libtestlib.a ../libpapi.a  -o zero_fork
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_force_software.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_force_software
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_single_event.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_single_event
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_twoevents.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_twoevents
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  timer_overflow.c ../testlib/libtestlib.a ../libpapi.a  -o timer_overflow 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow2.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow2
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_index.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_index
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_one_and_read.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_one_and_read
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  overflow_allcounters.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o overflow_allcounters
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -c prof_utils.c
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  profile.c prof_utils.o ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o profile
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DSWPROFILE profile.c prof_utils.o ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o profile_force_software
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  sprofile.c prof_utils.o ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o sprofile
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  profile_twoevents.c prof_utils.o ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o profile_twoevents
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  byte_profile.c prof_utils.o ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o byte_profile
+mpiicc -I../testlib -I../validation_tests -I.. -I.  -g -diag-disable 188,869,271  -O1  first.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o mpifirst
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  max_multiplex.c ../testlib/libtestlib.a ../libpapi.a  -o max_multiplex 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiplex1.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiplex1 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiplex2.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiplex2 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  -DMULTIPLEX mendes-alt.c ../testlib/libtestlib.a ../libpapi.a  -o mendes-alt 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1 -DMPX  sdsc-mpx.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../libpapi.a  -o sdsc-mpx
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1 -DMPX  sdsc2.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../libpapi.a  -lm -o sdsc2-mpx
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1 -DMPX -DSTARTSTOP  sdsc2.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../libpapi.a -lm  -o sdsc2-mpx-noreset
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1 -DMPX  sdsc4-mpx.c ../testlib/libtestlib.a ../validation_tests/flops_testcode.o ../libpapi.a  -lm -o sdsc4-mpx
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  reset_multiplex.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o reset_multiplex
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiplex1_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiplex1_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiplex3_pthreads.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiplex3_pthreads -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  kufrin.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o kufrin -lpthread
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -openmp -g -diag-disable 188,869,271  -O1  zero_omp.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_omp 
+icc: command line remark #10411: option '-openmp' is deprecated and will be removed in a future release. Please use the replacement option '-qopenmp'
+icc -pthread -I../testlib -I../validation_tests -I.. -I. -openmp -g -diag-disable 188,869,271  -O1  omptough.c ../testlib/libtestlib.a ../libpapi.a  -o omptough 
+icc: command line remark #10411: option '-openmp' is deprecated and will be removed in a future release. Please use the replacement option '-qopenmp'
+icc -pthread -I../testlib -I../validation_tests -I.. -I.  -g -diag-disable 188,869,271  -O1  zero_smp.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_smp 
+icc -pthread -I../testlib -I../validation_tests -I.. -I.  -g -diag-disable 188,869,271  -O1  zero_shmem.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_shmem 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  shlib.c ../testlib/libtestlib.a ../libpapi.a  -o shlib 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  earprofile.c ../testlib/libtestlib.a ../testlib/do_loops.o prof_utils.o ../libpapi.a  -o earprofile
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  data_range.c ../testlib/libtestlib.a ../libpapi.a  -o data_range
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  p4_lst_ins.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o p4_lst_ins
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiattach.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiattach
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  multiattach2.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o multiattach2
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  zero_attach.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o zero_attach
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  attach_target.c -o attach_target ../testlib/do_loops.o ../testlib/libtestlib.a
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  attach3.c ../testlib/libtestlib.a ../libpapi.a  -o attach3 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  attach2.c ../testlib/libtestlib.a ../libpapi.a  -o attach2 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  attach_cpu.c ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o attach_cpu 
+icc -I../testlib -I../validation_tests -I.. -I. -g -diag-disable 188,869,271  -O1  api.c ../testlib/libtestlib.a ../libpapi.a  -o api
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' から出ます
+cd ftests; make
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' に入ります
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 strtest.F ../testlib/libtestlib.a ../libpapi.a  -o strtest
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 zero.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o zero 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 zeronamed.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o zeronamed 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 first.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o first 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 second.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o second 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 tenth.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o tenth 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 description.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o description
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fdmemtest.F ../testlib/libtestlib.a ../libpapi.a  -o fdmemtest
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 accum.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o accum 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 highlevel.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o highlevel 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 cost.F ../testlib/libtestlib.a ../libpapi.a -o cost 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 case1.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o case1
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 case2.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o case2
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 clockres.F ../testlib/libtestlib.a ../libpapi.a  -o clockres
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 eventname.F ../testlib/libtestlib.a ../libpapi.a  -o eventname
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fmatrixlowpapi.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o fmatrixlowpapi
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fmatrixpapi.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o fmatrixpapi
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fmatrixpapi2.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o fmatrixpapi2
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 flops.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a  -o flops
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fmultiplex1.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o fmultiplex1 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 johnmay2.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o johnmay2 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 fmultiplex2.F ../testlib/libtestlib.a ../testlib/do_loops.o ../libpapi.a -o fmultiplex2 
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+ifort -I../testlib -I. -I.. -g -diag-disable 188,869,271  -ffixed-line-length-132 -O1 avail.F  ../testlib/libtestlib.a ../libpapi.a  -o avail
+ifort: command line warning #10006: ignoring unknown option '-ffixed-line-length-132'
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' に入ります
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c broken_events.c
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c event_name_lib.c
+icc -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o broken_events broken_events.o event_name_lib.o ../../../testlib/libtestlib.a ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c nmi_watchdog.c
+icc -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o nmi_watchdog nmi_watchdog.o ../../../testlib/libtestlib.a ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c perf_event_offcore_response.c
+icc -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o perf_event_offcore_response perf_event_offcore_response.o event_name_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c perf_event_system_wide.c
+icc -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o perf_event_system_wide perf_event_system_wide.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c perf_event_user_kernel.c
+icc -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o perf_event_user_kernel perf_event_user_kernel.o event_name_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' に入ります
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c -o perf_event_uncore.o perf_event_uncore.c
+icc -g -diag-disable 188,869,271  -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c perf_event_uncore_lib.c
+icc  -o perf_event_uncore perf_event_uncore.o perf_event_uncore_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c -o perf_event_uncore_attach.o perf_event_uncore_attach.c
+icc  -o perf_event_uncore_attach perf_event_uncore_attach.o perf_event_uncore_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c -o perf_event_uncore_multiple.o perf_event_uncore_multiple.c
+icc  -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o perf_event_uncore_multiple perf_event_uncore_multiple.o perf_event_uncore_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a  
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c -o perf_event_amd_northbridge.o perf_event_amd_northbridge.c
+icc  -o perf_event_amd_northbridge perf_event_amd_northbridge.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+icc -g -diag-disable 188,869,271  -O2 -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -c -o perf_event_uncore_cbox.o perf_event_uncore_cbox.c
+icc  -I. -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include -I../../.. -I../../../testlib -I../../../validation_tests -o perf_event_uncore_cbox perf_event_uncore_cbox.o perf_event_uncore_lib.o ../../../testlib/libtestlib.a ../../../testlib/do_loops.o ../../../libpapi.a 
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src' から出ます
++ make test
+cd testlib;  make
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' に入ります
+make[1]: `all' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' から出ます
+cd validation_tests; make
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' に入ります
+make[1]: `all' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' から出ます
+cd ctests; make
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' に入ります
+make[1]: `all' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' から出ます
+ctests/zero
+Test case 0: start, stop.
+-----------------------------------------------
+Default domain is: 1 (PAPI_DOM_USER)
+Default granularity is: 1 (PAPI_GRN_THR)
+Using 200 iterations 1 million instructions
+-------------------------------------------------------------------------
+Test type    : 	           1
+PAPI_TOT_CYC : 	    100038037
+PAPI_TOT_INS : 	    200001375
+IPC          : 	         2.00
+Real usec    : 	        28833
+Real cycles  : 	     66160226
+Virt usec    : 	        28757
+Virt cycles  : 	     66172158
+-------------------------------------------------------------------------
+Verification: PAPI_TOT_INS should be roughly 200000000
+PASSED
++ make install-all
+make -C libpfm4 ARCH="x86_64" DESTDIR= PREFIX=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel install_prefix=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel LIBDIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib INCDIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include MANDIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' に入ります
+installing in
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' に入ります
+building: libpfm.a libpfm.so.4.8.0
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+install -m 644 libpfm.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+install libpfm.so.4.8.0 /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib; ln -sf libpfm.so.4.8.0 libpfm.so.4
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib; ln -sf libpfm.so.4.8.0 libpfm.so
+ldconfig
+ldconfig: 一時キャッシュファイル /etc/ld.so.cache~ を作成できません: 許可がありません
+make[2]: [install] エラー 1 (無視されました)
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/lib' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' に入ります
+make[2]: `install' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/tests' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' に入ります
+make[2]: `install' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' に入ります
+make[2]: `install' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/perf_examples' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' に入ります
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include/perfmon
+install -m 644 perfmon/pfmlib.h perfmon/perf_event.h perfmon/pfmlib_perf_event.h /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include/perfmon
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/include' から出ます
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' に入ります
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3
+( cd man3; install -m 644 libpfm.3 pfm_find_event.3 pfm_get_event_attr_info.3 pfm_get_event_info.3 pfm_get_event_encoding.3 pfm_get_event_next.3 pfm_get_pmu_info.3 pfm_get_os_event_encoding.3 pfm_get_version.3 pfm_initialize.3 pfm_terminate.3 pfm_strerror.3 libpfm_intel_core.3 libpfm_intel_x86_arch.3 libpfm_amd64.3 libpfm_amd64_k7.3 libpfm_amd64_k8.3 libpfm_amd64_fam10h.3 libpfm_amd64_fam15h.3 libpfm_amd64_fam16h.3 libpfm_amd64_fam17h.3 libpfm_intel_atom.3 libpfm_intel_nhm.3 libpfm_intel_nhm_unc.3 libpfm_intel_wsm.3 libpfm_intel_wsm_unc.3 libpfm_intel_snb.3 libpfm_intel_snb_unc.3 libpfm_intel_ivb.3 libpfm_intel_ivb_unc.3 libpfm_intel_hsw.3 libpfm_intel_bdw.3 libpfm_intel_rapl.3 libpfm_intel_slm.3 libpfm_intel_skl.3 libpfm_intel_glm.3 libpfm_intel_knl.3 libpfm_intel_snbep_unc_cbo.3 libpfm_intel_snbep_unc_ha.3 libpfm_intel_snbep_unc_imc.3 libpfm_intel_snbep_unc_pcu.3 libpfm_intel_snbep_unc_qpi.3 libpfm_intel_snbep_unc_ubo.3 libpfm_intel_snbep_unc_r2pcie.3 libpfm_intel_snbep_unc_r3qpi.3 libpfm_intel_ivbep_unc_cbo.3 libpfm_intel_ivbep_unc_ha.3 libpfm_intel_ivbep_unc_imc.3 libpfm_intel_ivbep_unc_pcu.3 libpfm_intel_ivbep_unc_qpi.3 libpfm_intel_ivbep_unc_ubo.3 libpfm_intel_ivbep_unc_r2pcie.3 libpfm_intel_ivbep_unc_r3qpi.3 libpfm_intel_ivbep_unc_irp.3 libpfm_intel_knc.3 libpfm_intel_hswep_unc_cbo.3 libpfm_intel_hswep_unc_ha.3 libpfm_intel_hswep_unc_imc.3 libpfm_intel_hswep_unc_irp.3 libpfm_intel_hswep_unc_pcu.3 libpfm_intel_hswep_unc_qpi.3 libpfm_intel_hswep_unc_r2pcie.3 libpfm_intel_hswep_unc_r3qpi.3 libpfm_intel_hswep_unc_sbo.3 libpfm_intel_hswep_unc_ubo.3 libpfm_intel_bdx_unc_cbo.3 libpfm_intel_bdx_unc_ha.3 libpfm_intel_bdx_unc_imc.3 libpfm_intel_bdx_unc_irp.3 libpfm_intel_bdx_unc_pcu.3 libpfm_intel_bdx_unc_qpi.3 libpfm_intel_bdx_unc_r2pcie.3 libpfm_intel_bdx_unc_r3qpi.3 libpfm_intel_bdx_unc_sbo.3 libpfm_intel_bdx_unc_ubo.3 pfm_get_perf_event_encoding.3 libpfm_perf_event_raw.3 /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3 )
+make[2]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4/docs' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/libpfm4' から出ます
+install -d /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+install -d /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+cp -f ./papi_events.csv /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+Headers (INCDIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include
+cp fpapi.h f77papi.h f90papi.h papi.h papiStdEventDefs.h /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/include; chmod go+r fpapi.h f77papi.h f90papi.h papi.h papiStdEventDefs.h
+Libraries (LIBDIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib
+cd ../man && make DOCDIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/doc/papi MANDIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/man' に入ります
+Man pages (MANDIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3
+cp man3/PAPI*.3 /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3
+chmod go+r /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man3/PAPI*.3
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man1
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man1
+cp man1/*.1 /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man1
+chmod go+r /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/man/man1/*.1
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/man' から出ます
+cd utils; make BINDIR="/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin" CC="icc" CC_R="icc -pthread" CFLAGS="-I.. -g -diag-disable 188,869,271 " TOPTFLAGS="-O1" SMPCFLGS="" OMPCFLGS="-openmp" NOOPT="" LDFLAGS=" " LIBRARY="../libpapi.a" install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' に入ります
+Utilities (BINDIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/bin \;
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/utils' から出ます
+pkcongfig being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig
+cp papi.pc /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig/papi-5.6.0.0.pc
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig; ln -sf papi-5.6.0.0.pc papi-5.6.0.pc;
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig; ln -sf papi-5.6.0.0.pc papi-5.pc;
+cd /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/lib/pkgconfig; ln -sf papi-5.6.0.0.pc papi.pc;
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' に入ります
+perf_event tests (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/tests
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/tests
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/tests \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/*
+find . -name "*.[ch]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/tests \;
+cp Makefile /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event/tests
+cp ../../Makefile_comp_tests /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event/tests' から出ます
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' に入ります
+perf_event_uncore tests (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/tests
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/tests
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/tests \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/*
+find . -name "*.[ch]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/tests \;
+cp Makefile /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components/perf_event_uncore/tests
+cp ../../Makefile_comp_tests /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/components
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/components/perf_event_uncore/tests' から出ます
+cd testlib; make install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' に入ります
+Papi testlib (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib/*
+chmod: `/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib/*' にアクセスできません: そのようなファイルやディレクトリはありません
+make[1]: [install] エラー 1 (無視されました)
+find . -name "*.[chaF]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib \;
+cp Makefile.target /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/testlib/Makefile
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/testlib' から出ます
+cd ctests; make install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' に入ります
+C tests (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests/*
+find . -name "*.[ch]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests \;
+cp Makefile.target /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests/Makefile
+cat Makefile.recipies >> /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ctests/Makefile
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ctests' から出ます
+cd ftests; make install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' に入ります
+Fortran tests (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests/*
+find . -name "*.[Ffh]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests \;
+cp Makefile.target /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests/Makefile
+cat Makefile.recipies >> /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/ftests/Makefile
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/ftests' から出ます
+cd validation_tests; make install
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' に入ります
+Validation tests (DATADIR) being installed in: "/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi"
+mkdir -p /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests
+find . -perm -100 -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests \;
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests/*
+find . -name "*.[ch]" -type f -exec cp {} /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests \;
+cp Makefile.target /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests/Makefile
+cat Makefile.recipies >> /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/validation_tests/Makefile
+make[1]: ディレクトリ `/home/usr5/m70145b/papi/papi-5.6.0/src/validation_tests' から出ます
+cp run_tests.sh /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+cp run_tests_exclude_cuda.txt /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+cp run_tests_exclude.txt /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi
+chmod go+rx /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/run_tests.sh
+chmod go+r /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/run_tests_exclude_cuda.txt /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-intel/share/papi/run_tests_exclude.txt

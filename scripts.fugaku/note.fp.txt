@@ -1,0 +1,37 @@
+The counted HWPC events are:
+
+Double Precision:         -O1                -O2                  -Kfast
+            PAPI_FP_OPS  2000000000         2000000000           2000001000
+            PAPI_FP_INS  2000000000         250000000            125001000
+           PAPI_VEC_INS  0                  750751053            625751054
+           PAPI_FMA_INS  0                  0                    125000000
+
+      FP_SCALE_OPS_SPEC  0                  500000000            500000000
+      FP_FIXED_OPS_SPEC  2000000000         0                    1000
+   FP_DP_SCALE_OPS_SPEC  0                  500000000            500000000
+   FP_DP_FIXED_OPS_SPEC  2000000000         0                    1000
+   FP_SP_SCALE_OPS_SPEC  0                  0                    0
+   FP_SP_FIXED_OPS_SPEC  0                  0                    0
+
+        FLA_VAL_PRD_CNT  10631276816        1124496912           65637488
+        FLB_VAL_PRD_CNT  21416012560        2943743088           1978023072
+
+
+Single Precision:         -O1                -O2                  -Kfast
+            PAPI_FP_OPS  2000000000         2016000000           2016000000
+            PAPI_FP_INS  2000000000         126000000            63000000
+           PAPI_VEC_INS  0                  377377058            314377058
+           PAPI_FMA_INS  0                  0                    63000000
+
+      FP_SCALE_OPS_SPEC  0                  504000000            504000000
+      FP_FIXED_OPS_SPEC  2000000000         0                    0
+   FP_DP_SCALE_OPS_SPEC  0                  0                    0
+   FP_DP_FIXED_OPS_SPEC  0                  0                    0
+   FP_SP_SCALE_OPS_SPEC  0                  504000000            504000000
+   FP_SP_FIXED_OPS_SPEC  2000000000         0                    0
+
+        FLA_VAL_PRD_CNT  10854093760        626603520            56461032
+        FLB_VAL_PRD_CNT  21192268368        1456259432           984454032
+
+definition of FLA_VAL_PRD_CNT,FLB_VAL_PRD_CNT is not clear.
+

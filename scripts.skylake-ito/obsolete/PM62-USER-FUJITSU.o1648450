@@ -1,0 +1,58 @@
++ mpiFCC -c -Kopenmp -Xg -fvisibility=default main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include/papi.h", line 25: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility push(default)
+          ^
+
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include/papi.h", line 1138: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility pop
+          ^
+
+"main.cpp", line 30: 警告: 変数  "tt" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	       ^
+
+"main.cpp", line 30: 警告: 変数  "t1" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	           ^
+
+"main.cpp", line 30: 警告: 変数  "t2" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	               ^
+
+"main.cpp", line 30: 警告: 変数  "t3" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                   ^
+
+"main.cpp", line 30: 警告: 変数  "t4" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                       ^
+
+"main.cpp", line 31: 警告: 変数  "i" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	    ^
+
+"main.cpp", line 31: 警告: 変数  "j" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	       ^
+
+"main.cpp", line 31: 警告: 変数  "loop" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	          ^
+
++ mpifcc -c -Kopenmp -Xg -fvisibility=default sub.c
+"sub.c", line 42: 警告: 認識できない#pragmaです。
+  #pragma nounroll
+          ^
+
+"sub.c", line 43: エラー: #pragma omp: "simd" は認識できません。
+  #pragma omp simd
+              ^
+
+1 エラー "sub.c"の翻訳中に検出されました。
++ mpiFCC -Kopenmp -Xg -fvisibility=default main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -lstdc++ --linkfortran
+/usr/bin/ld: sub.o が見つかりません: そのようなファイルやディレクトリはありません
++ NPROCS=1
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 1 ./a.out
+[ERR.] PLE 0018 plexec The program(./a.out) cannot be executed.(nid=0x01ff002a)(error=No such file or directory)(CODE=1572,1088375774014078978,65280)

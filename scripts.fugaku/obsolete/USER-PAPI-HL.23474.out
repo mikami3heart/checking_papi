@@ -1,0 +1,36 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
+++ date
+Tue Feb 25 14:47:23 JST 2020
+++ hostname
+h27-7014c
+++ WKDIR=/home/g9200002/u92028/tmp/check_papi
+++ mkdir -p /home/g9200002/u92028/tmp/check_papi
+++ cd /home/g9200002/u92028/tmp/check_papi
+++ '[' 0 '!=' 0 ']'
+++ rm '/home/g9200002/u92028/tmp/check_papi/*'
+rm: cannot remove '/home/g9200002/u92028/tmp/check_papi/*': No such file or directory
+++ SRCDIR=/home/g9200002/u92028/check_papi/scripts.fugaku
+++ cp /home/g9200002/u92028/check_papi/scripts.fugaku/call_papi_hl_flops.c main.c
+cp: cannot stat '/home/g9200002/u92028/check_papi/scripts.fugaku/call_papi_hl_flops.c': No such file or directory
+++ CXXFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ FCFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ CFLAGS='-O2 -Kopenmp -Nnofjprof -Nfjomplib '
+++ PAPI_DIR=/opt/FJSVxos/devkit/aarch64/rfs/usr
+++ PAPI_LDFLAGS='-L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm '
+++ PAPI_INCLUDES='-I/opt/FJSVxos/devkit/aarch64/rfs/usr/include '
+++ MPI_LDFLAGS='-lmpi '
+++ set -x
+++ mpifcc -c -O2 -Kopenmp -Nnofjprof -Nfjomplib main.c -I/opt/FJSVxos/devkit/aarch64/rfs/usr/include
+Catastrophic error: cannot open source file "main.c"
+
+1 catastrophic error detected in the compilation of "main.c".
+Compilation terminated.
+++ mpiFCC -O2 -Kopenmp -Nnofjprof -Nfjomplib main.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -lmpi
+/usr/bin/ld: cannot find main.o: No such file or directory
+++ ls -go
+total 0
+++ xospastop
+++ export OMP_NUM_THREADS=12
+++ OMP_NUM_THREADS=12
+++ mpirun -np 1 ./a.out

@@ -1,0 +1,30 @@
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ ./a.out
+<main> npes=1 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 1: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 2: MEM_LOAD_UOPS_RETIRED:L1_MISS: events:40000031
+ i= 3: MEM_LOAD_UOPS_RETIRED:L2_MISS: events:40000032
+ i= 4: MEM_LOAD_UOPS_RETIRED:L3_MISS: events:4000000f
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=5
+#0, 4000002f 0
+#1, 40000030 0
+#2, 40000031 0
+#3, 40000032 0
+#4, 4000000f 0
+	 Check print before finishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+The counted events are:
+#0, 4000002f            MEM_LOAD_UOPS_RETIRED:HIT_LFB  48427577
+#1, 40000030             MEM_LOAD_UOPS_RETIRED:L1_HIT  72893724
+#2, 40000031            MEM_LOAD_UOPS_RETIRED:L1_MISS  7374605
+#3, 40000032            MEM_LOAD_UOPS_RETIRED:L2_MISS  5404593
+#4, 4000000f            MEM_LOAD_UOPS_RETIRED:L3_MISS  0
+Process 0 finishing up

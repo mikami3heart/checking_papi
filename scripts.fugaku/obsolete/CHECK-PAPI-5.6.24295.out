@@ -1,0 +1,66 @@
+--------------------------- /work/system/modulefiles ---------------------------
+lang/fjcompiler20191226_01               Python2-CN/2.7.15(default)  
+lang/fjcompiler20191226_01_old           Python3-CN/3.6.8(default)   
+lang/fjcompiler20200214_01(default)      Ruby-CN/2.6.5(default)      
+OpenJDK-CN/jdk11u-be745617e8c4(default)  
+-------------------------------------------------------------------
+/work/system/modulefiles/lang/fjcompiler20200214_01:
+
+module-whatis	Fujitsu Compiler prototype (Fortran/C/C++/Tool)
+conflict	lang
+setenv		XOS_MMM_L_HPAGE_TYPE	none
+prepend-path	PATH /opt/FJSVxtclanga/tcsds-1.2.21/bin
+prepend-path	LD_LIBRARY_PATH /opt/FJSVxtclanga/tcsds-1.2.21/lib64
+prepend-path	TMPDIR /home/g9200002/u92028
+-------------------------------------------------------------------
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
++ xospastop
++ which cc
+/usr/bin/cc
++ cc -v main.c
+cc: error: main.c: No such file or directory
+Using built-in specs.
+COLLECT_GCC=cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/8/lto-wrapper
+Target: aarch64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-gnu-indirect-function --build=aarch64-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190507 (Red Hat 8.3.1-4) (GCC) 
++ cc main.c
+cc: error: main.c: No such file or directory
+cc: fatal error: no input files
+compilation terminated.
++ file a.out
+a.out: cannot open `a.out' (No such file or directory)
++ ./a.out
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 27: ./a.out: No such file or directory
++ ldd a.out
+ldd: ./a.out: No such file or directory
++ hostname
+j29-3014c
++ uname -a
+Linux j29-3014c 4.18.0-147.3.1.el8_1.aarch64 #1 SMP Wed Nov 27 01:58:10 UTC 2019 aarch64 aarch64 aarch64 GNU/Linux
++ export LANG=C
++ LANG=C
++ PAPI_DIR=/opt/FJSVxos/devkit/aarch64/rfs/usr
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 40: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail: No such file or directory
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail -a
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 41: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail: No such file or directory
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_component_avail
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 42: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_component_avail: No such file or directory
++ echo
+
++ echo Checking with additional LD_LIBRARY_PATH
+Checking with additional LD_LIBRARY_PATH
++ echo
+
++ export LD_LIBRARY_PATH=/opt/FJSVxos/devkit/aarch64/rfs/usr/lib
++ LD_LIBRARY_PATH=/opt/FJSVxos/devkit/aarch64/rfs/usr/lib
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 48: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail: No such file or directory
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail -a
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 49: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_avail: No such file or directory
++ /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_component_avail
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024295: line 50: /opt/FJSVxos/devkit/aarch64/rfs/usr/bin/papi_component_avail: No such file or directory

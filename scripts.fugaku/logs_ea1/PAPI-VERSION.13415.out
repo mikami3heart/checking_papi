@@ -1,0 +1,34 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20190731_05(default)  
++ WKDIR=/home/users/ta05/ta0003/tmp/check_papi
++ mkdir -p /home/users/ta05/ta0003/tmp/check_papi
++ cd /home/users/ta05/ta0003/tmp/check_papi
++ '[' 0 '!=' 0 ']'
++ rm /home/users/ta05/ta0003/tmp/check_papi/a.out /home/users/ta05/ta0003/tmp/check_papi/check_papi_version.c
++ SRCDIR=/home/users/ta05/ta0003/papi/scripts.fugaku
++ cp /home/users/ta05/ta0003/papi/scripts.fugaku/check_papi_version.c ./
++ CXXFLAGS='-O2 '
++ CFLAGS='-O2 '
++ FCFLAGS='-O2 '
++ PAPI_DIR=/opt/FJSVxos/devkit/aarch64/rfs/usr
++ PAPI_LDFLAGS='-L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm '
++ PAPI_INCLUDES='-I/opt/FJSVxos/devkit/aarch64/rfs/usr/include '
++ fcc -O2 check_papi_version.c -I/opt/FJSVxos/devkit/aarch64/rfs/usr/include -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ ./a.out
+<PAPI_get_hardware_info>
+ vendor=7  
+ vendor_string=ARM 
+ model=0 
+ model_string= 
+ ncpu=7, threads=1, cores=1, sockets=60 
+ nnodes=8, totalcpus=60 
+ cpuid_family=0, cpuid_model=1, cpuid_stepping=0 
+PAPI_VERSION(5.6.0.0)=84279296
+PAPI_VER_CURRENT=84279296
+PAPI_VERSION_MAJOR()=5
+PAPI_VERSION_MINOR()=6
+PAPI_VERSION_REVISION()=0
+PAPI_VERSION_INCREMENT()=0
+Success!

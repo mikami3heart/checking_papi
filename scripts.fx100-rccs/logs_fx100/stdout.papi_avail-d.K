@@ -1,0 +1,596 @@
+Available events and hardware information.
+--------------------------------------------------------------------------------
+Vendor string and code   : Sun (7)
+Model string and code    : Fujitsu SPARC64 VIIIfx (140)
+CPU Revision             : 0.000000
+CPU Megahertz            : 2000.000000
+CPU Clock Megahertz      : 2000
+CPU's in this Node       : 8
+Nodes in this System     : 1
+Total CPU's              : 8
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+The following correspond to fields in the PAPI_event_info_t structure.
+
+Symbol       Event Code Count   |Short Description|
+ |Long Description|
+ |Developer's Notes|
+ |Derived|
+ |PostFix|
+ Native Code[n]: <hex> |name|
+PAPI_L1_DCM	0x80000000	1	|L1D cache misses|
+ |Level 1 data cache misses|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000004a |L1D_MISS|
+PAPI_L1_ICM	0x80000001	1	|L1I cache misses|
+ |Level 1 instruction cache misses|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000049 |L1I_MISS|
+PAPI_L2_DCM	0x80000002	0	|L2D cache misses|
+ |Level 2 data cache misses|
+ ||
+ ||
+ ||
+PAPI_L2_ICM	0x80000003	0	|L2I cache misses|
+ |Level 2 instruction cache misses|
+ ||
+ ||
+ ||
+PAPI_L3_DCM	0x80000004	0	|L3D cache misses|
+ |Level 3 data cache misses|
+ ||
+ ||
+ ||
+PAPI_L3_ICM	0x80000005	0	|L3I cache misses|
+ |Level 3 instruction cache misses|
+ ||
+ ||
+ ||
+PAPI_L1_TCM	0x80000006	2	|L1 cache misses|
+ |Level 1 cache misses|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x4000004a |L1D_MISS|
+ Native Code[1]: 0x40000049 |L1I_MISS|
+PAPI_L2_TCM	0x80000007	2	|L2 cache misses|
+ |Level 2 cache misses|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000055 |L2_MISS_DM|
+ Native Code[1]: 0x40000056 |L2_MISS_PF|
+PAPI_L3_TCM	0x80000008	0	|L3 cache misses|
+ |Level 3 cache misses|
+ ||
+ ||
+ ||
+PAPI_CA_SNP	0x80000009	0	|Snoop Requests|
+ |Requests for a snoop|
+ ||
+ ||
+ ||
+PAPI_CA_SHR	0x8000000a	0	|Ex Acces shared CL|
+ |Requests for exclusive access to shared cache line|
+ ||
+ ||
+ ||
+PAPI_CA_CLN	0x8000000b	0	|Ex Access clean CL|
+ |Requests for exclusive access to clean cache line|
+ ||
+ ||
+ ||
+PAPI_CA_INV	0x8000000c	1	|Cache ln invalid|
+ |Requests for cache line invalidation|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000005b |BI_COUNT|
+PAPI_CA_ITV	0x8000000d	1	|Cache ln intervene|
+ |Requests for cache line intervention|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000005c |CPD_COUNT|
+PAPI_L3_LDM	0x8000000e	0	|L3 load misses|
+ |Level 3 load misses|
+ ||
+ ||
+ ||
+PAPI_L3_STM	0x8000000f	0	|L3 store misses|
+ |Level 3 store misses|
+ ||
+ ||
+ ||
+PAPI_BRU_IDL	0x80000010	0	|Branch idle cycles|
+ |Cycles branch units are idle|
+ ||
+ ||
+ ||
+PAPI_FXU_IDL	0x80000011	0	|IU idle cycles|
+ |Cycles integer units are idle|
+ ||
+ ||
+ ||
+PAPI_FPU_IDL	0x80000012	0	|FPU idle cycles|
+ |Cycles floating point units are idle|
+ ||
+ ||
+ ||
+PAPI_LSU_IDL	0x80000013	0	|L/SU idle cycles|
+ |Cycles load/store units are idle|
+ ||
+ ||
+ ||
+PAPI_TLB_DM	0x80000014	1	|Data TLB misses|
+ |Data translation lookaside buffer misses|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000002b |TRAP_DMMU_MISS|
+PAPI_TLB_IM	0x80000015	1	|Instr TLB misses|
+ |Instruction translation lookaside buffer misses|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000002a |TRAP_IMMU_MISS|
+PAPI_TLB_TL	0x80000016	2	|Total TLB misses|
+ |Total translation lookaside buffer misses|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x4000002b |TRAP_DMMU_MISS|
+ Native Code[1]: 0x4000002a |TRAP_IMMU_MISS|
+PAPI_L1_LDM	0x80000017	0	|L1 load misses|
+ |Level 1 load misses|
+ ||
+ ||
+ ||
+PAPI_L1_STM	0x80000018	0	|L1 store misses|
+ |Level 1 store misses|
+ ||
+ ||
+ ||
+PAPI_L2_LDM	0x80000019	0	|L2 load misses|
+ |Level 2 load misses|
+ ||
+ ||
+ ||
+PAPI_L2_STM	0x8000001a	0	|L2 store misses|
+ |Level 2 store misses|
+ ||
+ ||
+ ||
+PAPI_BTAC_M	0x8000001b	0	|Br targt addr miss|
+ |Branch target address cache misses|
+ ||
+ ||
+ ||
+PAPI_PRF_DM	0x8000001c	0	|Data prefetch miss|
+ |Data prefetch cache misses|
+ ||
+ ||
+ ||
+PAPI_L3_DCH	0x8000001d	0	|L3D cache hits|
+ |Level 3 data cache hits|
+ ||
+ ||
+ ||
+PAPI_TLB_SD	0x8000001e	0	|TLB shootdowns|
+ |Translation lookaside buffer shootdowns|
+ ||
+ ||
+ ||
+PAPI_CSR_FAL	0x8000001f	0	|Failed store cond|
+ |Failed store conditional instructions|
+ ||
+ ||
+ ||
+PAPI_CSR_SUC	0x80000020	0	|Good store cond|
+ |Successful store conditional instructions|
+ ||
+ ||
+ ||
+PAPI_CSR_TOT	0x80000021	0	|Total store cond|
+ |Total store conditional instructions|
+ ||
+ ||
+ ||
+PAPI_MEM_SCY	0x80000022	1	|Stalled mem cycles|
+ |Cycles Stalled Waiting for memory accesses|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000034 |OP_STV_WAIT_SXMISS|
+PAPI_MEM_RCY	0x80000023	0	|Stalled rd cycles|
+ |Cycles Stalled Waiting for memory Reads|
+ ||
+ ||
+ ||
+PAPI_MEM_WCY	0x80000024	0	|Stalled wr cycles|
+ |Cycles Stalled Waiting for memory writes|
+ ||
+ ||
+ ||
+PAPI_STL_ICY	0x80000025	1	|No instr issue|
+ |Cycles with no instruction issue|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000030 |0IID_USE|
+PAPI_FUL_ICY	0x80000026	1	|Max instr issue|
+ |Cycles with maximum instruction issue|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000001e |4IID_USE|
+PAPI_STL_CCY	0x80000027	2	|No instr done|
+ |Cycles with no instructions completed|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x4000003c |0ENDOP|
+ Native Code[1]: 0x4000002d |SINGLE_SXAR_COMMIT|
+PAPI_FUL_CCY	0x80000028	5	|Max instr done|
+ |Cycles with maximum instructions completed|
+ ||
+ |DERIVED_SUB|
+ ||
+ Native Code[0]: 0x40000000 |CYCLE_COUNTS|
+ Native Code[1]: 0x40000042 |3ENDOP|
+ Native Code[2]: 0x40000040 |2ENDOP|
+ Native Code[3]: 0x4000003f |1ENDOP|
+ Native Code[4]: 0x4000003c |0ENDOP|
+PAPI_HW_INT	0x80000029	1	|Hdw interrupts|
+ |Hardware interrupts|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000025 |TRAP_INT_VECTOR|
+PAPI_BR_UCN	0x8000002a	0	|Uncond branch|
+ |Unconditional branch instructions|
+ ||
+ ||
+ ||
+PAPI_BR_CN	0x8000002b	0	|Cond branch|
+ |Conditional branch instructions|
+ ||
+ ||
+ ||
+PAPI_BR_TKN	0x8000002c	0	|Cond branch taken|
+ |Conditional branch instructions taken|
+ ||
+ ||
+ ||
+PAPI_BR_NTK	0x8000002d	0	|Cond br not taken|
+ |Conditional branch instructions not taken|
+ ||
+ ||
+ ||
+PAPI_BR_MSP	0x8000002e	1	|Cond br mspredictd|
+ |Conditional branch instructions mispredicted|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000001a |FLUSH_RS|
+PAPI_BR_PRC	0x8000002f	2	|Cond br predicted|
+ |Conditional branch instructions correctly predicted|
+ ||
+ |DERIVED_SUB|
+ ||
+ Native Code[0]: 0x4000000f |BRANCH_INSTRUCTIONS|
+ Native Code[1]: 0x4000001a |FLUSH_RS|
+PAPI_FMA_INS	0x80000030	2	|FMAs completed|
+ |FMA instructions completed|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000011 |FMA_INSTRUCTIONS|
+ Native Code[1]: 0x40000009 |SIMD_FMA_INSTRUCTIONS|
+PAPI_TOT_IIS	0x80000031	4	|Instr issued|
+ |Instructions issued|
+ ||
+ |DERIVED_POSTFIX|
+ |N0|2|N1|*|+|3|N2|*|+|4|N3|*|+||
+ Native Code[0]: 0x4000001b |1IID_USE|
+ Native Code[1]: 0x4000001c |2IID_USE|
+ Native Code[2]: 0x4000001d |3IID_USE|
+ Native Code[3]: 0x4000001e |4IID_USE|
+PAPI_TOT_INS	0x80000032	1	|Instr completed|
+ |Instructions completed|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000006 |EFFECTIVE_INSTRUCTION_COUNTS|
+PAPI_INT_INS	0x80000033	0	|Int instructions|
+ |Integer instructions|
+ ||
+ ||
+ ||
+PAPI_FP_INS	0x80000034	2	|FP instructions|
+ |Floating point instructions|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000010 |FLOATING_INSTRUCTIONS|
+ Native Code[1]: 0x40000008 |SIMD_FLOATING_INSTRUCTIONS|
+PAPI_LD_INS	0x80000035	3	|Loads|
+ |Load instructions|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000013 |EX_LOAD_INSTRUCTIONS|
+ Native Code[1]: 0x40000015 |FL_LOAD_INSTRUCTIONS|
+ Native Code[2]: 0x40000017 |SIMD_FL_LOAD_INSTRUCTIONS|
+PAPI_SR_INS	0x80000036	3	|Stores|
+ |Store instructions|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000014 |EX_STORE_INSTRUCTIONS|
+ Native Code[1]: 0x40000016 |FL_STORE_INSTRUCTIONS|
+ Native Code[2]: 0x40000018 |SIMD_FL_STORE_INSTRUCTIONS|
+PAPI_BR_INS	0x80000037	1	|Branches|
+ |Branch instructions|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000000f |BRANCH_INSTRUCTIONS|
+PAPI_VEC_INS	0x80000038	2	|Vector/SIMD instr|
+ |Vector/SIMD instructions|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000008 |SIMD_FLOATING_INSTRUCTIONS|
+ Native Code[1]: 0x40000009 |SIMD_FMA_INSTRUCTIONS|
+PAPI_RES_STL	0x80000039	0	|Stalled res cycles|
+ |Cycles stalled on any resource|
+ ||
+ ||
+ ||
+PAPI_FP_STAL	0x8000003a	0	|Stalled FPU cycles|
+ |Cycles the FP unit(s) are stalled|
+ ||
+ ||
+ ||
+PAPI_TOT_CYC	0x8000003b	1	|Total cycles|
+ |Total cycles|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x40000000 |CYCLE_COUNTS|
+PAPI_LST_INS	0x8000003c	1	|L/S completed|
+ |Load/store instructions completed|
+ ||
+ |NOT_DERIVED|
+ ||
+ Native Code[0]: 0x4000000e |LOAD_STORE_INSTRUCTIONS|
+PAPI_SYC_INS	0x8000003d	0	|Syncs completed|
+ |Synchronization instructions completed|
+ ||
+ ||
+ ||
+PAPI_L1_DCH	0x8000003e	0	|L1D cache hits|
+ |Level 1 data cache hits|
+ ||
+ ||
+ ||
+PAPI_L2_DCH	0x8000003f	0	|L2D cache hits|
+ |Level 2 data cache hits|
+ ||
+ ||
+ ||
+PAPI_L1_DCA	0x80000040	0	|L1D cache accesses|
+ |Level 1 data cache accesses|
+ ||
+ ||
+ ||
+PAPI_L2_DCA	0x80000041	0	|L2D cache accesses|
+ |Level 2 data cache accesses|
+ ||
+ ||
+ ||
+PAPI_L3_DCA	0x80000042	0	|L3D cache accesses|
+ |Level 3 data cache accesses|
+ ||
+ ||
+ ||
+PAPI_L1_DCR	0x80000043	0	|L1D cache reads|
+ |Level 1 data cache reads|
+ ||
+ ||
+ ||
+PAPI_L2_DCR	0x80000044	0	|L2D cache reads|
+ |Level 2 data cache reads|
+ ||
+ ||
+ ||
+PAPI_L3_DCR	0x80000045	0	|L3D cache reads|
+ |Level 3 data cache reads|
+ ||
+ ||
+ ||
+PAPI_L1_DCW	0x80000046	0	|L1D cache writes|
+ |Level 1 data cache writes|
+ ||
+ ||
+ ||
+PAPI_L2_DCW	0x80000047	0	|L2D cache writes|
+ |Level 2 data cache writes|
+ ||
+ ||
+ ||
+PAPI_L3_DCW	0x80000048	0	|L3D cache writes|
+ |Level 3 data cache writes|
+ ||
+ ||
+ ||
+PAPI_L1_ICH	0x80000049	0	|L1I cache hits|
+ |Level 1 instruction cache hits|
+ ||
+ ||
+ ||
+PAPI_L2_ICH	0x8000004a	0	|L2I cache hits|
+ |Level 2 instruction cache hits|
+ ||
+ ||
+ ||
+PAPI_L3_ICH	0x8000004b	0	|L3I cache hits|
+ |Level 3 instruction cache hits|
+ ||
+ ||
+ ||
+PAPI_L1_ICA	0x8000004c	0	|L1I cache accesses|
+ |Level 1 instruction cache accesses|
+ ||
+ ||
+ ||
+PAPI_L2_ICA	0x8000004d	0	|L2I cache accesses|
+ |Level 2 instruction cache accesses|
+ ||
+ ||
+ ||
+PAPI_L3_ICA	0x8000004e	0	|L3I cache accesses|
+ |Level 3 instruction cache accesses|
+ ||
+ ||
+ ||
+PAPI_L1_ICR	0x8000004f	0	|L1I cache reads|
+ |Level 1 instruction cache reads|
+ ||
+ ||
+ ||
+PAPI_L2_ICR	0x80000050	0	|L2I cache reads|
+ |Level 2 instruction cache reads|
+ ||
+ ||
+ ||
+PAPI_L3_ICR	0x80000051	0	|L3I cache reads|
+ |Level 3 instruction cache reads|
+ ||
+ ||
+ ||
+PAPI_L1_ICW	0x80000052	0	|L1I cache writes|
+ |Level 1 instruction cache writes|
+ ||
+ ||
+ ||
+PAPI_L2_ICW	0x80000053	0	|L2I cache writes|
+ |Level 2 instruction cache writes|
+ ||
+ ||
+ ||
+PAPI_L3_ICW	0x80000054	0	|L3I cache writes|
+ |Level 3 instruction cache writes|
+ ||
+ ||
+ ||
+PAPI_L1_TCH	0x80000055	0	|L1 cache hits|
+ |Level 1 total cache hits|
+ ||
+ ||
+ ||
+PAPI_L2_TCH	0x80000056	4	|L2 cache hits|
+ |Level 2 total cache hits|
+ ||
+ |DERIVED_POSTFIX|
+ |N0|N1|+|N2|-|N3|-||
+ Native Code[0]: 0x40000057 |L2_READ_DM|
+ Native Code[1]: 0x40000058 |L2_READ_PF|
+ Native Code[2]: 0x40000055 |L2_MISS_DM|
+ Native Code[3]: 0x40000056 |L2_MISS_PF|
+PAPI_L3_TCH	0x80000057	0	|L3 cache hits|
+ |Level 3 total cache hits|
+ ||
+ ||
+ ||
+PAPI_L1_TCA	0x80000058	0	|L1 cache accesses|
+ |Level 1 total cache accesses|
+ ||
+ ||
+ ||
+PAPI_L2_TCA	0x80000059	2	|L2 cache accesses|
+ |Level 2 total cache accesses|
+ ||
+ |DERIVED_ADD|
+ ||
+ Native Code[0]: 0x40000057 |L2_READ_DM|
+ Native Code[1]: 0x40000058 |L2_READ_PF|
+PAPI_L3_TCA	0x8000005a	0	|L3 cache accesses|
+ |Level 3 total cache accesses|
+ ||
+ ||
+ ||
+PAPI_L1_TCR	0x8000005b	0	|L1 cache reads|
+ |Level 1 total cache reads|
+ ||
+ ||
+ ||
+PAPI_L2_TCR	0x8000005c	0	|L2 cache reads|
+ |Level 2 total cache reads|
+ ||
+ ||
+ ||
+PAPI_L3_TCR	0x8000005d	0	|L3 cache reads|
+ |Level 3 total cache reads|
+ ||
+ ||
+ ||
+PAPI_L1_TCW	0x8000005e	0	|L1 cache writes|
+ |Level 1 total cache writes|
+ ||
+ ||
+ ||
+PAPI_L2_TCW	0x8000005f	0	|L2 cache writes|
+ |Level 2 total cache writes|
+ ||
+ ||
+ ||
+PAPI_L3_TCW	0x80000060	0	|L3 cache writes|
+ |Level 3 total cache writes|
+ ||
+ ||
+ ||
+PAPI_FML_INS	0x80000061	0	|FPU multiply|
+ |Floating point multiply instructions|
+ ||
+ ||
+ ||
+PAPI_FAD_INS	0x80000062	0	|FPU add|
+ |Floating point add instructions|
+ ||
+ ||
+ ||
+PAPI_FDV_INS	0x80000063	0	|FPU divide|
+ |Floating point divide instructions|
+ ||
+ ||
+ ||
+PAPI_FSQ_INS	0x80000064	0	|FPU square root|
+ |Floating point square root instructions|
+ ||
+ ||
+ ||
+PAPI_FNV_INS	0x80000065	0	|FPU inverse|
+ |Floating point inverse instructions|
+ ||
+ ||
+ ||
+PAPI_FP_OPS	0x80000066	4	|FP operations|
+ |Floating point operations|
+ ||
+ |DERIVED_POSTFIX|
+ |N0|2|N1|*|+|2|N2|*|+|4|N3|*|+||
+ Native Code[0]: 0x40000010 |FLOATING_INSTRUCTIONS|
+ Native Code[1]: 0x40000011 |FMA_INSTRUCTIONS|
+ Native Code[2]: 0x40000008 |SIMD_FLOATING_INSTRUCTIONS|
+ Native Code[3]: 0x40000009 |SIMD_FMA_INSTRUCTIONS|
+-------------------------------------------------------------------------
+Of 103 possible events, 30 are available, of which 15 are derived.
+
+avail.c                                  PASSED

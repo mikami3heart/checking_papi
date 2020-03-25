@@ -1,0 +1,67 @@
+FUJITSU CONFIDENTIAL
+Fujitsu C/C++ Version 4.0.0   Wed Jan  8 16:37:52 2020
+Compilation information
+  Current directory : /home/users/ta05/ta0003/tmp/check_papi
+  Source file       : sub.c
+(line-no.)(optimize)
+        1             #include <stdio.h>
+        2             #include <math.h>
+        3             #define MATSIZE 1000
+        4             
+        5             //	typedef float PRECISION;
+        6             typedef double PRECISION;
+        7             
+        8             struct {
+        9             	int nsize;
+       10             	PRECISION a2[MATSIZE][MATSIZE];
+       11             	PRECISION b2[MATSIZE][MATSIZE];
+       12             	PRECISION c2[MATSIZE][MATSIZE];
+       13             } matrix;
+       14             
+       15             
+       16             void subkernel()
+       17             {
+       18             int i, j, k;
+       19             PRECISION c1;
+       20             int nsize = MATSIZE;
+       21             
+       22             	matrix.nsize = nsize;
+       23             
+       24             	for (i=0; i<nsize; i++){
+       25             	for (j=0; j<nsize; j++){
+       26             	//	matrix.a2[i][j] = sin((PRECISION)j/(PRECISION)nsize);
+       27             	//	matrix.b2[i][j] = cos((PRECISION)j/(PRECISION)nsize);
+       28             	matrix.a2[i][j] = (PRECISION)j;
+       29             	matrix.b2[i][j] = (PRECISION)i;
+       30             	matrix.c2[i][j] = 0.0;
+       31             	}
+       32             	}
+       33             
+       34             	//	c1 + matrix.c2[10][10];
+       35             	for (i=0; i<nsize; i++){
+       36             #ifdef _OPENMP
+       37             #pragma omp parallel for
+       38             #endif
+       39             	for (j=0; j<nsize; j++){
+       40             	for (k=0; k<nsize; k++){
+       41             	matrix.c2[j][k] = matrix.c2[j][k] + matrix.a2[i][k] *matrix.b2[j][k];
+       42             	}
+       43             	}
+       44             	}
+       45             }
+       46             
+Total prefetch num: 0
+Statistics information
+  Option information
+    Command line options : -Kident_mpi -c -O0 -Knounroll,noswp,noopenmp -w -S -Nlst=t -I/opt/FJSVxtclanga/.common/MECA008/include/mpi/fujitsu -pthread
+    Effective options    : -g0 -Qy -w -std=gnu11 -O0 -Kcmodel=small -Kconst -Knofconst
+                           -Knofenv_access -Khpctag -Klargepage -Knolib -Klooptype=f
+                           -Knoopenmp -Knoopenmp_simd -Knooptlib_string
+                           -Knopc_relative_literal_loads -Knoparallel -Ksimd_reg_size=512
+                           -KA64FX -KARMV8_3_A -KSVE -Ncancel_overtime_compilation
+                           -Nnocoverage -Nnoexceptions -Nnofjcex -Nnohook_func -Nnohook_time
+                           -Nline -Nnolinkprof -Nlst=p -Nlst=t -Nquickdbg=noheapchk
+                           -Nquickdbg=nosubchk -NRnotrap -Nnoreordered_variable_stack
+                           -Nrt_notune -Nsetvalue=noheap -Nsetvalue=nostack
+                           -Nsetvalue=noscalar -Nsetvalue=noarray -Nsetvalue=nostruct -Nsrc
+                           -Nsta

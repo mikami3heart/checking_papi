@@ -1,0 +1,147 @@
+Job Information
+
+ JOB ID                    : 1621413
+ JOB NAME                  : USER-1-FUJITSU
+ JOB TYPE                  : BATCH
+ JOB MODEL                 : NM
+ RETRY NUM                 : 0
+ SUB JOB NUM               : -
+ USER                      : m70145b
+ GROUP                     : gr170129
+ RESOURCE UNIT             : ito-a
+ RESOURCE GROUP            : ito-ss
+ APRIORITY                 : 127
+ PRIORITY                  : 127
+ SHELL                     : /bin/bash
+ SUPPLEMENTARY INFORMATION : 
+ COMMENT                   : 
+ LAST STATE                : RNO
+ STATE                     : EXT
+ PRM DATE                  : 2018/09/21 19:16:25
+ EXIT CODE                 : 240
+ SIGNAL NO                 : 0
+ PJM CODE                  : 0
+ REASON                    : -
+ MAIL SEND FLAG            : ----
+ MAIL ADDRESS              : m70145b
+ STEP DEPENDENCY EXP       : -
+ STEP EXITING WAIT MODE    : -
+ FILE MASK                 : 0022
+ STANDARD OUT FILE         : /home/usr5/m70145b/papi/scripts/USER-1-FUJITSU.o1621413
+ STANDARD ERR FILE         : /home/usr5/m70145b/papi/scripts/USER-1-FUJITSU.o1621413
+ INFORMATION FILE          : /home/usr5/m70145b/papi/scripts/USER-1-FUJITSU.i1621413
+ PJSUB DIRECTORY           : /home/usr5/m70145b/papi/scripts
+ FILE SYSTEM NAME          : 
+ APPLICATION NAME          : 
+ ACCEPT DATE               : 2018/09/21 19:16:10
+ QUEUED DATE               : 2018/09/21 19:16:10
+ EXIT DATE                 : 2018/09/21 19:16:27
+ LAST HOLD USER            : 
+ HOLD NUM                  : 0
+ HOLD TIME                 : 00:00:00 (0)
+ JOB START DATE            : 2018/09/21 19:16:19
+ JOB END DATE              : 2018/09/21 19:16:24
+ JOB DELETE DATE (REQUIRE) : -
+ JOB DELETE DATE           : -
+ NODE NUM (REQUIRE)        : -
+ VNODE NUM (ALLOC)         : 1
+ CPU NUM (REQUIRE)         : 36
+ ELAPSE TIME (LIMIT)       : 00:30:00 (1800)
+ MEMORY SIZE (LIMIT)       : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : unlimited <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ PROC CPU LIMIT            : unlimited <DEFAULT>
+ PROC COREFILE LIMIT       : 0.0 MB (0) <DEFAULT>
+ PROC CREATE PROC LIMIT    : unlimited <DEFAULT>
+ PROC DATA LIMIT           : unlimited <DEFAULT>
+ PROC LOCKED MEMORY LIMIT  : unlimited <DEFAULT>
+ PROC MESSAGE QUEUE LIMIT  : unlimited <DEFAULT>
+ PROC OPEN FILES LIMIT     : 1048576 <DEFAULT>
+ PROC PENDING SIGNAL LIMIT : unlimited <DEFAULT>
+ PROC PERMFILE LIMIT       : unlimited <DEFAULT>
+ PROC STACK LIMIT          : unlimited <DEFAULT>
+ PROC VIRTUAL MEMORY LIMIT : unlimited <DEFAULT>
+ MEMORY SIZE (ALLOC)       : unlimited
+ CPU NUM (ALLOC)           : 36
+ ELAPSE TIME (USE)         : 00:00:05 (5)
+ NODE ID (USE)             : 0x01FF00EA 
+ MAX MEMORY SIZE (USE)     : 97.6 MiB (102301696)
+ CPU NUM (USE)             : 26
+ VIRTUAL MEMORY SIZE (USE) : 6072.9 MiB (6367793152)
+ USER CPU TIME (USE)       : 1519 ms
+ SYSTEM CPU TIME (USE)     : 446 ms
+ CPU TIME (TOTAL)          : 1965 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 99.5 MB (99402340)
+ FILE I/O SIZE             : 97.8 MB (97716783)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 0
+ PRO START DATE            : 2018/09/21 19:16:19
+ PRO END DATE              : 2018/09/21 19:16:19
+ PRO EXIT CODE             : 0
+ EPI START DATE            : 2018/09/21 19:16:25
+ EPI END DATE              : 2018/09/21 19:16:25
+ EPI EXIT CODE             : 0
+ HOST NAME                 : ito-1
+ NODE ID (RANK)            : 0x01FF00EA(0) 
+ MPI STATIC PROC (REQUIRE) : 1
+ MPI PROC (REQUIRE)        : 1
+ MPI STATIC PROC (ALLOC)   : 1
+ MPI PROC (ALLOC)          : 1
+ TOTAL JOB PROC            : 109
+ MAX JOB PROC              : 7
+ ASSISTANT CORE (USE)      : -
+ ASSISTANT CORE USER CPU TIME (USE)       : -
+ ASSISTANT CORE SYSTEM CPU TIME (USE)     : -
+ ASSISTANT CORE MAX USER CPU TIME (USE)   : -
+ ASSISTANT CORE MAX SYSTEM CPU TIME (USE) : -
+ AFFECTED NODE ID          : -
+ BACKFILL                  : 0
+ NUMA POLICY               : 0
+ SPECIFIED JOB START DATE  : -
+ START BULKNO              : -
+ END BULKNO                : -
+
+--------------------------------------------------------------------------------
+VNode Information
+
+ VNODE ID                  : 0
+ NODE ID                   : 0x01FF00EA
+ MEMORY SIZE (LIMIT)       : unlimited <DEFAULT>
+ CPU TIME (LIMIT)          : unlimited <DEFAULT>
+ DISK SIZE (LIMIT)         : unlimited <DEFAULT>
+ MEMORY SIZE (ALLOC)       : unlimited
+ CPU NUM (ALLOC)           : 36
+ MAX MEMORY SIZE (USE)     : 97.6 MiB (102301696)
+ VIRTUAL MEMORY SIZE (USE) : 6072.9 MiB (6367793152)
+ CPU NUM (USE)             : 26
+ USER CPU TIME (USE)       : 1519 ms
+ SYSTEM CPU TIME (USE)     : 446 ms
+ CPU TIME (TOTAL)          : 1965 ms
+ DISK SIZE (USE)           : -
+ I/O SIZE                  : 99.5 MB (99402340)
+ FILE I/O SIZE             : 97.8 MB (97716783)
+ EXEC INST NUM             : 0
+ EXEC SIMD NUM             : 0
+ PERF COUNT 1              : -
+ PERF COUNT 2              : -
+ PERF COUNT 3              : -
+ PERF COUNT 4              : -
+ PERF COUNT 5              : -
+ PERF COUNT 6              : -
+ PERF COUNT 7              : -
+ PERF COUNT 8              : -
+ PERF COUNT 9              : -
+ MPI STATIC PROC (ALLOC)   : 1
+ MPI PROC (ALLOC)          : 1
+ TOTAL JOB PROC            : 109
+ MAX JOB PROC              : 7
+ ASSISTANT CORE (USE)      : -
+ ASSISTANT CORE USER CPU TIME (USE)       : -
+ ASSISTANT CORE SYSTEM CPU TIME (USE)     : -
+ ASSISTANT CORE MAX USER CPU TIME (USE)   : -
+ ASSISTANT CORE MAX SYSTEM CPU TIME (USE) : -
+ CPU BITMAP (ALLOC)        : 0xfffffffff
+ CPU BITMAP (USE)          : 0xd7ffc0bfe
+ RANK NO                   : 0
+

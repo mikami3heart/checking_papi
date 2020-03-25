@@ -1,0 +1,107 @@
+[fx10comp papi]$ papi_avail -e PAPI_FP_INS  >>stdout.fx10.papi_avail-a
+
+Available events and hardware information.
+--------------------------------------------------------------------------------
+Vendor string and code   : Sun (7)
+Model string and code    : Fujitsu SPARC64 IXfx (141)
+CPU Revision             : 0.000000
+CPU Megahertz            : 1650.000000
+CPU Clock Megahertz      : 1650
+CPU's in this Node       : 16
+Nodes in this System     : 1
+Total CPU's              : 16
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+The following correspond to fields in the PAPI_event_info_t structure.
+
+Event name:                   PAPI_FP_INS
+Event Code:                   0x80000034  
+Number of Native Events:      2
+Short Description:           |FP instructions|
+Long Description:            |Floating point instructions|
+Developer's Notes:           ||
+Derived Type:                |DERIVED_ADD|
+Postfix Processing String:   ||
+ Native Code[0]: 0x40000010  |FLOATING_INSTRUCTIONS|
+ Number of Register Values:   8
+ Register[ 0]:   0x0000000a  |Event Code|
+ Register[ 1]:   0x0000000a  |Event Code|
+ Register[ 2]:   0x0000000a  |Event Code|
+ Register[ 3]:   0x0000000a  |Event Code|
+ Register[ 4]:   0x0000000a  |Event Code|
+ Register[ 5]:   0x0000000a  |Event Code|
+ Register[ 6]:   0x0000000a  |Event Code|
+ Register[ 7]:   0x0000000a  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point operation instructions.|
+
+ Native Code[1]: 0x40000008  |SIMD_FLOATING_INSTRUCTIONS|
+ Number of Register Values:   1
+ Register[ 0]:   0x00000007  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point SIMD instructions of one operation in SIMD.|
+
+-------------------------------------------------------------------------
+avail.c                                  PASSED
+
+[fx10comp papi]$ papi_avail -e PAPI_FP_OPS  >>stdout.fx10.papi_avail-a
+
+
+Available events and hardware information.
+--------------------------------------------------------------------------------
+Vendor string and code   : Sun (7)
+Model string and code    : Fujitsu SPARC64 IXfx (141)
+CPU Revision             : 0.000000
+CPU Megahertz            : 1650.000000
+CPU Clock Megahertz      : 1650
+CPU's in this Node       : 16
+Nodes in this System     : 1
+Total CPU's              : 16
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+The following correspond to fields in the PAPI_event_info_t structure.
+
+Event name:                   PAPI_FP_OPS
+Event Code:                   0x80000066  
+Number of Native Events:      4
+Short Description:           |FP operations|
+Long Description:            |Floating point operations|
+Developer's Notes:           ||
+Derived Type:                |DERIVED_POSTFIX|
+Postfix Processing String:   |N0|2|N1|*|+|2|N2|*|+|4|N3|*|+||
+ Native Code[0]: 0x40000010  |FLOATING_INSTRUCTIONS|
+ Number of Register Values:   8
+ Register[ 0]:   0x0000000a  |Event Code|
+ Register[ 1]:   0x0000000a  |Event Code|
+ Register[ 2]:   0x0000000a  |Event Code|
+ Register[ 3]:   0x0000000a  |Event Code|
+ Register[ 4]:   0x0000000a  |Event Code|
+ Register[ 5]:   0x0000000a  |Event Code|
+ Register[ 6]:   0x0000000a  |Event Code|
+ Register[ 7]:   0x0000000a  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point operation instructions.|
+
+ Native Code[1]: 0x40000011  |FMA_INSTRUCTIONS|
+ Number of Register Values:   8
+ Register[ 0]:   0x0000000b  |Event Code|
+ Register[ 1]:   0x0000000b  |Event Code|
+ Register[ 2]:   0x0000000b  |Event Code|
+ Register[ 3]:   0x0000000b  |Event Code|
+ Register[ 4]:   0x0000000b  |Event Code|
+ Register[ 5]:   0x0000000b  |Event Code|
+ Register[ 6]:   0x0000000b  |Event Code|
+ Register[ 7]:   0x0000000b  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point Multiply-and-Add operation instructions.|
+
+ Native Code[2]: 0x40000008  |SIMD_FLOATING_INSTRUCTIONS|
+ Number of Register Values:   1
+ Register[ 0]:   0x00000007  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point SIMD instructions of one operation in SIMD.|
+
+ Native Code[3]: 0x40000009  |SIMD_FMA_INSTRUCTIONS|
+ Number of Register Values:   1
+ Register[ 0]:   0x00000007  |Event Code|
+ Native Event Description:   |Counts the number of committed floating-point SIMD instructions of two operation in SIMD.|
+
+-------------------------------------------------------------------------
+avail.c                                  PASSED

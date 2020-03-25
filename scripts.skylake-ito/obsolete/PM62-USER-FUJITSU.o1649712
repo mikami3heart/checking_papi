@@ -1,0 +1,44 @@
++ SRCDIR=/home/usr5/m70145b/papi/scripts
++ cp /home/usr5/m70145b/papi/scripts/check_papi_band_skylake.cpp main.cpp
++ cp /home/usr5/m70145b/papi/scripts/sub_kernel.c sub.c
++ CXXFLAGS='-Kopenmp -Xg -fvisibility=default '
++ CFLAGS='-Kopenmp -Xg -fvisibility=default '
++ FCFLAGS='-Kopenmp '
++ LDFLAGS+='--linkfortran '
++ export CC=fcc CXX=FCC F90=frt FC=frt
++ CC=fcc
++ CXX=FCC
++ F90=frt
++ FC=frt
++ export I_MPI_CC=mpifcc I_MPI_CXX=mpiFCC I_MPI_F90=mpifrt I_MPI_FC=mpifrt
++ I_MPI_CC=mpifcc
++ I_MPI_CXX=mpiFCC
++ I_MPI_F90=mpifrt
++ I_MPI_FC=mpifrt
++ set -x
++ FCC -c -Kopenmp -Xg -fvisibility=default main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include
+"main.cpp", line 1: 致命的なエラー: ソース ファイル "mpi.h" をオープンできません。
+  #include <mpi.h>
+                  ^
+
+1 致命的なエラー "main.cpp"の翻訳中に検出されました。
+Compilation terminated.
++ fcc -c -Kopenmp -Xg -fvisibility=default sub.c
+"sub.c", line 39: 警告: 認識できない#pragmaです。
+  #pragma nounroll
+          ^
+
+"sub.c", line 10: 警告: 変数  "k" は宣言されましたが参照されません。
+  int i, j, k;
+            ^
+
+"sub.c", line 11: 警告: 変数  "c1" は宣言されましたが参照されません。
+  PRECISION c1;
+            ^
+
++ FCC -Kopenmp -Xg -fvisibility=default main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu-gnu-mix/lib -lPM -lpapi_ext -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu-gnu-mix/lib -lPM -lpapi_ext /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -lstdc++ --linkfortran
+/usr/bin/ld: main.o が見つかりません: そのようなファイルやディレクトリはありません
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ ./a.out
+/home/usr5/m70145b/papi/scripts/.d0001649712: 行 60: ./a.out: そのようなファイルやディレクトリはありません

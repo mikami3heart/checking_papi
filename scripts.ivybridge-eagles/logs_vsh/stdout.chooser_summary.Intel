@@ -1,0 +1,128 @@
+Event Chooser: Available events which can be added with given events.
+--------------------------------------------------------------------------------
+PAPI Version             : 5.2.0.0
+Vendor string and code   : GenuineIntel (1)
+Model string and code    : Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz (45)
+-------------------------------------------------------------------------
+ix86arch::LLC_REFERENCES	0x40000031
+ |count each request to reference a cache line in the last level cache. excludes hardware prefetch|
+-------------------------------------------------------------------------
+ix86arch::LLC_MISSES	0x40000038
+ |count each miss for references to the last level cache. excludes hardware prefetch|
+-------------------------------------------------------------------------
+HW_PRE_REQ	0x4000041a
+ |Hardware prefetch requests|
+    0x4000041b  :L1D_MISS  |Hardware prefetch requests that misses the L1D cache.
+-------------------------------------------------------------------------
+LOAD_HIT_PRE	0x4000050a
+ |Load dispatches that hit fill buffer|
+    0x4000050b  :HW_PF  |Non sw-prefetch load dispatches that hit the fill buffer allocated for HW prefetch|
+    0x4000050c  :SW_PF  |Non sw-prefetch load dispatches that hit the fill buffer allocated for SW prefetch|
+-------------------------------------------------------------------------
+L3_LAT_CACHE	0x40000513
+ |Core-originated cacheable demand requests to L3|
+    0x40000514  :MISS  |Core-originated cacheable demand requests missed L3|
+    0x40000515  :REFERENCE  |Core-originated cacheable demand requests that refer to L3|
+-------------------------------------------------------------------------
+MEM_LOAD_UOPS_LLC_HIT_RETIRED	0x40000526
+ |Load uops retired which hit the L3 cache|
+-------------------------------------------------------------------------
+MEM_LOAD_LLC_HIT_RETIRED	0x40000531
+ |Load uops retired which hit the L3 cache|
+    0x40000532  :XSNP_HIT  |Load LLC Hit and a cross-core Snoop hits in on-pkg core cache (Precise Event)|
+    0x40000533  :XSNP_HITM  |Load had HitM Response from a core on same socket (shared LLC) (Precise Event)|
+    0x40000534  :XSNP_MISS  |Load LLC Hit and a cross-core Snoop missed in on-pkg core cache (Precise Event)|
+    0x40000535  :XSNP_NONE  |Load hit in last-level (L3) cache with no snoop needed (Precise Event)|
+-------------------------------------------------------------------------
+MEM_LOAD_UOPS_LLC_MISS_RETIRED	0x4000053c
+ |Load uops retired which miss the L3 cache|
+    0x4000053d  :LOCAL_DRAM  |Load uops that miss in the L3 and hit local DRAM|
+    0x4000053e  :REMOTE_DRAM  |Load uops that miss in the L3 and hit remote DRAM|
+-------------------------------------------------------------------------
+MEM_LOAD_UOPS_MISC_RETIRED	0x40000545
+ |Loads and some non simd split loads uops retired|
+    0x40000546  :LLC_MISS  |Counts load driven L3 misses and some non simd split loads (Precise Event)|
+-------------------------------------------------------------------------
+MEM_LOAD_MISC_RETIRED	0x4000054d
+ |Loads and some non simd split loads uops retired (deprecated use MEM_LOAD_UOPS_MISC_RETIRED)|
+    0x4000054e  :LLC_MISS  |Counts load driven L3 misses and some non simd split loads (Precise Event)|
+-------------------------------------------------------------------------
+MEM_LOAD_UOPS_RETIRED	0x40000555
+ |Memory loads uops retired|
+    0x40000556  :HIT_LFB  |A load missed L1D but hit the Fill Buffer (Precise Event)|
+    0x40000557  :L1_HIT  |Load hit in nearest-level (L1D) cache (Precise Event)|
+    0x40000558  :L2_HIT  |Load hit in mid-level (L2) cache (Precise Event)|
+    0x40000559  :L3_HIT  |Load hit in last-level (L3) cache with no snoop needed (Precise Event)|
+    0x4000055a  :L3_MISS  |Retired load uops which data sources were data missed LLC (excluding unknown data source)|
+-------------------------------------------------------------------------
+MEM_LOAD_RETIRED	0x40000561
+ |Memory loads uops retired (deprecated use MEM_LOAD_UOPS_RETIRED)|
+    0x40000562  :HIT_LFB  |A load missed L1D but hit the Fill Buffer (Precise Event)|
+    0x40000563  :L1_HIT  |Load hit in nearest-level (L1D) cache (Precise Event)|
+    0x40000564  :L2_HIT  |Load hit in mid-level (L2) cache (Precise Event)|
+    0x40000565  :L3_HIT  |Load hit in last-level (L3) cache with no snoop needed (Precise Event)|
+    0x40000566  :L3_MISS  |Retired load uops which data sources were data missed LLC (excluding unknown data source)|
+-------------------------------------------------------------------------
+MEM_UOPS_RETIRED	0x40000574
+ |Memory uops retired|
+    0x40000575  :ALL_LOADS  |Any retired loads (Precise Event)|
+    0x40000576  :ANY_LOADS  |Any retired loads (Precise Event)|
+    0x40000577  :ALL_STORES  |Any retired stores (Precise Event)|
+    0x40000578  :ANY_STORES  |Any retired stores (Precise Event)|
+    0x40000579  :LOCK_LOADS  |Locked retired loads (Precise Event)|
+    0x4000057a  :LOCK_STORES  |Locked retired stores (Precise Event)|
+    0x4000057b  :SPLIT_LOADS  |Retired loads causing cacheline splits (Precise Event)|
+    0x4000057c  :SPLIT_STORES  |Retired stores causing cacheline splits (Precise Event)|
+    0x4000057d  :STLB_MISS_LOADS  |STLB misses dues to retired loads (Precise Event)|
+    0x4000057e  :STLB_MISS_STORES  |STLB misses dues to retired stores (Precise Event)|
+-------------------------------------------------------------------------
+OFFCORE_REQUESTS	0x4000059d
+ |Offcore requests|
+    0x4000059e  :ALL_DATA_RD  |Demand and prefetch read requests sent to uncore|
+    0x4000059f  :ALL_DATA_READ  |Demand and prefetch read requests sent to uncore|
+    0x400005a0  :DEMAND_CODE_RD  |Offcore code read requests, including cacheable and un-cacheables|
+    0x4000000c  :DEMAND_DATA_RD  |Demand Data Read requests sent to uncore|
+    0x400005a1  :DEMAND_RFO  |Offcore Demand RFOs, includes regular RFO, Locks, ItoM|
+-------------------------------------------------------------------------
+OFFCORE_RESPONSE_0	0x40000656
+OFFCORE_RESPONSE_1	0x40000681
+ |Offcore response event (must provide at least one request type and either any_response or any combination of supplier + snoop)|
+    0x40000682  :DMND_DATA_RD  |Request: number of demand and DCU prefetch data reads 
+    0x40000683  :DMND_RFO  |Request: number of demand and DCU prefetch reads for ownership (RFO) requests 
+    0x40000684  :DMND_IFETCH  |Request: number of demand and DCU prefetch instruction cacheline reads. 
+    0x40000685  :WB  |Request: number of writebacks (modified to exclusive) transactions|
+    0x40000686  :PF_DATA_RD  |Request: number of data cacheline reads generated by L2 prefetchers|
+    0x40000687  :PF_RFO  |Request: number of RFO requests generated by L2 prefetchers|
+    0x40000688  :PF_IFETCH  |Request: number of code reads generated by L2 prefetchers|
+    0x40000689  :PF_LLC_DATA_RD  |Request: number of L3 prefetcher requests to L2 for loads|
+    0x4000068a  :PF_LLC_RFO  |Request: number of RFO requests generated by L2 prefetcher|
+    0x4000068b  :PF_LLC_IFETCH  |Request: number of L2 prefetcher requests to L3 for instruction fetches|
+    0x4000068c  :BUS_LOCKS  |Request: number bus lock and split lock requests|
+    0x4000068d  :STRM_ST  |Request: number of streaming store requests|
+    0x4000068e  :OTHER  |Request: counts L3 invalidate, I/O, full or partial writes, WC or non-temporal stores, CLFLUSH, Fences,
+    0x4000068f  :ANY_IFETCH  |Request: combination of PF_IFETCH | DMND_IFETCH | PF_LLC_IFETCH|
+    0x40000690  :ANY_REQUEST  |Request: combination of all request umasks|
+    0x40000691  :ANY_DATA  |Request: combination of DMND_DATA | PF_DATA_RD | PF_LLC_DATA_RD|
+    0x40000692  :ANY_RFO  |Request: combination of DMND_RFO | PF_RFO | PF_LLC_RFO|
+    0x40000693  :ANY_RESPONSE  |Response: count any response type|
+    0x40000694  :NO_SUPP  |Supplier: counts number of times supplier information is not available|
+    0x40000695  :LLC_HITM  |Supplier: counts L3 hits in M-state (initial lookup)|
+    0x40000696  :LLC_HITE  |Supplier: counts L3 hits in E-state|
+    0x40000697  :LLC_HITS  |Supplier: counts L3 hits in S-state|
+    0x40000698  :LLC_HITF  |Supplier: counts L3 hits in F-state|
+    0x40000699  :LLC_MISS_LOCAL  |Supplier: counts L3 misses to local DRAM|
+    0x4000069a  :LLC_MISS_LOCAL_DRAM  |Supplier: counts L3 misses to local DRAM|
+    0x4000069b  :LLC_MISS_REMOTE  |Supplier: counts L3 misses to remote DRAM|
+    0x4000069c  :LLC_MISS_REMOTE_DRAM  |Supplier: counts L3 misses to remote DRAM|
+    0x4000069d  :LLC_HITMESF  |Supplier: counts L3 hits in any state (M, E, S, F)|
+    0x4000069e  :SNP_NONE  |Snoop: counts number of times no snoop-related information is available|
+    0x4000069f  :SNP_NOT_NEEDED  |Snoop: counts the number of times no snoop was needed to satisfy the request|
+    0x400006a0  :SNP_MISS  |Snoop: counts number of times a snoop was needed and it missed all snooped caches|
+    0x400006a1  :SNP_NO_FWD  |Snoop: counts number of times a snoop was needed and it hit in at leas one snooped cache|
+    0x400006a2  :SNP_FWD  |Snoop: counts number of times a snoop was needed and data was forwarded from a remote socket|
+    0x400006a3  :HITM  |Snoop: counts number of times a snoop was needed and it hitM-ed in local or remote cache|
+    0x400006a4  :NON_DRAM  |Snoop:  counts number of times target was a non-DRAM system address. This includes MMIO transactions|
+    0x400006a5  :SNP_ANY  |Snoop: any snoop reason|
+-------------------------------------------------------------------------
+Total events reported: 142
+event_chooser.c                     PASSED

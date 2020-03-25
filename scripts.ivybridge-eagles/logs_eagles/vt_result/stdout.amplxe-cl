@@ -1,0 +1,10 @@
+
+Function Stack             Module                CPU Time:Total  CPU Time:Self
+-------------------------  --------------------  --------------  -------------
+Total                      [Unknown]             100%            0
+ __libc_start_main         libc-2.12.so          100%            0
+  main                     papi_component_avail  100%            0
+   test_pass               papi_component_avail  100%            0
+    PAPI_shutdown          papi_component_avail  100%            0
+     MPX_shutdown          papi_component_avail  100%            0
+      mpx_shutdown_itimer  papi_component_avail  100%            0.010

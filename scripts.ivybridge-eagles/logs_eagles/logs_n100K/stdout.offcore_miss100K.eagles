@@ -1,0 +1,318 @@
+2018年  3月  8日 木曜日 20:07:27 JST
+eagles
+/home/kazunori.mikami/tmp/check_papi
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3739.350     0.000323     0.000321     0.000334
+step 0 finished in 0.004227 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  7613388
+#1, 80000036                              PAPI_SR_INS  2304277
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  28
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  0
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3750.495     0.000322     0.000320     0.000324
+step 0 finished in 0.004198 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  7613331
+#1, 80000036                              PAPI_SR_INS  2304273
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  49
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  5
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3243.019     0.000374     0.000370     0.000389
+step 0 finished in 0.004852 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  7613690
+#1, 80000036                              PAPI_SR_INS  2304273
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  28
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  7
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         15582.554     0.000078     0.000077     0.000083
+step 0 finished in 0.001658 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2011859
+#1, 80000036                              PAPI_SR_INS  1203871
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  82
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  13
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         17911.619     0.000068     0.000067     0.000071
+step 0 finished in 0.001457 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2011504
+#1, 80000036                              PAPI_SR_INS  1203865
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  21
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  0
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         17911.619     0.000068     0.000067     0.000075
+step 0 finished in 0.001461 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2011613
+#1, 80000036                              PAPI_SR_INS  1203864
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  21
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  0
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         24552.023     0.000050     0.000049     0.000054
+step 0 finished in 0.001289 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  511914
+#1, 80000036                              PAPI_SR_INS  303886
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  13
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  0
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         24552.023     0.000050     0.000049     0.000050
+step 0 finished in 0.001294 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  512106
+#1, 80000036                              PAPI_SR_INS  303887
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  22
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  2
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         27962.027     0.000043     0.000043     0.000044
+step 0 finished in 0.001135 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  512135
+#1, 80000036                              PAPI_SR_INS  303888
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  24
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  11
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         27962.027     0.000045     0.000043     0.000058
+step 0 finished in 0.001132 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  512390
+#1, 80000036                              PAPI_SR_INS  303890
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  24
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  5
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         28597.527     0.000043     0.000042     0.000044
+step 0 finished in 0.001128 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  511763
+#1, 80000036                              PAPI_SR_INS  303890
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  27
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  4
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         28597.527     0.000044     0.000042     0.000047
+step 0 finished in 0.001122 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  512366
+#1, 80000036                              PAPI_SR_INS  303892
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  32
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  9
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         27354.157     0.000044     0.000044     0.000045
+step 0 finished in 0.001168 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  262897
+#1, 80000036                              PAPI_SR_INS  153889
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  39
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  1
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         23519.462     0.000052     0.000051     0.000055
+step 0 finished in 0.001337 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  262616
+#1, 80000036                              PAPI_SR_INS  153893
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  28
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  9
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS: events:40000024
+Array Copy size = 100000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         27354.157     0.000044     0.000044     0.000047
+step 0 finished in 0.001181 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  262722
+#1, 80000036                              PAPI_SR_INS  153890
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  27
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  5

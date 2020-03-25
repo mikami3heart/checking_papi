@@ -1,0 +1,102 @@
+FUJITSU CONFIDENTIAL
+Fujitsu C/C++ Version 4.0.0   Wed Jan  8 16:37:52 2020
+Compilation information
+  Current directory : /home/users/ta05/ta0003/tmp/check_papi
+  Source file       : sub.c
+(line-no.)(optimize)
+        1             #include <stdio.h>
+        2             #include <math.h>
+        3             #define MATSIZE 1000
+        4             
+        5             //	typedef float PRECISION;
+        6             typedef double PRECISION;
+        7             
+        8             struct {
+        9             	int nsize;
+       10             	PRECISION a2[MATSIZE][MATSIZE];
+       11             	PRECISION b2[MATSIZE][MATSIZE];
+       12             	PRECISION c2[MATSIZE][MATSIZE];
+       13             } matrix;
+       14             
+       15             
+       16             void subkernel()
+       17             {
+       18             int i, j, k;
+       19             PRECISION c1;
+       20             int nsize = MATSIZE;
+       21             
+       22             	matrix.nsize = nsize;
+       23             
+       24             	for (i=0; i<nsize; i++){
+                       <<< Loop-information Start >>>
+                       <<<  [OPTIMIZATION]
+                       <<<    SIMD(VL: 8)
+                       <<<    PREFETCH(HARD) Expected by compiler :
+                       <<<      matrix
+                       <<< Loop-information  End >>>
+       25          v  	for (j=0; j<nsize; j++){
+       26             	//	matrix.a2[i][j] = sin((PRECISION)j/(PRECISION)nsize);
+       27             	//	matrix.b2[i][j] = cos((PRECISION)j/(PRECISION)nsize);
+       28          v  	matrix.a2[i][j] = (PRECISION)j;
+       29          v  	matrix.b2[i][j] = (PRECISION)i;
+       30          v  	matrix.c2[i][j] = 0.0;
+       31          v  	}
+       32             	}
+       33             
+       34             	//	c1 + matrix.c2[10][10];
+                       <<< Loop-information Start >>>
+                       <<<  [OPTIMIZATION]
+                       <<<    INTERCHANGED(nest: 2)
+                       <<< Loop-information  End >>>
+       35             	for (i=0; i<nsize; i++){
+       36             #ifdef _OPENMP
+       37             #pragma omp parallel for
+       38             #endif
+                       <<< Loop-information Start >>>
+                       <<<  [OPTIMIZATION]
+                       <<<    INTERCHANGED(nest: 1)
+                       <<< Loop-information  End >>>
+       39             	for (j=0; j<nsize; j++){
+                       <<< Loop-information Start >>>
+                       <<<  [OPTIMIZATION]
+                       <<<    SIMD(VL: 8)
+                       <<<    PREFETCH(HARD) Expected by compiler :
+                       <<<      matrix
+                       <<< Loop-information  End >>>
+       40          v  	for (k=0; k<nsize; k++){
+       41          v  	matrix.c2[j][k] = matrix.c2[j][k] + matrix.a2[i][k] *matrix.b2[j][k];
+       42          v  	}
+       43             	}
+       44             	}
+       45             }
+       46             
+Total prefetch num: 0
+Statistics information
+  Option information
+    Command line options : -Kident_mpi -c -Kfast -Knounroll,noswp,noopenmp -w -S -Nlst=t -I/opt/FJSVxtclanga/.common/MECA008/include/mpi/fujitsu -pthread
+    Effective options    : -g0 -Qy -w -std=gnu11 -x- -O3 -Knoalias_const -Kalign_loops
+                           -Kassume=noshortloop -Kassume=nomemory_bandwidth
+                           -Kassume=notime_saving_compilation -Kcmodel=small -Kconst -Keval
+                           -Keval_noconcurrent -Kfast_matmul -Knofconst -Knofenv_access
+                           -Kfp_contract -Kfp_relaxed -Kfsimple -Kfz -Khpctag -Kilfunc=loop
+                           -Klargepage -Klib -Kloop_blocking -Kloop_fission
+                           -Kloop_nofission_stripmining -Kloop_fission_threshold=50
+                           -Kloop_fusion -Kloop_interchange -Kloop_part_simd
+                           -Kloop_noversioning -Klooptype=f -Knolto -Knomemalias -Kmfunc=1
+                           -Knoocl -Komitfp -Knoopenmp -Knoopenmp_simd -Knooptlib_string
+                           -Knooptmsg -Knopc_relative_literal_loads -Knoparallel -Knopreex
+                           -Kprefetch_cache_level=all -Kprefetch_noconditional
+                           -Kprefetch_noindirect -Kprefetch_noinfer
+                           -Kprefetch_sequential=auto -Kprefetch_nostride -Kprefetch_strong
+                           -Kprefetch_strong_L2 -Krdconv -Krestp=restrict -Ksch_post_ra
+                           -Ksch_pre_ra -Ksibling_calls -Ksimd=auto -Ksimd_packed_promotion
+                           -Ksimd_reduction_product -Ksimd_reg_size=512 -Knostrict_aliasing
+                           -Knostriping -KA64FX -KARMV8_3_A -KSVE -Knoswp
+                           -Kswp_freg_rate=100 -Kswp_ireg_rate=100 -Kswp_preg_rate=100
+                           -Knounroll -Knounroll_and_jam -Knozfill
+                           -Ncancel_overtime_compilation -Nnocoverage -Nnoexceptions
+                           -Nnofjcex -Nnohook_func -Nnohook_time -Nline -Nnolinkprof -Nlst=p
+                           -Nlst=t -Nquickdbg=noheapchk -Nquickdbg=nosubchk -NRnotrap
+                           -Nnoreordered_variable_stack -Nrt_notune -Nsetvalue=noheap
+                           -Nsetvalue=nostack -Nsetvalue=noscalar -Nsetvalue=noarray
+                           -Nsetvalue=nostruct -Nsrc -Nsta

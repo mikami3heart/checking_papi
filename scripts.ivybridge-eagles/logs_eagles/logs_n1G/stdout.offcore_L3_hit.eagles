@@ -1,0 +1,318 @@
+2018年  3月  8日 木曜日 16:32:35 JST
+eagles
+/home/kazunori.mikami/tmp/check_papi
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3616.387     3.318381     3.318229     3.318656
+step 0 finished in 40.787483 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  76032039025
+#1, 80000036                              PAPI_SR_INS  23000004251
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  15943196
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  19882763
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3616.767     3.318067     3.317880     3.318246
+step 0 finished in 40.821877 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  76032306286
+#1, 80000036                              PAPI_SR_INS  23000004252
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  16003160
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  23484396
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O0 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3615.587     3.319095     3.318963     3.319165
+step 0 finished in 40.888338 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  76032599003
+#1, 80000036                              PAPI_SR_INS  23000004248
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  15962153
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  23847628
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         13418.631     0.895372     0.894279     0.895714
+step 0 finished in 14.603956 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  20031777960
+#1, 80000036                              PAPI_SR_INS  12000003798
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  752567655
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  382097889
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         13423.538     0.894767     0.893952     0.894979
+step 0 finished in 14.571280 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  20030406954
+#1, 80000036                              PAPI_SR_INS  12000003804
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  752440138
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  380750451
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O1 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         13422.893     0.895134     0.893995     0.895775
+step 0 finished in 14.578172 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  20030768560
+#1, 80000036                              PAPI_SR_INS  12000003803
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  752936136
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  381833113
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9419.368     1.274092     1.273971     1.274212
+step 0 finished in 19.372383 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025501223
+#1, 80000036                              PAPI_SR_INS  3000003812
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672823416
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  17550
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9419.176     1.274128     1.273997     1.274239
+step 0 finished in 19.392168 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025595314
+#1, 80000036                              PAPI_SR_INS  3000003812
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672806746
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  18013
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -O2 -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9419.352     1.274118     1.273973     1.274294
+step 0 finished in 19.326680 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025109627
+#1, 80000036                              PAPI_SR_INS  3000003812
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672810948
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  15500
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9420.655     1.273907     1.273797     1.274030
+step 0 finished in 19.340870 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025868870
+#1, 80000036                              PAPI_SR_INS  3000003809
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672788258
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  16713
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9421.579     1.273820     1.273672     1.273946
+step 0 finished in 19.327475 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025380689
+#1, 80000036                              PAPI_SR_INS  3000003813
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672925356
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  16692
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -Ofast -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9419.833     1.274011     1.273908     1.274091
+step 0 finished in 19.361589 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5025070542
+#1, 80000036                              PAPI_SR_INS  3000003810
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  672768958
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  16512
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=always
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9156.839     1.310716     1.310496     1.310866
+step 0 finished in 19.847594 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2534933091
+#1, 80000036                              PAPI_SR_INS  1500944097
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  652571017
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  14010
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=never
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9215.705     1.305363     1.302125     1.305985
+step 0 finished in 19.800016 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2531887877
+#1, 80000036                              PAPI_SR_INS  1500944887
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  650177209
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  13384
+
+newrun:
+OPTFLAGS=-unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium -xHost -qopt-streaming-store=auto
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF: events:40000023
+ i= 3: OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF: events:40000024
+Array Copy size = 1000000000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          9191.402     1.305658     1.305568     1.305755
+step 0 finished in 19.838825 seconds
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  2532985226
+#1, 80000036                              PAPI_SR_INS  1500945045
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  650164282
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  10289

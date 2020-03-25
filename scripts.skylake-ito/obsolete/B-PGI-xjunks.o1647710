@@ -1,0 +1,32 @@
+Currently Loaded Modulefiles:
+  1) pgi/17.7           2) pgi/17.7_openmpi
++ hostname
+scb0067
++ date
+2018年  9月 24日 月曜日 12:53:31 JST
++ cd /home/usr5/m70145b/prog_c
++ rm a.out
++ pgcc -v macro.c
+Export PGI=/usr/local/pgi
+
+/usr/local/pgi/linux86-64/17.7/bin/pgc macro.c -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp knightslanding -x 120 0x1000 -astype 0 -stdinc /usr/local/pgi/linux86-64/17.7/include-gcc48:/usr/local/pgi/linux86-64/17.7/include:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include:/usr/local/include:/usr/include:/usr/local/pgi/linux86-64/2017/mpi/openmpi-1.10.2/include -def unix -def __unix -def __unix__ -def linux -def __linux -def __linux__ -def __NO_MATH_INLINES -def __LP64__ -def __x86_64 -def __x86_64__ -def __LONG_MAX__=9223372036854775807L -def '__SIZE_TYPE__=unsigned long int' -def '__PTRDIFF_TYPE__=long int' -def __THROW= -def __extension__= -def __amd_64__amd64__ -def __k8 -def __k8__ -def __SSE__ -def __MMX__ -def __SSE2__ -def __SSE3__ -def __SSSE3__ -def __STDC_HOSTED__ -predicate '#machine(x86_64) #lint(off) #system(posix) #cpu(x86_64)' -cmdline '+pgcc macro.c -v' -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 119 0x20 -def __pgnu_vsn=40805 -x 120 0x200000 -x 70 0x40000000 -x 164 0x800000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -asm /tmp/pgccNAkD1jHy7H3L.s
+pgcc: LICENSE MANAGER PROBLEM: Cannot find license file.
+ The license files (or license server system network addresses) attempted are 
+listed below.  Use LM_LICENSE_FILE to use a different license file,
+ or contact your software provider for a license file.
+Feature:       pgcc
+Filename:      /usr/local/pgi/license.dat
+License path:  /usr/local/pgi/license.dat:
+FlexNet Licensing error:-1,73.  System Error: 2 "No such file or directory"
+For further information, refer to the FlexNet Licensing documentation,
+available at "www.flexerasoftware.com".
+pgcc-Fatal-ccompile completed with exit code 1
+
+Unlinking /tmp/pgccNAkD1jHy7H3L.s
+Unlinking /tmp/pgccFAkDDykmP1RO.ll
++ ./a.out
+/home/usr5/m70145b/papi/scripts/.d0001647710: 行 20: ./a.out: そのようなファイルやディレクトリはありません
++ '[' 127 '!=' 0 ']'
++ echo '@@@ Directory error @@@'
+@@@ Directory error @@@
++ exit

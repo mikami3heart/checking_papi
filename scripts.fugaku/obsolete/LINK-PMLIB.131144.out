@@ -1,0 +1,84 @@
+Currently Loaded Modulefiles:
+ 1) lang/tcsds-1.2.24(default)  
+Sat Mar 21 23:46:26 JST 2020
+a27-3006c
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O0  -Knoopenmp -w '
+++ mpifcc -c -O0 -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> npes=1 max_threads=1
+*** Error for event [0]
+*** Error for event [1]
+step 16384 finished in 24.744135 seconds
+The counted events are:
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+#0, 8000006a                              PAPI_VEC_DP  0
+#1, 80000069                              PAPI_VEC_SP  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O1 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O1 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> npes=1 max_threads=1
+*** Error for event [0]
+*** Error for event [1]
+step 16384 finished in 3.440706 seconds
+The counted events are:
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+#0, 8000006a                              PAPI_VEC_DP  0
+#1, 80000069                              PAPI_VEC_SP  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O2 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O2 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> npes=1 max_threads=1
+*** Error for event [0]
+*** Error for event [1]
+step 16384 finished in 0.233730 seconds
+The counted events are:
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+#0, 8000006a                              PAPI_VEC_DP  0
+#1, 80000069                              PAPI_VEC_SP  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast,nounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -Kfast,nounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> npes=1 max_threads=1
+*** Error for event [0]
+*** Error for event [1]
+step 16384 finished in 0.153690 seconds
+The counted events are:
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+#0, 8000006a                              PAPI_VEC_DP  0
+#1, 80000069                              PAPI_VEC_SP  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast  -Knoopenmp -w '
+++ mpifcc -c -Kfast -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/fugaku/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=1
+*** error. <my_papi_bind_start> :: <PAPI_start>
+<main> npes=1 max_threads=1
+*** Error for event [0]
+*** Error for event [1]
+step 16384 finished in 0.130592 seconds
+The counted events are:
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+#0, 8000006a                              PAPI_VEC_DP  0
+#1, 80000069                              PAPI_VEC_SP  0

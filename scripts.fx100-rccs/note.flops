@@ -1,0 +1,29 @@
+
+
+# eagles - Ivybridge node
+
++ icpc -c -Ofast -no-ipo -qopenmp -xavx -opt-report=3 main.cpp -I/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/include
++ icc -c -Ofast -no-ipo -std=c99 -qopenmp -xavx -opt-report=3 sub.c
++ icpc -Ofast -no-ipo -qopenmp -xavx -opt-report=3 main.o sub.o /home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpapi.a /home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpfm.a -L/home/kazunori.mikami/pmlib/usr_local_pmlib/intel/lib -lPMmpi -lpapi_ext -lmpi
++ export OMP_NUM_THREADS=1
++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-4620 v2 @ 2.60GHz
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: PAPI_DP_OPS: events:80000068
+ i= 2: PAPI_SP_OPS: events:80000067
+ i= 3: FP_COMP_OPS_EXE:SSE_SCALAR_DOUBLE: events:40000016
+ i= 4: FP_COMP_OPS_EXE:SSE_FP_PACKED_DOUBLE: events:4000001b
+ i= 5: SIMD_FP_256:PACKED_DOUBLE: events:4000001c
+step 0 finished in 0.387563 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  9407005
+#1, 80000068                              PAPI_DP_OPS  2883545622
+#2, 80000067                              PAPI_SP_OPS  0
+#3, 40000016        FP_COMP_OPS_EXE:SSE_SCALAR_DOUBLE  9406870
+#4, 4000001b     FP_COMP_OPS_EXE:SSE_FP_PACKED_DOUBLE  4451452
+#5, 4000001c                SIMD_FP_256:PACKED_DOUBLE  716308962
+

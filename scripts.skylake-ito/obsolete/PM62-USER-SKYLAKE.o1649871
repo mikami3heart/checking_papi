@@ -1,0 +1,71 @@
++ mpiicpc -c -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/include
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ mpiicc -c -Ofast -xHost -no-ipo -qopenmp sub.c
++ mpiicpc -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-6.2/lib -lPM -lpapi_ext
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ NPROCS=2
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 2 ./a.out
+<main> npes=1 max_threads=4
+<main> npes=1 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 6: L2_TRANS:L2_WB: events:40000031
+ i= 6: L2_TRANS:L2_WB: events:40000031
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+	 Check print before finishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  128668762
+#1, 80000036                              PAPI_SR_INS  2209583
+#2, 4000002f            MEM_LOAD_UOPS_RETIRED:HIT_LFB  49167697
+#3, 40000030             MEM_LOAD_UOPS_RETIRED:L1_HIT  72583769
+#4, 80000006                              PAPI_L1_TCM  31746735
+#5, 80000007                              PAPI_L2_TCM  49732552
+#6, 40000031                           L2_TRANS:L2_WB  170311
+Process 0 finishing up
+	 Check print before finishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  130495696
+#1, 80000036                              PAPI_SR_INS  2412364
+#2, 4000002f            MEM_LOAD_UOPS_RETIRED:HIT_LFB  43959965
+#3, 40000030             MEM_LOAD_UOPS_RETIRED:L1_HIT  78023372
+#4, 80000006                              PAPI_L1_TCM  31756204
+#5, 80000007                              PAPI_L2_TCM  34842593
+#6, 40000031                           L2_TRANS:L2_WB  176458
+Process 0 finishing up

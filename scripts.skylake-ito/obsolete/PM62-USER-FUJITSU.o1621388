@@ -1,0 +1,131 @@
++ mpiFCC -c -Kfast main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include/papi.h", line 25: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility push(default)
+          ^
+
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include/papi.h", line 1138: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility pop
+          ^
+
+"main.cpp", line 185: 警告: 値が設定される前に 変数  "t1" は使用されています。
+  	if(my_id == 0) { fprintf(stderr,"step %d finished in %f seconds\n", i,(t2-t1));}
+  	                                                                          ^
+
+"main.cpp", line 185: 警告: 値が設定される前に 変数  "i" は使用されています。
+  	if(my_id == 0) { fprintf(stderr,"step %d finished in %f seconds\n", i,(t2-t1));}
+  	                                                                    ^
+
+"main.cpp", line 30: 警告: 変数  "tt" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	       ^
+
+"main.cpp", line 30: 警告: 変数  "t3" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                   ^
+
+"main.cpp", line 30: 警告: 変数  "t4" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                       ^
+
+"main.cpp", line 31: 警告: 変数  "j" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	       ^
+
+"main.cpp", line 31: 警告: 変数  "loop" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	          ^
+
++ mpifcc -c -Kfast sub.c
+"sub.c", line 42: 警告: 認識できない#pragmaです。
+  #pragma nounroll
+          ^
+
++ mpiFCC -Kfast main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpfm.a -lstdc++ --linkfortran
++ NPROCS=2
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 2 ./a.out
+<main> npes=2 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 6: L2_TRANS:L2_WB: events:40000031
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 6: L2_TRANS:L2_WB: events:40000031
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+	 Check print before sinishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+	 Check print before sinishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+step 0 finished in 1537524535.598370 seconds
+#0, 80000035                              PAPI_LD_INS  530072895
+#1, 80000036                              PAPI_SR_INS  10417527
+#2, 4000002f            MEM_LOAD_UOPS_RETIRED:HIT_LFB  142298184
+#3, 40000030             MEM_LOAD_UOPS_RETIRED:L1_HIT  277599807
+#4, 80000006                              PAPI_L1_TCM  125917190
+#5, 80000007                              PAPI_L2_TCM  133283232
+#6, 40000031                           L2_TRANS:L2_WB  125174336
+#0, 80000035                              PAPI_LD_INS  530073054
+#1, 80000036                              PAPI_SR_INS  10417527
+#2, 4000002f            MEM_LOAD_UOPS_RETIRED:HIT_LFB  143048976
+#3, 40000030             MEM_LOAD_UOPS_RETIRED:L1_HIT  277939991
+#4, 80000006                              PAPI_L1_TCM  125918696
+#5, 80000007                              PAPI_L2_TCM  139971115
+#6, 40000031                           L2_TRANS:L2_WB  125416314
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+jwe0019i-u The program was terminated abnormally with signal number SIGSEGV.
+           signal identifier = SEGV_MAPERR, address not mapped to object
+jwe0019i-u The program was terminated abnormally with signal number SIGSEGV.
+           signal identifier = SEGV_MAPERR, address not mapped to object
+ error occurs at opal_memory_ptmalloc2_int_free  loc 00002b269389eeb6 offset 00000000000001e6 
+ opal_memory_ptmalloc2_int_free      at loc 00002b269389ecd0 called from loc 00002b269389d856 in opal_memory_ptmalloc2_free           
+ opal_memory_ptmalloc2_free          at loc 00002b269389d7a0 called from loc 00002b269389c989 in opal_memory_linux_free_hook          
+ opal_memory_linux_free_hook         at loc 00002b269389c980 called from loc 000000000040bbb6 in _ZNSsD1Ev                            
+ _ZNSsD1Ev                           at loc 000000000040bb79 called from loc 00002b2696cbfeda in __cxa_finalize                       
+ __cxa_finalize                      at loc 00002b2696cbfe40 called from loc 00002b2696195e16 in               
+              at loc 00002b2696cbfe40 called from o.s.  
+error summary (Fortran)
+error number  error level  error count
+  jwe0019i         u           1      
+total error count = 1
+ error occurs at opal_memory_ptmalloc2_int_free  loc 00002ac0c1f56eb6 offset 00000000000001e6 
+ opal_memory_ptmalloc2_int_free      at loc 00002ac0c1f56cd0 called from loc 00002ac0c1f55856 in opal_memory_ptmalloc2_free           
+ opal_memory_ptmalloc2_free          at loc 00002ac0c1f557a0 called from loc 00002ac0c1f54989 in opal_memory_linux_free_hook          
+ opal_memory_linux_free_hook         at loc 00002ac0c1f54980 called from loc 000000000040bbb6 in _ZNSsD1Ev                            
+ _ZNSsD1Ev                           at loc 000000000040bb79 called from loc 00002ac0c5377eda in __cxa_finalize                       
+ __cxa_finalize                      at loc 00002ac0c5377e40 called from loc 00002ac0c484de16 in               
+              at loc 00002ac0c5377e40 called from o.s.  
+error summary (Fortran)
+error number  error level  error count
+  jwe0019i         u           1      
+total error count = 1

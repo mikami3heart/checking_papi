@@ -1,0 +1,49 @@
++ mpiFCC -c -Kfast main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include/papi.h", line 25: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility push(default)
+          ^
+
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/include/papi.h", line 1138: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility pop
+          ^
+
+"main.cpp", line 185: 警告: 値が設定される前に 変数  "t1" は使用されています。
+  	if(my_id == 0) { fprintf(stderr,"step %d finished in %f seconds\n", i,(t2-t1));}
+  	                                                                          ^
+
+"main.cpp", line 185: 警告: 値が設定される前に 変数  "i" は使用されています。
+  	if(my_id == 0) { fprintf(stderr,"step %d finished in %f seconds\n", i,(t2-t1));}
+  	                                                                    ^
+
+"main.cpp", line 30: 警告: 変数  "tt" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	       ^
+
+"main.cpp", line 30: 警告: 変数  "t3" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                   ^
+
+"main.cpp", line 30: 警告: 変数  "t4" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                       ^
+
+"main.cpp", line 31: 警告: 変数  "j" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	       ^
+
+"main.cpp", line 31: 警告: 変数  "loop" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	          ^
+
++ mpifcc -c -Kfast sub.c
+"sub.c", line 42: 警告: 認識できない#pragmaです。
+  #pragma nounroll
+          ^
+
++ mpiFCC -Kfast main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu/lib -lPM -lpapi_ext /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-fujitsu/lib/libpfm.a -lstdc++ --linkfortran
++ NPROCS=2
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 2 ./a.out
+[ERR.] PLE 0070 plexec The number of processes "n" must be smaller than or equal to the number of virtual nodes "m":
+       "pjsub -L vnode=m", "pjsub --mpi proc=n".

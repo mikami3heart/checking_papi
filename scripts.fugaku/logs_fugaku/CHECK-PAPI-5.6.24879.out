@@ -1,0 +1,89 @@
+--------------------------- /work/system/modulefiles ---------------------------
+lang/fjcompiler20191226_01               Python2-CN/2.7.15(default)  
+lang/fjcompiler20191226_01_old           Python3-CN/3.6.8(default)   
+lang/fjcompiler20200214_01(default)      Ruby-CN/2.6.5(default)      
+OpenJDK-CN/jdk11u-be745617e8c4(default)  
+-------------------------------------------------------------------
+/work/system/modulefiles/lang/fjcompiler20200214_01:
+
+module-whatis	Fujitsu Compiler prototype (Fortran/C/C++/Tool)
+conflict	lang
+setenv		XOS_MMM_L_HPAGE_TYPE	none
+prepend-path	PATH /opt/FJSVxtclanga/tcsds-1.2.21/bin
+prepend-path	LD_LIBRARY_PATH /opt/FJSVxtclanga/tcsds-1.2.21/lib64
+prepend-path	TMPDIR /home/g9200002/u92028
+-------------------------------------------------------------------
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
++ hostname
+a30-4214c
++ uname -a
+Linux a30-4214c 4.18.0-147.3.1.el8_1.aarch64 #1 SMP Wed Nov 27 01:58:10 UTC 2019 aarch64 aarch64 aarch64 GNU/Linux
++ xospastop
++ export LANG=C
++ LANG=C
++ PAPI_DIR=/usr
++ ls -l /usr/bin/papi_avail /usr/bin/papi_clockres /usr/bin/papi_command_line /usr/bin/papi_component_avail /usr/bin/papi_cost /usr/bin/papi_decode /usr/bin/papi_error_codes /usr/bin/papi_event_chooser /usr/bin/papi_mem_info /usr/bin/papi_multiplex_cost /usr/bin/papi_native_avail /usr/bin/papi_version /usr/bin/papi_xml_event_info
+-rwxr-xr-x 1 root root 70800 Jul 23  2019 /usr/bin/papi_avail
+-rwxr-xr-x 1 root root 70768 Jul 23  2019 /usr/bin/papi_clockres
+-rwxr-xr-x 1 root root 71096 Jul 23  2019 /usr/bin/papi_command_line
+-rwxr-xr-x 1 root root 70760 Jul 23  2019 /usr/bin/papi_component_avail
+-rwxr-xr-x 1 root root 70904 Jul 23  2019 /usr/bin/papi_cost
+-rwxr-xr-x 1 root root 70352 Jul 23  2019 /usr/bin/papi_decode
+-rwxr-xr-x 1 root root 70336 Jul 23  2019 /usr/bin/papi_error_codes
+-rwxr-xr-x 1 root root 70816 Jul 23  2019 /usr/bin/papi_event_chooser
+-rwxr-xr-x 1 root root 70336 Jul 23  2019 /usr/bin/papi_mem_info
+-rwxr-xr-x 1 root root 70832 Jul 23  2019 /usr/bin/papi_multiplex_cost
+-rwxr-xr-x 1 root root 70808 Jul 23  2019 /usr/bin/papi_native_avail
+-rwxr-xr-x 1 root root 70328 Jul 23  2019 /usr/bin/papi_version
+-rwxr-xr-x 1 root root 70488 Jul 23  2019 /usr/bin/papi_xml_event_info
++ which papi_avail
+/usr/bin/papi_avail
++ locate papi_avail
+locate: can not stat () `/var/lib/mlocate/mlocate.db': No such file or directory
++ which libpapi.so
+which: no libpapi.so in (/opt/FJSVxtclanga/tcsds-1.2.21/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/g9200002/u92028/bin:/home/g9200002/u92028/.local/bin:/home/g9200002/u92028/bin)
++ locate libpapi.so
+locate: can not stat () `/var/lib/mlocate/mlocate.db': No such file or directory
++ cd /opt
++ find . -name '*libpapi.*'
++ cd /usr
++ find . -name '*libpapi.*'
+./lib64/libpapi.so.5
+./lib64/libpapi.so.5.6.0
+./lib64/libpapi.so.5.6.0.0
+./lib64/libpapi.so
++ cd /
++ ls -l
+total 204
+dr-xr-xr-x   2 root root 40960 Feb 14 12:34 bin
+dr-xr-xr-x   8 root root  4096 Feb  6 16:20 boot
+drwxr-xr-x   2 root root  4096 Feb 19 13:03 data
+drwxr-xr-x  14 root root  2960 Feb 20 13:49 dev
+drwxr-xr-x 118 root root  8192 Feb 17 18:47 etc
+drwxr-xr-x   7 root root    66 Feb 13 16:23 fj
+drwxr-xr-x  38 root root  4096 Feb 19 11:56 home
+drwxr-xr-x   2 root root     6 Feb 10 15:02 home_old
+dr-xr-xr-x  44 root root  4096 Feb  6 16:26 lib
+dr-xr-xr-x  80 root root 53248 Feb  7 11:06 lib64
+drwxr-xr-x   2 root root     6 Aug 12  2018 media
+drwxr-xr-x   2 root root     6 Aug 12  2018 mnt
+drwxr-xr-x   7 root root    85 Feb  7 17:29 opt
+dr-xr-xr-x 689 root root     0 Feb 25 18:22 proc
+dr-xr-x---   5 root root   262 Feb 20 15:06 root
+drwxr-xr-x  38 root root  1180 Feb 20 13:49 run
+dr-xr-xr-x   2 root root 20480 Feb  7 11:06 sbin
+drwxr-xr-x   2 root root     6 Aug 12  2018 srv
+dr-xr-xr-x  12 root root     0 Feb 20 13:48 sys
+drwxrwxrwt   9 root root   197 Feb 25 18:22 tmp
+drwxr-xr-x  13 root root   156 Feb  6 16:22 usr
+drwxr-xr-x  22 root root   304 Feb  6 16:37 var
+drwxr-xr-x   4 root root    35 Feb 13 19:38 work
++ ls -l /lib64/libpapi.so.5 /lib64/libpapi.so.5.6.0 /lib64/libpapi.so.5.6.0.0 /usr/lib64/libpapi.so.5 /usr/lib64/libpapi.so.5.6.0 /usr/lib64/libpapi.so.5.6.0.0
+lrwxrwxrwx 1 root root     18 Jul 23  2019 /lib64/libpapi.so.5 -> libpapi.so.5.6.0.0
+lrwxrwxrwx 1 root root     18 Jul 23  2019 /lib64/libpapi.so.5.6.0 -> libpapi.so.5.6.0.0
+-rwxr-xr-x 1 root root 531984 Jul 23  2019 /lib64/libpapi.so.5.6.0.0
+lrwxrwxrwx 1 root root     18 Jul 23  2019 /usr/lib64/libpapi.so.5 -> libpapi.so.5.6.0.0
+lrwxrwxrwx 1 root root     18 Jul 23  2019 /usr/lib64/libpapi.so.5.6.0 -> libpapi.so.5.6.0.0
+-rwxr-xr-x 1 root root 531984 Jul 23  2019 /usr/lib64/libpapi.so.5.6.0.0
++ exit

@@ -1,0 +1,265 @@
+
+The realistic approach to count the memory store without memory controller information:
+Add values of writeback and streaming store!
+	OFFCORE_RESPONSE_0:   WB:ANY_RESPONSE + STRM_ST:L3_MISS:SNP_ANY
+
+ c[j] = a[j]+b[j];
+
+Array Copy size = 1000000000
+3 x 1G x 4 x 10 = 120 GB (80 GB/R + 40 GB/W)
+
+[1] compile option: -Ofast -unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium
+	-qopt-streaming-stores=always ~= -qopt-streaming-stores=auto
+
+
+The counted events are:
+#0, 80000006                              PAPI_L1_TCM  1258794042	: 1G miss
+#2, 80000007                              PAPI_L2_TCM  592464487	: 0.6G miss	== LAST_LEVEL_CACHE_REFERENCES
+#1, 80000008                              PAPI_L3_TCM  127828241	: 0.1G miss	== LAST_LEVEL_CACHE_MISSES
+
+The counted events are:
+#0, 40000023             MEM_LOAD_UOPS_RETIRED:L2_HIT  601126501
+#1, 40000024            MEM_LOAD_UOPS_RETIRED:L2_MISS  525776161
+#1, 40000024            MEM_LOAD_UOPS_RETIRED:L3_MISS  106261027
+
+The counted events are:
+#0, 40000004              L2_RQSTS:ALL_DEMAND_DATA_RD  1175731220
+#1, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT   664791996
+#1, 40000023                          L2_RQSTS:ALL_PF  1649859059
+#4, 40000025                          L2_RQSTS:PF_HIT   256920237
+#5, 40000026                         L2_RQSTS:PF_MISS  1389589083
+
+
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5022966800	: 5G instructions
+#1, 80000036                              PAPI_SR_INS  3000003812	: 3G instructions
+
+	PAPI_LD_INS ~= MEM_UOPS_RETIRED:ANY_LOADS ~= perf::L1-DCACHE-LOADS
+	PAPI_SR_INS ~= MEM_UOPS_RETIRED:ANY_STORES ~= perf::L1-DCACHE-STORES
+
+
+The counted events are:
+#0, 40000023      OFFCORE_RESPONSE_0:ANY_REQUEST:ANY_RESPONSE  2723615013	: 64 * 2.72G = 173 GB
+
+#0, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:ANY_RESPONSE     1901880315	: 64 x 1.90G = 121 GB
+
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS          1253345071	: 64 x 1.22G =  80 GB	== PAPI_L3_TCM
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF       673334457	: 64 x 0.67G  = 43 GB
+       #0, 40000023     OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITM       227374
+       #1, 40000024     OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITE    673198100
+       #0, 40000023     OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITS        58667
+       #1, 40000024     OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITF        18254
+The counted events are:
+#0, 000023       OFFCORE_RESPONSE_0:PF_DATA_RD:ANY_RESPONSE     629652625
+#0, 40000023     OFFCORE_RESPONSE_0:PF_DATA_RD:L3_MISS          479906886
+#1, 0000024      OFFCORE_RESPONSE_0:PF_DATA_RD:LLC_HITMESF      150645760
+#0, 0000023      OFFCORE_RESPONSE_0:PF_LLC_DATA_RD:L3_MISS      645534070
+#1, 024          OFFCORE_RESPONSE_0:PF_LLC_DATA_RD:LLC_HITMESF   19558439
+
+#0, 40000023      OFFCORE_RESPONSE_0:ANY_RFO:ANY_RESPONSE           32597
+#1, 40000024      OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF            31082
+#3, 40000024      OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS                18768
+
+#1, 40000024     OFFCORE_RESPONSE_0:ANY_IFETCH:ANY_RESPONSE         33365
+#0, 40000023     OFFCORE_RESPONSE_0:ANY_RFO:ANY_RESPONSE            32597
+#0, 40000023     OFFCORE_RESPONSE_0:WB:ANY_RESPONSE               6957486
+#1, 40000024     OFFCORE_RESPONSE_0:BUS_LOCKS:ANY_RESPONSE              0
+
+#0, 40000023 OFFCORE_RESPONSE_0:STRM_ST:L3_MISS:SNP_ANY         590754276	: 64 x 0.60G = 38.4 GB
+#0, 40000023 OFFCORE_RESPONSE_0:STRM_ST:LLC_MISS_LOCAL:SNP_ANY  590507055
+#1, 40000024 OFFCORE_RESPONSE_0:STRM_ST:LLC_MISS_REMOTE:SNP_ANY    271285
+#0, 40000023 OFFCORE_RESPONSE_0:STRM_ST:LLC_HITMESF:SNP_ANY     187500065
+
+#1, 40000024    OFFCORE_RESPONSE_0:WB:ANY_RESPONSE                7405676
+#0, 40000023    OFFCORE_RESPONSE_0:WB:LLC_HITMESF:SNP_ANY         7300654
+#1, 40000024    OFFCORE_RESPONSE_0:WB:L3_MISS:SNP_ANY                   0
+#2, 40000024    OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF         648493378	== :SNP_ANY
+3, 40000025     OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS            1253373944	== :SNP_ANY
+#0, 40000023    OFFCORE_RESPONSE_0:STRM_ST:ANY_RESPONSE         778340276
+1, 40000024     OFFCORE_RESPONSE_0:STRM_ST:LLC_HITMESF:SNP_ANY  187500067
+3, 40000025     OFFCORE_RESPONSE_0:STRM_ST:L3_MISS              590738211	== :SNP_ANY
+#1, 40000024    OFFCORE_RESPONSE_0:OTHER:ANY_RESPONSE            15613655
+#0, 40000023    OFFCORE_RESPONSE_0:ANY_REQUEST:L3_MISS:SNP_ANY 1843738570
+
+
+
+
+
+
+The counted events are:
+#0, 40000023                   perf::L1-DCACHE-STORES  3000003960	: 64 x 3G = 192 GB
+#1, 40000024                          L2_TRANS:L1D_WB  9913940		: 64 x 10M = 0.64 GB
+#2, 40000025                           L2_TRANS:L2_WB  2755413
+#0, 40000023                             L2_TRANS:RFO  168
+#3, 40000026                     L2_L1D_WB_RQSTS:MISS  4465103
+#4, 40000027                      L2_L1D_WB_RQSTS:ALL  9913618		: 64 x 10M = 0.64 GB
+
+#0, 40000023                    perf::L1-DCACHE-LOADS  5015106837
+#1, 40000024                   perf::L1-DCACHE-STORES  3000003962
+#3, 40000026       perf::PERF_COUNT_HW_CACHE_L1D:READ  1258420770	: 64 x 1.25G = 80 GB
+#2, 40000025      perf::PERF_COUNT_HW_CACHE_L1D:WRITE  32694486		: 64 x 32M = 2 GB
+#4, 40000027   perf::PERF_COUNT_HW_CACHE_L1D:PREFETCH  124000575
+
+The counted events are:
+#3, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  621547272
+#4, 40000024              L2_RQSTS:PF_MISS             1395234189
+#4, 40000023              L2_RQSTS:PF_HIT              259027881
+#0, 4000001d              L2_RQSTS:ALL_RFO             127
+#5, 4000001f              L2_RQSTS:RFO_HIT             68
+#5, 40000009              L2_RQSTS:RFO_MISS            103
+#6, 4000000a              L2_RQSTS:CODE_RD_HIT         63605
+
+The counted events are:
+#2, 40000025      OFFCORE_REQUESTS:ALL_DATA_RD         1261087931	: 64 x 1.26G = 80 GB
+#0, 4000000c      OFFCORE_REQUESTS:DEMAND_DATA_RD       638327888
+#1, 40000023      OFFCORE_REQUESTS:DEMAND_RFO                  95
+
+[2] compile option: -O0 -unroll=0 -no-ipo -qno-openmp -g -mcmodel=medium
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:          3423.117     3.505720     3.505577     3.505891
+
+#1, 80000035                              PAPI_LD_INS  76021777232	: 76 Gins
+#2, 80000036                              PAPI_SR_INS  23000004368	: 23 Gins
+#1, 40000024      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS   1253444471	: 64 x 1.25G = 80 GB
+#0, 40000023      OFFCORE_RESPONSE_0:WB:ANY_RESPONSE     589088596	: 64 x 0.59G = 38 GB
+#0, 40000023      OFFCORE_RESPONSE_0:STRM_ST:ANY_RESPONSE        0
+#0, 40000023      OFFCORE_RESPONSE_0:STRM_ST:L3_MISS:SNP_ANY     0
+#0, 40000023            MEM_LOAD_UOPS_RETIRED:L2_MISS      4373110
+#1, 40000024            MEM_LOAD_UOPS_RETIRED:L3_MISS       619236
+
+
+[3] compile option: -Ofast -qopt-streaming-stores=never
+
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         11507.622     1.042899     1.042787     1.043123
+The counted events are:
+#0, 40000023      OFFCORE_RESPONSE_0:STRM_ST:L3_MISS:SNP_ANY      0
+#1, 40000024      OFFCORE_RESPONSE_0:STRM_ST:LLC_HITMESF:SNP_ANY  0
+The counted events are:
+#0, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS    1250366721
+#1, 40000024      OFFCORE_RESPONSE_0:WB:ANY_RESPONSE      589504828
+
+#2, 40000025            MEM_LOAD_UOPS_RETIRED:L2_MISS     846098873
+#3, 40000026            MEM_LOAD_UOPS_RETIRED:L3_MISS     488857360
+
+
+
+
+
+
+#############################################################################################33
+Array Copy size = 1000000
+3 x 1M x 4 x 10 = 120 MB
+
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5040146
+#1, 80000036                              PAPI_SR_INS  3003919
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  134715	: 64 x 134715 =   7 MB
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  29
+The counted events are:
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  1452280	: 64 x 1452280 = 93 MB
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  345
+The counted events are:
+#0, 80000007                              PAPI_L2_TCM  323663
+#1, 80000008                              PAPI_L3_TCM  20059
+The counted events are:
+#0, 000023 OFFCORE_RESPONSE_0:PF_DATA_RD:ANY_RESPONSE  947254	: 64 x 947254 = 61 MB
+#1, 40000024       OFFCORE_RESPONSE_0:WB:ANY_RESPONSE  6684
+
+The counted events are:
+#0, 40000023            MEM_LOAD_UOPS_RETIRED:L2_MISS  300618
+#1, 40000024            MEM_LOAD_UOPS_RETIRED:L3_MISS  18913
+#2, 40000025             OFFCORE_REQUESTS:ALL_DATA_RD  1269373	: 64 x 1269373 = 81 MB
+#3, 40000026      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  135486	: 64 x 135486 =   9 MB
+#4, 40000027       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  49
+
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  5041308
+#1, 80000036                              PAPI_SR_INS  3003911
+#2, 80000006                              PAPI_L1_TCM  1262597
+#3, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  930943
+#4, 40000023                          L2_RQSTS:PF_HIT  227652
+#5, 4000001f                         L2_RQSTS:RFO_HIT  60
+#6, 4000000a                     L2_RQSTS:CODE_RD_HIT  667
+The counted events are:
+#0, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  930668
+#1, 40000023                          L2_RQSTS:PF_HIT  228241
+#2, 4000001f                         L2_RQSTS:RFO_HIT  59
+#3, 4000000a                     L2_RQSTS:CODE_RD_HIT  676
+#4, 40000024                         L2_RQSTS:PF_MISS  1293064
+#5, 40000009                        L2_RQSTS:RFO_MISS  110
+#6, 40000025      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  134677
+
+
+#############################################################################################33
+Array Copy size = 10000
+3 x 10K x 4 x 100 = 12 MB
+
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  527773
+#1, 80000036                              PAPI_SR_INS  269440
+#2, 40000023      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  16
+#3, 40000024       OFFCORE_RESPONSE_0:ANY_RFO:L3_MISS  0
+The counted events are:
+#2, 40000023  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  8131	: 64 x 8131 = 0.5 KB
+#3, 40000024   OFFCORE_RESPONSE_0:ANY_RFO:LLC_HITMESF  22429 : 64 x 22429 = 1.4 MB
+The counted events are:
+#0, 80000007                              PAPI_L2_TCM  21058 : 64 x 21058 = 1.3 MB
+#1, 80000008                              PAPI_L3_TCM  103
+The counted events are:
+#0, 40000023 OFFCORE_RESPONSE_0:PF_DATA_RD:ANY_RESPONSE  8237
+#1, 40000024       OFFCORE_RESPONSE_0:WB:ANY_RESPONSE  13510
+
+The counted events are:
+#2, 40000023             OFFCORE_REQUESTS:ALL_DATA_RD  9776	: 64 x 9776 = 0.6 MB
+#3, 40000024      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  72
+
+The counted events are:
+#0, 40000023            MEM_LOAD_UOPS_RETIRED:HIT_LFB  362626
+#1, 40000024             MEM_LOAD_UOPS_RETIRED:L1_HIT  49528
+#2, 80000006                              PAPI_L1_TCM  190690	: 64 x 190690 = 12 MB
+#3, 80000007                              PAPI_L2_TCM  21624	: 64 x 21624 = 1.4 MB
+#4, 80000008                              PAPI_L3_TCM  87
+
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  527516
+#1, 80000036                              PAPI_SR_INS  269451
+#2, 80000006                              PAPI_L1_TCM  191032
+#3, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  116928
+#4, 40000023                          L2_RQSTS:PF_HIT  151169
+#5, 4000001f                         L2_RQSTS:RFO_HIT  45615
+#6, 4000000a                     L2_RQSTS:CODE_RD_HIT  713
+
+
+==> CACHE is more useful for short loops
+
+#############################################################################################33
+2018年  3月 23日 金曜日 16:32:11 JST
+eagles
+/home/kazunori.mikami/tmp/check_papi
+<main> npes=1 max_threads=1
+Array Copy size = 1000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:               inf     0.000000     0.000000     0.000001
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  76280
+#1, 80000036                              PAPI_SR_INS  39585
+#2, 80000006                              PAPI_L1_TCM  1873
+#3, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  511
+#4, 40000023                          L2_RQSTS:PF_HIT  311
+#5, 4000001f                         L2_RQSTS:RFO_HIT  26
+#6, 4000000a                     L2_RQSTS:CODE_RD_HIT  676
+2018年  3月 23日 金曜日 17:35:29 JST
+eagles
+/home/kazunori.mikami/tmp/check_papi
+<main> npes=1 max_threads=1
+Array Copy size = 10000
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Add:         41943.040     0.000003     0.000003     0.000004
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  527388
+#1, 80000036                              PAPI_SR_INS  269431
+#2, 4000001e              L2_RQSTS:DEMAND_DATA_RD_HIT  120992
+#3, 40000023                          L2_RQSTS:PF_HIT  153594
+#4, 40000024      OFFCORE_RESPONSE_0:ANY_DATA:L3_MISS  16
+#5, 40000025  OFFCORE_RESPONSE_0:ANY_DATA:LLC_HITMESF  9630

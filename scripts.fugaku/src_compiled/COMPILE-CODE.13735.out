@@ -1,0 +1,23 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20190731_05(default)  
+Wed Jan  8 16:37:51 JST 2020
+++ for opt in "-O0" "-O1" "-O2" "-Kfast"
+++ CFLAGS='-O0 -Knounroll,noswp,noopenmp -w '
+++ mpifcc -c -O0 -Knounroll,noswp,noopenmp -w -S -Nlst=t sub.c
+++ mv sub.s sub.s-O0
+++ mv sub.lst sub.lst-O0
+++ for opt in "-O0" "-O1" "-O2" "-Kfast"
+++ CFLAGS='-O1 -Knounroll,noswp,noopenmp -w '
+++ mpifcc -c -O1 -Knounroll,noswp,noopenmp -w -S -Nlst=t sub.c
+++ mv sub.s sub.s-O1
+++ mv sub.lst sub.lst-O1
+++ for opt in "-O0" "-O1" "-O2" "-Kfast"
+++ CFLAGS='-O2 -Knounroll,noswp,noopenmp -w '
+++ mpifcc -c -O2 -Knounroll,noswp,noopenmp -w -S -Nlst=t sub.c
+++ mv sub.s sub.s-O2
+++ mv sub.lst sub.lst-O2
+++ for opt in "-O0" "-O1" "-O2" "-Kfast"
+++ CFLAGS='-Kfast -Knounroll,noswp,noopenmp -w '
+++ mpifcc -c -Kfast -Knounroll,noswp,noopenmp -w -S -Nlst=t sub.c
+++ mv sub.s sub.s-Kfast
+++ mv sub.lst sub.lst-Kfast

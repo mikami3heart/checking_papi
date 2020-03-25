@@ -1,0 +1,9 @@
+Note on ITO login node.
+
+In order to measure HWPC, the job must be executed as batch job
+using dedicated compute nodes.
+
+Interactive run on a login node does not return the correct
+HWPC values.
+
+

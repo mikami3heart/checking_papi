@@ -1,0 +1,462 @@
+Event Chooser: Available events which can be added with given events.
+--------------------------------------------------------------------------------
+Vendor string and code   : Sun (7)
+Model string and code    : Fujitsu SPARC64 IXfx (141)
+CPU Revision             : 0.000000
+CPU Megahertz            : 1650.000000
+CPU Clock Megahertz      : 1650
+CPU's in this Node       : 16
+Nodes in this System     : 1
+Total CPU's              : 16
+Number Hardware Counters : 8
+Max Multiplex Counters   : 512
+--------------------------------------------------------------------------------
+
+CYCLE_COUNTS	0x40000000
+ |Counts the number of cycles when the performance monitor is enabled.|
+ |Register Value[0]: 0x0           Event Code|
+ |Register Value[1]: 0x0           Event Code|
+ |Register Value[2]: 0x0           Event Code|
+ |Register Value[3]: 0x0           Event Code|
+ |Register Value[4]: 0x0           Event Code|
+ |Register Value[5]: 0x0           Event Code|
+ |Register Value[6]: 0x0           Event Code|
+ |Register Value[7]: 0x0           Event Code|
+-------------------------------------------------------------------------
+INSTRUCTION_COUNTS	0x40000001
+ |Counts the number of committed instructions|
+ |Register Value[0]: 0x1           Event Code|
+ |Register Value[1]: 0x1           Event Code|
+ |Register Value[2]: 0x1           Event Code|
+ |Register Value[3]: 0x1           Event Code|
+ |Register Value[4]: 0x1           Event Code|
+ |Register Value[5]: 0x1           Event Code|
+ |Register Value[6]: 0x1           Event Code|
+ |Register Value[7]: 0x1           Event Code|
+-------------------------------------------------------------------------
+INSTRUCTION_FLOW_COUNTS	0x40000002
+ |Counts the number of committed instructions.instruction_flow_count measures number of internal instructions during measuring period.Neither packed SXAR1 nor SXAR2 are included in this number of instructions.|
+ |Register Value[0]: 0x2           Event Code|
+ |Register Value[1]: 0x2           Event Code|
+-------------------------------------------------------------------------
+XMA_INST	0x40000003
+ |Counts the number of committed FPMADDX/FPMADDXHI instructions.|
+ |Register Value[0]: 0x2           Event Code|
+-------------------------------------------------------------------------
+IWR_EMPTY	0x40000004
+ |Counts the number of cycles that IWR (Issue Word Register) is empty.|
+ |Register Value[0]: 0x3           Event Code|
+ |Register Value[1]: 0x3           Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT	0x40000005
+ |Counts the number of cycles that instruction commit is not done due to data wait.|
+ |Register Value[0]: 0x5           Event Code|
+ |Register Value[1]: 0x5           Event Code|
+ |Register Value[2]: 0x5           Event Code|
+ |Register Value[3]: 0x5           Event Code|
+ |Register Value[4]: 0x5           Event Code|
+ |Register Value[5]: 0x5           Event Code|
+ |Register Value[6]: 0x5           Event Code|
+ |Register Value[7]: 0x5           Event Code|
+-------------------------------------------------------------------------
+EFFECTIVE_INSTRUCTION_COUNTS	0x40000006
+ |Counts the number of committed execution instructions.|
+ |Register Value[0]: 0x6           Event Code|
+ |Register Value[1]: 0x6           Event Code|
+ |Register Value[2]: 0x6           Event Code|
+ |Register Value[3]: 0x6           Event Code|
+ |Register Value[4]: 0x6           Event Code|
+ |Register Value[5]: 0x6           Event Code|
+ |Register Value[6]: 0x6           Event Code|
+ |Register Value[7]: 0x6           Event Code|
+-------------------------------------------------------------------------
+SIMD_LOAD_STORE_INSTRUCTIONS	0x40000007
+ |Counts the number of committed floating-point load/store instructions.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+SIMD_FLOATING_INSTRUCTIONS	0x40000008
+ |Counts the number of committed floating-point SIMD instructions of one operation in SIMD.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+SIMD_FMA_INSTRUCTIONS	0x40000009
+ |Counts the number of committed floating-point SIMD instructions of two operation in SIMD.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+SXAR1_INSTRUCTIONS	0x4000000a
+ |Counts the number of committed SXAR1 instructions.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+SXAR2_INSTRUCTIONS	0x4000000b
+ |Counts the number of committed SXAR2 instructions.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+UNPACK_SXAR1	0x4000000c
+ |Counts the number of committed unpack SXAR1 instructions.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+UNPACK_SXAR2	0x4000000d
+ |Counts the number of committed unpack SXAR2 instructions.|
+ |Register Value[0]: 0x7           Event Code|
+-------------------------------------------------------------------------
+LOAD_STORE_INSTRUCTIONS	0x4000000e
+ |Counts the number of committed load/store instructions.|
+ |Register Value[0]: 0x8           Event Code|
+ |Register Value[1]: 0x8           Event Code|
+ |Register Value[2]: 0x8           Event Code|
+ |Register Value[3]: 0x8           Event Code|
+ |Register Value[4]: 0x8           Event Code|
+ |Register Value[5]: 0x8           Event Code|
+ |Register Value[6]: 0x8           Event Code|
+ |Register Value[7]: 0x8           Event Code|
+-------------------------------------------------------------------------
+BRANCH_INSTRUCTIONS	0x4000000f
+ |Counts the number of committed branch instructions.|
+ |Register Value[0]: 0x9           Event Code|
+ |Register Value[1]: 0x9           Event Code|
+ |Register Value[2]: 0x9           Event Code|
+ |Register Value[3]: 0x9           Event Code|
+ |Register Value[4]: 0x9           Event Code|
+ |Register Value[5]: 0x9           Event Code|
+ |Register Value[6]: 0x9           Event Code|
+ |Register Value[7]: 0x9           Event Code|
+-------------------------------------------------------------------------
+FLOATING_INSTRUCTIONS	0x40000010
+ |Counts the number of committed floating-point operation instructions.|
+ |Register Value[0]: 0xa           Event Code|
+ |Register Value[1]: 0xa           Event Code|
+ |Register Value[2]: 0xa           Event Code|
+ |Register Value[3]: 0xa           Event Code|
+ |Register Value[4]: 0xa           Event Code|
+ |Register Value[5]: 0xa           Event Code|
+ |Register Value[6]: 0xa           Event Code|
+ |Register Value[7]: 0xa           Event Code|
+-------------------------------------------------------------------------
+FMA_INSTRUCTIONS	0x40000011
+ |Counts the number of committed floating-point Multiply-and-Add operation instructions.|
+ |Register Value[0]: 0xb           Event Code|
+ |Register Value[1]: 0xb           Event Code|
+ |Register Value[2]: 0xb           Event Code|
+ |Register Value[3]: 0xb           Event Code|
+ |Register Value[4]: 0xb           Event Code|
+ |Register Value[5]: 0xb           Event Code|
+ |Register Value[6]: 0xb           Event Code|
+ |Register Value[7]: 0xb           Event Code|
+-------------------------------------------------------------------------
+PREFETCH_INSTRUCTIONS	0x40000012
+ |Counts the number of committed prefetch instructions.|
+ |Register Value[0]: 0xc           Event Code|
+ |Register Value[1]: 0xc           Event Code|
+ |Register Value[2]: 0xc           Event Code|
+ |Register Value[3]: 0xc           Event Code|
+ |Register Value[4]: 0xc           Event Code|
+ |Register Value[5]: 0xc           Event Code|
+ |Register Value[6]: 0xc           Event Code|
+ |Register Value[7]: 0xc           Event Code|
+-------------------------------------------------------------------------
+FL_LOAD_INSTRUCTIONS	0x40000015
+ |Counts the number of committed floating-point load instructions.|
+ |Register Value[0]: 0xd           Event Code|
+-------------------------------------------------------------------------
+FL_STORE_INSTRUCTIONS	0x40000016
+ |Counts the number of committed floating-point store instructions.|
+ |Register Value[0]: 0xd           Event Code|
+-------------------------------------------------------------------------
+SIMD_FL_LOAD_INSTRUCTIONS	0x40000017
+ |Counts the number of committed SIMD floating-point load instructions.|
+ |Register Value[0]: 0xd           Event Code|
+-------------------------------------------------------------------------
+SIMD_FL_STORE_INSTRUCTIONS	0x40000018
+ |Counts the number of committed SIMD floating-point store instructions.|
+ |Register Value[0]: 0xd           Event Code|
+-------------------------------------------------------------------------
+RS1	0x40000019
+ |Counts the number of cycles when the instruction execution stopped by the following factors. Trap or interrupt, update of privilege registers, assurance of memory order, hardware retry.|
+ |Register Value[0]: 0x12          Event Code|
+-------------------------------------------------------------------------
+FLUSH_RS	0x4000001a
+ |Counts the number of pipeline flush due to mis-prediction.|
+ |Register Value[0]: 0x12          Event Code|
+-------------------------------------------------------------------------
+1IID_USE	0x4000001b
+ |One instruction is issued in a cycle.|
+ |Register Value[0]: 0x13          Event Code|
+-------------------------------------------------------------------------
+4IID_USE	0x4000001e
+ |Four instructions are issued in a cycle.|
+ |Register Value[0]: 0x13          Event Code|
+-------------------------------------------------------------------------
+SYNC_INTLK	0x4000001f
+ |Counts the number of cycles that prevent issuing instructions by pipeline sync.|
+ |Register Value[0]: 0x13          Event Code|
+-------------------------------------------------------------------------
+REGWIN_INTLK	0x40000020
+ |Counts the number of cycles that prevent issuing instructions by switching the register window.|
+ |Register Value[0]: 0x13          Event Code|
+-------------------------------------------------------------------------
+FLUSH_RS	0x40000022
+ |Counts the number of pipeline flush due to mis-prediction.|
+ |Register Value[0]: 0x15          Event Code|
+-------------------------------------------------------------------------
+RS1	0x40000023
+ |Counts the number of cycles when the instruction execution stopped by the following factors. Trap or interrupt, update of privilege registers, assurance of memory order, hardware retry.|
+ |Register Value[0]: 0x15          Event Code|
+-------------------------------------------------------------------------
+TRAP_ALL	0x40000024
+ |Counts all trap events.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+TRAP_SPILL	0x40000027
+ |Counts the number of occurrences of spill_n_normal,spill_n_other.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+TRAP_FILL	0x40000028
+ |Counts the number of occurrences of fill_n_normal,fill_n_other.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+TRAP_TRAP_INST	0x40000029
+ |Counts the number of occurrences of trap_instruction.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+TRAP_IMMU_MISS	0x4000002a
+ |Counts the number of occurrences of fast_instruction_access_MMU_miss.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+TRAP_DMMU_MISS	0x4000002b
+ |Counts the number of occurrences of fast_data_instruction_access_MMU_miss.|
+ |Register Value[0]: 0x16          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_SWPF_PFP_BUSY	0x4000002d
+ |Counts the op_stv_wait due to being not able to execute the memory access instruction because there is no empty port for the prefetch.|
+ |Register Value[0]: 0x18          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_SXMISS	0x4000002e
+ |op_stv_wait due to L2 cache miss.|
+ |Register Value[0]: 0x18          Event Code|
+-------------------------------------------------------------------------
+SUSPEND_CYCLE	0x40000030
+ |Counts the number of instruction control part has stopped by suspend/sleep.|
+ |Register Value[0]: 0x1a          Event Code|
+-------------------------------------------------------------------------
+RSF_PMMI	0x40000031
+ |Counts the number of cycles the instruction issue was not able to be done to the floating-point arithmetic of single precision mixed with the floating-point arithmetic of double precision. |
+ |Register Value[0]: 0x1b          Event Code|
+-------------------------------------------------------------------------
+0IID_USE	0x40000032
+ |No instruction is issued in a cycle.|
+ |Register Value[0]: 0x1b          Event Code|
+-------------------------------------------------------------------------
+FLUSH_RS	0x40000033
+ |Counts the number of pipeline flush due to mis-prediction.|
+ |Register Value[0]: 0x1b          Event Code|
+-------------------------------------------------------------------------
+DECALL_INTLK	0x40000034
+ |Counts the number of cycles that prevent issuing instructions due to any static inter-lock conditions at the decode stage.|
+ |Register Value[0]: 0x1b          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_PFP_BUSY_EX	0x40000035
+ |Counts the op_stv_wait due to being not able to execute the integer memory access instruction because there is no empty port for the prefetch.|
+ |Register Value[0]: 0x1d          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_SXMISS	0x40000036
+ |op_stv_wait due to L2 cache miss.|
+ |Register Value[0]: 0x1d          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_NC_PEND	0x40000038
+ |op_stv_wait due to non-cache access.|
+ |Register Value[0]: 0x1d          Event Code|
+-------------------------------------------------------------------------
+CSE_WINDOW_EMPTY_SP_FULL	0x40000039
+ |No instruction is committed because CSE is empty while the Store Port is full.|
+ |Register Value[0]: 0x1d          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_PFP_BUSY	0x4000003a
+ |Counts the op_stv_wait due to being not able to execute the memory access instruction because there is no empty port for the prefetch.|
+ |Register Value[0]: 0x1d          Event Code|
+-------------------------------------------------------------------------
+CSE_WINDOW_EMPTY	0x4000003b
+ |No instruction is committed because CSE is empty.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+0ENDOP	0x4000003e
+ |No instruction is committed.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_EX	0x4000003f
+ |Counts the op_stv_wait due to integer load instruction access.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+FL_COMP_WAIT	0x40000040
+ |Counts the number of cycle committed instructions is 0 in the instruction under execution is executing the operation of the floating-point.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+1ENDOP	0x40000041
+ |One instruction is committed.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+2ENDOP	0x40000042
+ |Two instructions are committed.|
+ |Register Value[0]: 0x1e          Event Code|
+-------------------------------------------------------------------------
+INH_CMIT_GPR_2WRITE	0x40000043
+ |Because two integer registers have been updated, cycle when four instructions were not able to be completed number is measured.|
+ |Register Value[0]: 0x1f          Event Code|
+-------------------------------------------------------------------------
+3ENDOP	0x40000044
+ |Three instructions are committed.|
+ |Register Value[0]: 0x1f          Event Code|
+-------------------------------------------------------------------------
+SLEEP_CYCLE	0x40000045
+ |Counts the number of cycle instruction control part has stopped by SLEEP instruction.|
+ |Register Value[0]: 0x1f          Event Code|
+-------------------------------------------------------------------------
+OP_STV_WAIT_SWPF	0x40000046
+ |Counts the op_stv_wait due to being not able to execute the prefetch instruction because there is no empty port for the prefetch.|
+ |Register Value[0]: 0x1f          Event Code|
+-------------------------------------------------------------------------
+UITLB_MISS2	0x40000047
+ |Counts the number of readed fITLB by the uTLB mistake of instruction fetch.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+UDTLB_MISS	0x4000004a
+ |Counts the occurrences of data uTLB misses.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+L1I_MISS	0x4000004b
+ |Counts the occurrences of I1 cache misses.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+L1D_MISS	0x4000004c
+ |Counts the occurrences of D1 cache misses.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+L1I_WAIT_ALL	0x4000004d
+ |Counts the total latency of I1 cache misses.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+L1D_WAIT_ALL	0x4000004e
+ |Counts the total latency of D1 cache misses.|
+ |Register Value[0]: 0x20          Event Code|
+-------------------------------------------------------------------------
+L1D_MISS_QPF	0x4000004f
+ |Counts the occurrences of L1 data cache miss by hardware prefetch instructions.|
+ |Register Value[0]: 0x21          Event Code|
+-------------------------------------------------------------------------
+L1I_THRASHING	0x40000050
+ |Counts the number of reading demand of L2 is issued two times from acquisition of the lead board to opening.The instruction fetch is measured with this counter when driven out from cache before it is read though makes a mistake in the L1I cache, and was written the data in the L1I cache.|
+ |Register Value[0]: 0x23          Event Code|
+-------------------------------------------------------------------------
+L1D_MISS_DM	0x40000052
+ |Counts the occurrences of L1 data cache miss by load store instructions.|
+ |Register Value[0]: 0x23          Event Code|
+-------------------------------------------------------------------------
+L1D_MISS_PF	0x40000053
+ |Counts the occurrences of L1 data cache miss by prefetch instructions.|
+ |Register Value[0]: 0x23          Event Code|
+-------------------------------------------------------------------------
+SWPF_SUCCESS_ALL	0x40000054
+ |Counts the number of prefetch instructions to lost is not done of SU to send SX.|
+ |Register Value[0]: 0x24          Event Code|
+-------------------------------------------------------------------------
+SWPF_LBS_HIT	0x40000056
+ |Counts the number of prefetch instructions of hitted to L1 cache.|
+ |Register Value[0]: 0x24          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_PF	0x40000058
+ |Counts the occurrences of L2 cache miss by both software prefetch and hardware prefetch access.|
+ |Register Value[0]: 0x30          Event Code|
+-------------------------------------------------------------------------
+L2_READ_DM	0x40000059
+ |Counts L2 cache references by demand read access.|
+ |Register Value[0]: 0x30          Event Code|
+-------------------------------------------------------------------------
+L2_READ_PF	0x4000005a
+ |Counts L2 cache references by both software prefetch and hardware prefetch access.|
+ |Register Value[0]: 0x30          Event Code|
+-------------------------------------------------------------------------
+L2_WB_DM	0x4000005b
+ |Counts the occurrences of L2 cache miss by demand, with writeback request.|
+ |Register Value[0]: 0x30          Event Code|
+-------------------------------------------------------------------------
+L2_WB_PF	0x4000005c
+ |Counts the occurrences of L2 cache miss by both software prefetch and hardware prefetch, with writeback request.|
+ |Register Value[0]: 0x30          Event Code|
+-------------------------------------------------------------------------
+BI_COUNT	0x4000005d
+ |Counts the number of copyback requests received.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+CPD_COUNT	0x4000005e
+ |Count number of busy cycles of order buses, from SCs to CPU, in Bus cycle.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+CPU_MEM_READ_COUNT	0x4000005f
+ |Counts the number of memory read request is issued to DIMM.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+CPU_MEM_WRITE_COUNT	0x40000060
+ |Counts the number of memory write request is issued to DIMM.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+IO_MEM_READ_COUNT	0x40000061
+ |Counts the number of read request is issued to I/O.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+IO_MEM_WRITE_COUNT	0x40000062
+ |Counts the number of write request is issued to I/O.|
+ |Register Value[0]: 0x31          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_DM_BANK0	0x40000063
+ |Counts the time that hangs to the processing of L2 cache bank0 miss of the demand.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_PF_BANK0	0x40000066
+ |Counts the number of L2 cache bank0 miss of the prefetch.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_DM_BANK1	0x40000067
+ |Counts the time that hangs to the processing of L2 cache bank1 miss of the demand.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_PF_BANK1	0x40000068
+ |Counts the time that hangs to the processing of L2 cache bank1 miss of the prefetch.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_DM_BANK1	0x40000069
+ |Counts the number of L2 cache bank1 miss of the demand.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_PF_BANK1	0x4000006a
+ |Counts the number of L2 cache bank1 miss of the prefetch.|
+ |Register Value[0]: 0x32          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_DM_BANK2	0x4000006b
+ |Counts the time that hangs to the processing of L2 cache bank2 miss of the demand.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_PF_BANK2	0x4000006e
+ |Counts the number of L2 cache bank2 miss of the prefetch.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_DM_BANK3	0x4000006f
+ |Counts the time that hangs to the processing of L2 cache bank3 miss of the demand.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_COUNT_PF_BANK3	0x40000070
+ |Counts the time that hangs to the processing of L2 cache bank3 miss of the prefetch.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_DM_BANK3	0x40000071
+ |Counts the number of L2 cache bank3 miss of the demand.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+L2_MISS_WAIT_PF_BANK3	0x40000072
+ |Counts the number of L2 cache bank3 miss of the prefetch.|
+ |Register Value[0]: 0x33          Event Code|
+-------------------------------------------------------------------------
+LOST_PF_PFP_FULL	0x40000073
+ |Number of software prefetch requests lost due to PF port full.|
+ |Register Value[0]: 0x34          Event Code|
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+Total events reported: 95
+event_chooser.c                          PASSED

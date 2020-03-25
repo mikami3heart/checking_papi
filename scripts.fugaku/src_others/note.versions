@@ -1,0 +1,78 @@
+
+# vsh
+Red Hat Enterprise Linux Server release 6.1 (Santiago)
+
+#BUGs ???.
+#PAPI Fortran API does not return the correct counter values...
+#PAPI C API works OK.
+
+PAPI 5.3.2
+make is finished OK.
+make test  finished OK.
+make install  finished OK.
+
+
+PAPI 5.5.1
+make is finished OK.
+make test seems to be NG.
+
+ctests/zero
+0x8000003b PAPI_TOT_CYC is not available.
+0x80000034 PAPI_FP_INS is not available.
+0x8000003b PAPI_TOT_CYC is not available.
+0x80000066 PAPI_FP_OPS is not available.
+0x8000003b PAPI_TOT_CYC is not available.
+0x80000032 PAPI_TOT_INS is not available.
+
+
+#Remark-- PAPI 5.5 contains ffsll() which is not compatible with Linux.
+#Remark-- Comment out ${PAPI_DIR}/include/papi.h line 1024, i.e. ffsll()
+#        Otherwise, the error occurs while compiling the source PerfCpuType.cpp
+/usr/include/string.h(531): error: exception specification is incompatible with that of previous function "ffsll" (declared at line 1024 of "/home/ra000004/mikami/papi/usr_local_papi/include/papi.h")
+       __THROW __attribute__ ((__const__));
+
+
+# eagles
+papi_avail commands built on Haswell and on Ivybridge produce
+the same output if executed on the same node.
+
+
+# FX10 - works ok
+papi_event_chooser PRESET L2_MISS_DM L2_MISS_PF L2_WB_DM L2_WB_PF PAPI_L1_TCM PAPI_L2_TCM
+
+	Bandwidth = (L2_MISS_DM + L2_MISS_PF + L2_WB_DM + L2_WB_PF) / time
+	L2_MISS_DM  0x40000057
+	L2_MISS_PF  0x40000058
+	L2_WB_DM    0x4000005b
+	L2_WB_PF    0x4000005c
+
+
+
+# Intel Xeon
+
+papi_event_chooser PRESET PAPI_L1_TCM PAPI_L2_TCM LLC_MISSES
+-------------------------------------------------------------------------
+
+L3_LAT_CACHE    0x40000513   |demand requests to L3|
+    0x40000514  :MISS  |demand requests missed L3|
+    0x40000515  :REFERENCE  |demand requests that refer to L3|
+-------------------------------------------------------------------------
+
+MEM_LOAD_UOPS_RETIRED   0x40000555 |Memory loads uops retired|
+    0x40000556  :HIT_LFB  |A load missed L1D but hit the Fill Buffer
+    0x40000557  :L1_HIT  |Load hit in nearest-level (L1D) cache 
+    0x40000558  :L2_HIT  |Load hit in mid-level (L2) cache 
+    0x40000559  :L3_HIT  |Load hit in last-level (L3) cache 
+    0x4000055a  :L3_MISS  |load uops which data sources were data missed LLC
+-------------------------------------------------------------------------
+
+OFFCORE_RESPONSE_0  0x40000656 |Offcore response event 
+    0x4000066e  :LLC_MISS_LOCAL  |Supplier: counts L3 misses to local DRAM|
+    0x40000670  :LLC_MISS_REMOTE  |Supplier: counts L3 misses to remote DRAM|
+    0x40000672  :LLC_HITMESF  |Supplier: counts L3 hits in any state (M,E,S,F)|
+
+PAPI_L3_TCM
+PAPI_L3_TCA
+
+	Bandwidth = ???
+

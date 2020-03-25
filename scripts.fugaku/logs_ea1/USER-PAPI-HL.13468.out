@@ -1,0 +1,93 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20190731_05(default)  
+Tue Jan  7 18:01:54 JST 2020
+ea-cn14
+++ mpifcc -c -O2 -Kopenmp main.c -I/opt/FJSVxos/devkit/aarch64/rfs/usr/include
+"main.c", line 22: warning: variable "tt" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+         ^
+
+"main.c", line 22: warning: variable "t3" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+                     ^
+
+"main.c", line 22: warning: variable "t4" was declared but never referenced
+  double tt, t1, t2, t3, t4;
+                         ^
+
+"main.c", line 23: warning: variable "j" was declared but never referenced
+  int i, j, k, loop;
+         ^
+
+"main.c", line 23: warning: variable "k" was declared but never referenced
+  int i, j, k, loop;
+            ^
+
+"main.c", line 25: warning: variable "fn" was declared but never referenced
+  char fn[]="tmp.cio.###";
+       ^
+
+"main.c", line 27: warning: variable "real_time0" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+        ^
+
+"main.c", line 27: warning: variable "proc_time0" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+                    ^
+
+"main.c", line 27: warning: variable "mflips" was declared but never referenced
+  float real_time0, proc_time0, mflips;
+                                ^
+
+"main.c", line 28: warning: variable "flpins" was declared but never referenced
+  long_long flpops, flpins;
+                    ^
+
+"main.c", line 85: warning: variable "k" was declared but never referenced
+  int i, j, k;
+            ^
+
+"main.c", line 86: warning: variable "f1" was declared but never referenced
+  float f1,f2,f3;
+        ^
+
+"main.c", line 86: warning: variable "f2" was declared but never referenced
+  float f1,f2,f3;
+           ^
+
+"main.c", line 86: warning: variable "f3" was declared but never referenced
+  float f1,f2,f3;
+              ^
+
+++ mpiFCC -O2 -Kopenmp main.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -lmpi
+++ ls -go
+total 2
+-rwxr-xr-x 1 81040 Jan  7 18:01 a.out
+-rw-r--r-- 1  2649 Jan  7 18:01 main.c
+-rw-r--r-- 1 15360 Jan  7 18:01 main.o
+++ xospastop
+++ export OMP_NUM_THREADS=12
+++ OMP_NUM_THREADS=12
+++ mpirun -np 1 ./a.out
+<main> MATSIZE=1000 max_threads=12
+<PAPI_library_init> returned 84279296
+<PAPI_thread_init> returned 0
+step 1 finished in 5.426723 seconds
+step 2 finished in 5.426407 seconds
+step 3 finished in 5.425686 seconds
+step 4 finished in 5.425862 seconds
+step 5 finished in 5.428781 seconds
+exact flop count is :     20000000000 
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP fp1: 27.141674 fp2: 27.141680 ip3: 1664766275 fp4: 61.336521
+FLOP RealT: 0.000000 ProcT: 0.000000 Flpops: 19977195300 MFlops: 736.038330

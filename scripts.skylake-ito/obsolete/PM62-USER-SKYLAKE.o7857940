@@ -1,0 +1,68 @@
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
+icpc: リマーク #10397: 最適化レポートは出力先の *.optrpt ファイルに生成されます。
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ ./a.out
+<main> npes=1 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: L2_TRANS:L2_WB: events:4000002f
+ i= 1: OFFCORE_RESPONSE_0:OTHER:ANY_RESPONSE: events:40000030
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 2: : events:6
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 3: : events:b725c960
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 4: : events:2b10
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 5: : events:b7241d20
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 6: : events:2b10
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 7: : events:b7241f90
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 8: : events:4
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i= 9: : events:0
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i=10: : events:0
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i=11: : events:7c004121
+*** error. <PAPI_event_name_to_code> c_event=[], retval=-7
+ i=12: : events:1c0003f
+*** error. <my_papi_add_events> :: <PAPI_add_events> state->EventSet=0, num_events=13
+*** <my_papi_add_events> failed for rank=0
+*** error. <my_papi_bind_start> :: <PAPI_start>
+*** <my_papi_bind_start> failed for rank=0
+<my_papi_bind_start> papi.num_events=13
+#0, 4000002f 0
+#1, 40000030 0
+#2, 6 0
+#3, b725c960 0
+#4, 2b10 0
+#5, b7241d20 0
+#6, 2b10 0
+#7, b7241f90 0
+#8, 4 0
+#9, 0 0
+#10, 0 0
+#11, 7c004121 0
+#12, 1c0003f 0
+	 Check print before finishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+*** error. <my_papi_bind_stop> :: <PAPI_stop>
+The counted events are:
+#0, 4000002f                           L2_TRANS:L2_WB  0
+#1, 40000030    OFFCORE_RESPONSE_0:OTHER:ANY_RESPONSE  0
+#2, 6                                           0
+#3, b725c960                                           0
+#4, 2b10                                           0
+#5, b7241d20                                           0
+#6, 2b10                                           0
+#7, b7241f90                                           0
+#8, 4                                           0
+#9, 0                                           0
+#10, 0                                           0
+#11, 7c004121                                           0
+#12, 1c0003f                                           0
+Process 0 finishing up

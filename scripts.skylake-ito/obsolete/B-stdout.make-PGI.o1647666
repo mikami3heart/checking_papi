@@ -1,0 +1,38 @@
+Currently Loaded Modulefiles:
+  1) pgi/17.7           2) pgi/17.7_openmpi
++ date
+2018年  9月 24日 月曜日 12:45:17 JST
++ export CC=pgcc CXX=pgc++ F90=pgf90 FC=pgfortran
++ CC=pgcc
++ CXX=pgc++
++ F90=pgf90
++ FC=pgfortran
++ CXXFLAGS='-DUSE_PRECISE_TIMER -mp '
++ FCFLAGS='-Mpreprocess -mp '
++ CFLAGS='-mp '
++ LDFLAGS='-pgc++libs '
++ DEBUG=
++ PREFIX=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-pgi
++ SRCDIR=/home/usr5/m70145b/papi/papi-5.6.0-pgi/src
++ cd /home/usr5/m70145b/papi/papi-5.6.0-pgi/src
++ '[' 0 '!=' 0 ']'
++ make distclean
+make: *** ターゲット `distclean' を make するルールがありません.  中止.
++ export LANG=C
++ LANG=C
++ ./configure CC=pgcc F77=pgfortran MPICC=mpicc --prefix=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-pgi
+checking for architecture... x86_64
+checking for OS... linux
+checking for OS version... 3.10.0-514.26.2.el7.x86_64
+checking for perf_event workaround level... autodetect
+checking for if MIC should be used... no
+checking whether the C compiler works... no
+configure: error: in `/home/usr5/m70145b/papi/papi-5.6.0-pgi/src':
+configure: error: C compiler cannot create executables
+See `config.log' for more details
++ make
+make: *** No targets specified and no makefile found.  Stop.
++ make test
+make: *** No rule to make target `test'.  Stop.
++ make install-all
+make: *** No rule to make target `install-all'.  Stop.

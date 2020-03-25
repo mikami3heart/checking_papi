@@ -1,0 +1,36 @@
+--------------------------- /work/system/modulefiles ---------------------------
+lang/fjcompiler20191226_01               Python2-CN/2.7.15(default)  
+lang/fjcompiler20191226_01_old           Python3-CN/3.6.8(default)   
+lang/fjcompiler20200214_01(default)      Ruby-CN/2.6.5(default)      
+OpenJDK-CN/jdk11u-be745617e8c4(default)  
+-------------------------------------------------------------------
+/work/system/modulefiles/lang/fjcompiler20200214_01:
+
+module-whatis	Fujitsu Compiler prototype (Fortran/C/C++/Tool)
+conflict	lang
+setenv		XOS_MMM_L_HPAGE_TYPE	none
+prepend-path	PATH /opt/FJSVxtclanga/tcsds-1.2.21/bin
+prepend-path	LD_LIBRARY_PATH /opt/FJSVxtclanga/tcsds-1.2.21/lib64
+prepend-path	TMPDIR /home/g9200002/u92028
+-------------------------------------------------------------------
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
++ hostname
+c27-0206c
++ uname -a
+Linux c27-0206c 4.18.0-147.3.1.el8_1.aarch64 #1 SMP Wed Nov 27 01:58:10 UTC 2019 aarch64 aarch64 aarch64 GNU/Linux
++ xospastop
++ export LANG=C
++ LANG=C
++ PAPI_DIR=/opt/FJSVxos/devkit/aarch64/rfs/usr
++ lg /opt/FJSVxos/devkit/aarch64/rfs/usr/bin
+/home/g9200002/u92028/papi/scripts.fugaku/.d0000024771: line 39: lg: command not found
++ which papi_avail
+/usr/bin/papi_avail
++ locate papi_avail
+locate: can not stat () `/var/lib/mlocate/mlocate.db': No such file or directory
++ which libpapi.so
+which: no libpapi.so in (/opt/FJSVxtclanga/tcsds-1.2.21/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/g9200002/u92028/bin:/home/g9200002/u92028/.local/bin:/home/g9200002/u92028/bin)
++ locate libpapi.so
+locate: can not stat () `/var/lib/mlocate/mlocate.db': No such file or directory
++ exit

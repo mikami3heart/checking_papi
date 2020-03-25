@@ -1,0 +1,49 @@
+[r1004@com check_papi]$ mpiexec -np 1 ./a.out
+
+-O0
+
+step 0 finished in 29.982782 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000000000
+#1, 4000007b                     16FLOPS_INSTRUCTIONS  0
+#2, 4000007a                      8FLOPS_INSTRUCTIONS  0
+#3, 40000079                      4FLOPS_INSTRUCTIONS  0
+#4, 40000078                      2FLOPS_INSTRUCTIONS  0
+#5, 40000077                      1FLOPS_INSTRUCTIONS  2000000000
+
+-O1
+
+step 0 finished in 2.644712 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000000000
+#1, 4000007b                     16FLOPS_INSTRUCTIONS  0
+#2, 4000007a                      8FLOPS_INSTRUCTIONS  0
+#3, 40000079                      4FLOPS_INSTRUCTIONS  0
+#4, 40000078                      2FLOPS_INSTRUCTIONS  1000000000
+#5, 40000077                      1FLOPS_INSTRUCTIONS  0
+
+-O2
+
+step 0 finished in 0.664652 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000001000
+#1, 4000007b                     16FLOPS_INSTRUCTIONS  0
+#2, 4000007a                      8FLOPS_INSTRUCTIONS  250000000
+#3, 40000079                      4FLOPS_INSTRUCTIONS  0
+#4, 40000078                      2FLOPS_INSTRUCTIONS  0
+#5, 40000077                      1FLOPS_INSTRUCTIONS  1000
+
+
+step 0 finished in 0.664478 seconds
+The counted events are:
+#0, 40000008               SIMD_FLOATING_INSTRUCTIONS  0
+#1, 40000009                    SIMD_FMA_INSTRUCTIONS  0
+
+step 0 finished in 0.655814 seconds
+The counted events are:
+#0, 400000d1              XSIMD_FLOATING_INSTRUCTIONS  250000
+#1, 400000d2                   XSIMD_FMA_INSTRUCTIONS  250000000
+
+#0, 40000010                    FLOATING_INSTRUCTIONS  2000
+#1, 40000011                         FMA_INSTRUCTIONS  0
+

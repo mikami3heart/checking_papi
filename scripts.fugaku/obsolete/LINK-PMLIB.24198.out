@@ -1,0 +1,44 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20200214_01(default)  
+Tue Feb 25 16:22:26 JST 2020
+a27-7014c
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O0  -Knoopenmp -w '
+++ mpifcc -c -O0 -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+/usr/bin/ld: cannot find -lPMmpi
+/usr/bin/ld: cannot find -lpapi_ext
+++ mpirun -np 1 ./a.out
+[WARN] PLE 0611 plexec The program(./a.out) cannot be executed.(nid=0x21460006)(error=execve failed. No such file or directory.)(CODE=9122,0,2)
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O1 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O1 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+/usr/bin/ld: cannot find -lPMmpi
+/usr/bin/ld: cannot find -lpapi_ext
+++ mpirun -np 1 ./a.out
+[WARN] PLE 0611 plexec The program(./a.out) cannot be executed.(nid=0x21460006)(error=execve failed. No such file or directory.)(CODE=9122,0,2)
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O2 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O2 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+/usr/bin/ld: cannot find -lPMmpi
+/usr/bin/ld: cannot find -lpapi_ext
+++ mpirun -np 1 ./a.out
+[WARN] PLE 0611 plexec The program(./a.out) cannot be executed.(nid=0x21460006)(error=execve failed. No such file or directory.)(CODE=9122,0,2)
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast,nounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -Kfast,nounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+/usr/bin/ld: cannot find -lPMmpi
+/usr/bin/ld: cannot find -lpapi_ext
+++ mpirun -np 1 ./a.out
+[WARN] PLE 0611 plexec The program(./a.out) cannot be executed.(nid=0x21460006)(error=execve failed. No such file or directory.)(CODE=9122,0,2)
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast  -Knoopenmp -w '
+++ mpifcc -c -Kfast -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -Nnofjprof -Nfjomplib -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/g9200002/u92028/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+/usr/bin/ld: cannot find -lPMmpi
+/usr/bin/ld: cannot find -lpapi_ext
+++ mpirun -np 1 ./a.out
+[WARN] PLE 0611 plexec The program(./a.out) cannot be executed.(nid=0x21460006)(error=execve failed. No such file or directory.)(CODE=9122,0,2)

@@ -1,0 +1,17 @@
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+	5
+	Sun
+	0
+	FUJITSU SPARC64 XIfx
+ i= 0: FLOATING_INSTRUCTIONS: events:40000010
+ i= 1: FMA_INSTRUCTIONS: events:40000011
+ i= 2: XSIMD_FLOATING_INSTRUCTIONS: events:400000d1
+ i= 3: XSIMD_FMA_INSTRUCTIONS: events:400000d2
+step 0 finished in 0.291019 seconds
+The counted events are:
+#0, 40000010                    FLOATING_INSTRUCTIONS  1006001
+#1, 40000011                         FMA_INSTRUCTIONS  1005000
+#2, 400000d1              XSIMD_FLOATING_INSTRUCTIONS  14250000
+#3, 400000d2                   XSIMD_FMA_INSTRUCTIONS  250000000

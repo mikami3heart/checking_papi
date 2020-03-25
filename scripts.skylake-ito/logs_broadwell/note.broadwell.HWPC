@@ -1,0 +1,6 @@
+
+
+Broadwell CPU can count only 4 HWPC events at a time!!!
+5-th event will not record any data.
+
+

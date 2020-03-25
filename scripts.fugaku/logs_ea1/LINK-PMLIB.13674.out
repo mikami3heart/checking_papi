@@ -1,0 +1,124 @@
+Currently Loaded Modulefiles:
+ 1) lang/fjcompiler20190731_05(default)  
+Wed Jan  8 14:45:52 JST 2020
+ea-cn14
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O0  -Knoopenmp -w '
+++ mpifcc -c -O0 -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/users/ta05/ta0003/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	7
+	ARM
+	0
+	
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FP_SCALE_OPS_SPEC: events:40000022
+ i= 2: FP_FIXED_OPS_SPEC: events:40000023
+ i= 3: PAPI_FP_INS: events:80000034
+ i= 4: PAPI_VEC_INS: events:80000038
+ i= 5: PAPI_FMA_INS: events:80000030
+step 0 finished in 24.687750 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000000000
+#1, 40000022                        FP_SCALE_OPS_SPEC  0
+#2, 40000023                        FP_FIXED_OPS_SPEC  2000000000
+#3, 80000034                              PAPI_FP_INS  2000000000
+#4, 80000038                             PAPI_VEC_INS  0
+#5, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O1 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O1 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/users/ta05/ta0003/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	7
+	ARM
+	0
+	
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FP_SCALE_OPS_SPEC: events:40000022
+ i= 2: FP_FIXED_OPS_SPEC: events:40000023
+ i= 3: PAPI_FP_INS: events:80000034
+ i= 4: PAPI_VEC_INS: events:80000038
+ i= 5: PAPI_FMA_INS: events:80000030
+step 0 finished in 3.438174 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000000000
+#1, 40000022                        FP_SCALE_OPS_SPEC  0
+#2, 40000023                        FP_FIXED_OPS_SPEC  2000000000
+#3, 80000034                              PAPI_FP_INS  2000000000
+#4, 80000038                             PAPI_VEC_INS  0
+#5, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-O2 -Knounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -O2 -Knounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/users/ta05/ta0003/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	7
+	ARM
+	0
+	
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FP_SCALE_OPS_SPEC: events:40000022
+ i= 2: FP_FIXED_OPS_SPEC: events:40000023
+ i= 3: PAPI_FP_INS: events:80000034
+ i= 4: PAPI_VEC_INS: events:80000038
+ i= 5: PAPI_FMA_INS: events:80000030
+step 0 finished in 3.524113 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000000000
+#1, 40000022                        FP_SCALE_OPS_SPEC  500000000
+#2, 40000023                        FP_FIXED_OPS_SPEC  0
+#3, 80000034                              PAPI_FP_INS  250000000
+#4, 80000038                             PAPI_VEC_INS  1377128053
+#5, 80000030                             PAPI_FMA_INS  0
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast,nounroll,noswp  -Knoopenmp -w '
+++ mpifcc -c -Kfast,nounroll,noswp -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/users/ta05/ta0003/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	7
+	ARM
+	0
+	
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FP_SCALE_OPS_SPEC: events:40000022
+ i= 2: FP_FIXED_OPS_SPEC: events:40000023
+ i= 3: PAPI_FP_INS: events:80000034
+ i= 4: PAPI_VEC_INS: events:80000038
+ i= 5: PAPI_FMA_INS: events:80000030
+step 0 finished in 0.352693 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000001000
+#1, 40000022                        FP_SCALE_OPS_SPEC  500000000
+#2, 40000023                        FP_FIXED_OPS_SPEC  1000
+#3, 80000034                              PAPI_FP_INS  125001000
+#4, 80000038                             PAPI_VEC_INS  625751054
+#5, 80000030                             PAPI_FMA_INS  125000000
+++ for opt in "-O0 " "-O1 -Knounroll,noswp " "-O2 -Knounroll,noswp " "-Kfast,nounroll,noswp " "-Kfast "
+++ CFLAGS='-Kfast  -Knoopenmp -w '
+++ mpifcc -c -Kfast -Knoopenmp -w sub.c
+++ mpiFCC -O2 -Knoopenmp -w main.o sub.o -L/opt/FJSVxos/devkit/aarch64/rfs/usr/lib64 -lpapi -lpfm -L/home/users/ta05/ta0003/pmlib/usr_local_pmlib/aarch64/lib -lPMmpi -lpapi_ext -lmpi
+++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	7
+	ARM
+	0
+	
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: FP_SCALE_OPS_SPEC: events:40000022
+ i= 2: FP_FIXED_OPS_SPEC: events:40000023
+ i= 3: PAPI_FP_INS: events:80000034
+ i= 4: PAPI_VEC_INS: events:80000038
+ i= 5: PAPI_FMA_INS: events:80000030
+step 0 finished in 0.312434 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2000001000
+#1, 40000022                        FP_SCALE_OPS_SPEC  500000000
+#2, 40000023                        FP_FIXED_OPS_SPEC  1000
+#3, 80000034                              PAPI_FP_INS  125001000
+#4, 80000038                             PAPI_VEC_INS  625751054
+#5, 80000030                             PAPI_FMA_INS  125000000

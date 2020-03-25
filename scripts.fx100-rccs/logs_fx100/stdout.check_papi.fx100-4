@@ -1,0 +1,21 @@
+jwe1050i-w The hardware barrier couldn't be used and continues processing using the software barrier.
+taken to (standard) corrective action, execution continuing.
+<main> npes=1 max_threads=1
+	5
+	Sun
+	0
+	FUJITSU SPARC64 XIfx
+ i= 0: PAPI_FP_OPS: events:80000066
+ i= 1: 16FLOPS_INSTRUCTIONS: events:4000007b
+ i= 2: 8FLOPS_INSTRUCTIONS: events:4000007a
+ i= 3: 4FLOPS_INSTRUCTIONS: events:40000079
+ i= 4: 2FLOPS_INSTRUCTIONS: events:40000078
+ i= 5: 1FLOPS_INSTRUCTIONS: events:40000077
+step 0 finished in 0.290947 seconds
+The counted events are:
+#0, 80000066                              PAPI_FP_OPS  2035013000
+#1, 4000007b                     16FLOPS_INSTRUCTIONS  0
+#2, 4000007a                      8FLOPS_INSTRUCTIONS  250000000
+#3, 40000079                      4FLOPS_INSTRUCTIONS  8000000
+#4, 40000078                      2FLOPS_INSTRUCTIONS  1005000
+#5, 40000077                      1FLOPS_INSTRUCTIONS  1003000

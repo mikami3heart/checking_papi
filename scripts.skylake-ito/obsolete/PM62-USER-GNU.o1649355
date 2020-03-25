@@ -1,0 +1,86 @@
+Currently Loaded Modulefiles:
+  1) openmpi/3.1.1-nocuda-gcc4.8.5
++ PMLIB_DIR=/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-gnu
++ PMLIB_LDFLAGS='-L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-gnu/lib -lPM -lpapi_ext '
++ PAPI_DIR=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu
++ PAPI_INCLUDES='-I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include '
++ PAPI_LDFLAGS='/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a '
++ LDFLAGS+=' -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-gnu/lib -lPM -lpapi_ext  /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a  -lstdc++ '
++ export LD_LIBRARY_PATH=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib:/home/app/openmpi/3.1.1-nocuda-gcc4.8.5/lib/:/opt/FJSVpclang/1.2.0/lib64
++ LD_LIBRARY_PATH=/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib:/home/app/openmpi/3.1.1-nocuda-gcc4.8.5/lib/:/opt/FJSVpclang/1.2.0/lib64
++ WKDIR=/home/usr5/m70145b/tmp/check_papi_gnu
++ mkdir -p /home/usr5/m70145b/tmp/check_papi_gnu
++ cd /home/usr5/m70145b/tmp/check_papi_gnu
++ '[' 0 '!=' 0 ']'
++ rm /home/usr5/m70145b/tmp/check_papi_gnu/a.out /home/usr5/m70145b/tmp/check_papi_gnu/main.cpp /home/usr5/m70145b/tmp/check_papi_gnu/main.o /home/usr5/m70145b/tmp/check_papi_gnu/sub.c /home/usr5/m70145b/tmp/check_papi_gnu/sub.o
++ SRCDIR=/home/usr5/m70145b/papi/scripts
++ cp /home/usr5/m70145b/papi/scripts/check_papi_band_skylake.cpp main.cpp
++ cp /home/usr5/m70145b/papi/scripts/sub_kernel.c sub.c
++ CXXFLAGS='-g -O2 -w -fno-inline -fopenmp '
++ CFLAGS='-g -O2 -w -fno-inline -fopenmp '
++ FCFLAGS='-g -O2 -w -fno-inline -fopenmp '
++ export CC=mpiicc CXX=mpiicpc F90=mpiifort FC=mpiifort
++ CC=mpiicc
++ CXX=mpiicpc
++ F90=mpiifort
++ FC=mpiifort
++ export I_MPI_CC=icc I_MPI_CXX=icpc I_MPI_F90=ifort I_MPI_FC=ifort
++ I_MPI_CC=icc
++ I_MPI_CXX=icpc
++ I_MPI_F90=ifort
++ I_MPI_FC=ifort
++ set -x
++ mpic++ -c -g -O2 -w -fno-inline -fopenmp main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include
++ mpicc -c -g -O2 -w -fno-inline -fopenmp sub.c
++ mpic++ -g -O2 -w -fno-inline -fopenmp main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-gnu/lib -lPM -lpapi_ext
++ NPROCS=2
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ mpirun -np 2 ./a.out
+<main> npes=1 max_threads=4
+<main> npes=1 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 6: L2_TRANS:L2_WB: events:40000031
+ i= 6: L2_TRANS:L2_WB: events:40000031
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node sca0411 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

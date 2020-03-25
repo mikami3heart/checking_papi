@@ -1,0 +1,99 @@
++ SRCDIR=/home/usr5/m70145b/papi/scripts
++ cp /home/usr5/m70145b/papi/scripts/check_papi_band_skylake.cpp main.cpp
++ cp /home/usr5/m70145b/papi/scripts/sub_kernel.c sub.c
++ CXXFLAGS='-Kopenmp -Xg -fvisibility=default '
++ CFLAGS='-Kopenmp -Xg -fvisibility=default '
++ FCFLAGS='-Kopenmp '
++ LDFLAGS+='--linkfortran '
++ export CC=fcc CXX=FCC F90=frt FC=frt
++ CC=fcc
++ CXX=FCC
++ F90=frt
++ FC=frt
++ export I_MPI_CC=mpifcc I_MPI_CXX=mpiFCC I_MPI_F90=mpifrt I_MPI_FC=mpifrt
++ I_MPI_CC=mpifcc
++ I_MPI_CXX=mpiFCC
++ I_MPI_F90=mpifrt
++ I_MPI_FC=mpifrt
++ set -x
++ FCC -c -Kopenmp -Xg -fvisibility=default main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include/papi.h", line 25: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility push(default)
+          ^
+
+"/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/include/papi.h", line 1138: 警告: 認識できない#pragmaです。
+  #pragma GCC visibility pop
+          ^
+
+"main.cpp", line 30: 警告: 変数  "tt" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	       ^
+
+"main.cpp", line 30: 警告: 変数  "t1" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	           ^
+
+"main.cpp", line 30: 警告: 変数  "t2" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	               ^
+
+"main.cpp", line 30: 警告: 変数  "t3" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                   ^
+
+"main.cpp", line 30: 警告: 変数  "t4" は宣言されましたが参照されません。
+  	double tt, t1, t2, t3, t4;
+  	                       ^
+
+"main.cpp", line 31: 警告: 変数  "i" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	    ^
+
+"main.cpp", line 31: 警告: 変数  "j" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	       ^
+
+"main.cpp", line 31: 警告: 変数  "loop" は宣言されましたが参照されません。
+  	int i, j, loop;
+  	          ^
+
++ fcc -c -Kopenmp -Xg -fvisibility=default sub.c
+"sub.c", line 39: 警告: 認識できない#pragmaです。
+  #pragma nounroll
+          ^
+
+"sub.c", line 10: 警告: 変数  "k" は宣言されましたが参照されません。
+  int i, j, k;
+            ^
+
+"sub.c", line 11: 警告: 変数  "c1" は宣言されましたが参照されません。
+  PRECISION c1;
+            ^
+
++ FCC -Kopenmp -Xg -fvisibility=default main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu-gnu-mix/lib -lPM -lpapi_ext -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-fujitsu-gnu-mix/lib -lPM -lpapi_ext /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-gnu/lib/libpfm.a -lstdc++ --linkfortran
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ ./a.out
+<main> npes=1 max_threads=4
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:85 Intel(R) Xeon(R) Gold 6154 CPU @ 3.00GHz
+ i= 0: PAPI_LD_INS: events:80000035
+ i= 1: PAPI_SR_INS: events:80000036
+ i= 2: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002f
+ i= 3: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:40000030
+ i= 4: PAPI_L1_TCM: events:80000006
+ i= 5: PAPI_L2_TCM: events:80000007
+ i= 6: L2_TRANS:L2_WB: events:40000031
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=7
+#0, 80000035 0
+#1, 80000036 0
+#2, 4000002f 0
+#3, 40000030 0
+#4, 80000006 0
+#5, 80000007 0
+#6, 40000031 0
+jwe0019i-u The program was terminated abnormally with signal number SIGSEGV.
+           signal identifier = SEGV_MAPERR, address not mapped to object
+/home/usr5/m70145b/papi/scripts/.d0001649713: 60 行: 40198 中止                  ./a.out

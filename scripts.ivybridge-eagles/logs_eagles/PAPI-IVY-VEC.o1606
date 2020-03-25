@@ -1,0 +1,57 @@
+Currently Loaded Modulefiles:
+  1) torque                     3) mpt/2.11
+  2) intelcompiler/15.0.2.164
++ date
+Wed Sep 13 11:35:08 JST 2017
++ hostname
+uv01
++ WKDIR=/home/kazunori.mikami/tmp/check_papi
++ mkdir -p /home/kazunori.mikami/tmp/check_papi
++ cd /home/kazunori.mikami/tmp/check_papi
++ '[' 0 '!=' 0 ']'
++ rm /home/kazunori.mikami/tmp/check_papi/a.out /home/kazunori.mikami/tmp/check_papi/main.cpp /home/kazunori.mikami/tmp/check_papi/main.o /home/kazunori.mikami/tmp/check_papi/main.optrpt /home/kazunori.mikami/tmp/check_papi/sub.c /home/kazunori.mikami/tmp/check_papi/sub.o /home/kazunori.mikami/tmp/check_papi/sub.optrpt
++ SRCDIR=/home/kazunori.mikami/papi/scripts
++ cp /home/kazunori.mikami/papi/scripts/check_papi_simd.cpp main.cpp
++ cp /home/kazunori.mikami/papi/scripts/sub_kernel.c sub.c
++ CXXFLAGS='-Ofast -no-ipo -qopenmp -xavx -opt-report=3 '
++ CFLAGS='-Ofast -no-ipo -std=c99 -qopenmp -xavx -opt-report=3 '
++ FCFLAGS='-Ofast -no-ipo -qopenmp -xavx -opt-report=3 '
++ PAPI_DIR=/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel
++ PMLIB_DIR=/home/kazunori.mikami/pmlib/usr_local_pmlib/intel
++ PAPI_LDFLAGS='-L/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib -lpapi -lpfm '
++ PAPI_LDFLAGS='/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpapi.a /home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpfm.a '
++ PAPI_INCLUDES='-I/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/include '
++ PMLIB_LDFLAGS='-L/home/kazunori.mikami/pmlib/usr_local_pmlib/intel/lib -lPMmpi -lpapi_ext '
++ MPI_LDFLAGS='-lmpi '
++ icpc -c -Ofast -no-ipo -qopenmp -xavx -opt-report=3 main.cpp -I/home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/include
+icpc: remark #10397: optimization reports are generated in *.optrpt files in the output location
++ icc -c -Ofast -no-ipo -std=c99 -qopenmp -xavx -opt-report=3 sub.c
+icc: remark #10397: optimization reports are generated in *.optrpt files in the output location
++ icpc -Ofast -no-ipo -qopenmp -xavx -opt-report=3 main.o sub.o /home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpapi.a /home/kazunori.mikami/papi/usr_local_papi/papi-5.5.1-intel/lib/libpfm.a -L/home/kazunori.mikami/pmlib/usr_local_pmlib/intel/lib -lPMmpi -lpapi_ext -lmpi
+icpc: remark #10397: optimization reports are generated in *.optrpt files in the output location
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ mpirun -np 1 ./a.out
+<main> npes=1 max_threads=1
+	1
+	GenuineIntel
+	62
+	Intel(R) Xeon(R) CPU E5-4620 v2 @ 2.60GHz
+ i= 0: PAPI_SP_OPS: events:80000067
+ i= 1: FP_COMP_OPS_EXE:SSE_FP_SCALAR_SINGLE: events:40000017
+ i= 2: FP_COMP_OPS_EXE:SSE_PACKED_SINGLE: events:40000019
+ i= 3: SIMD_FP_256:PACKED_SINGLE: events:4000001a
+ i= 4: PAPI_DP_OPS: events:80000068
+ i= 5: FP_COMP_OPS_EXE:SSE_SCALAR_DOUBLE: events:40000016
+ i= 6: FP_COMP_OPS_EXE:SSE_FP_PACKED_DOUBLE: events:4000001b
+ i= 7: SIMD_FP_256:PACKED_DOUBLE: events:4000001c
+step 0 finished in 0.382852 seconds
+The counted events are:
+#0, 80000067                              PAPI_SP_OPS  0
+#1, 40000017     FP_COMP_OPS_EXE:SSE_FP_SCALAR_SINGLE  0
+#2, 40000019        FP_COMP_OPS_EXE:SSE_PACKED_SINGLE  0
+#3, 4000001a                SIMD_FP_256:PACKED_SINGLE  0
+#4, 80000068                              PAPI_DP_OPS  2883051028
+#5, 40000016        FP_COMP_OPS_EXE:SSE_SCALAR_DOUBLE  9394402
+#6, 4000001b     FP_COMP_OPS_EXE:SSE_FP_PACKED_DOUBLE  4450929
+#7, 4000001c                SIMD_FP_256:PACKED_DOUBLE  716188692

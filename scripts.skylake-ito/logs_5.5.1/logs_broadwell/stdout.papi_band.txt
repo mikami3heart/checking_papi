@@ -1,0 +1,11 @@
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  128937340
+#1, 80000036                              PAPI_SR_INS  2240676
+#2, 4000002f                           L2_TRANS:L2_WB  30691131
+The counted events are:
+#0, 80000035                              PAPI_LD_INS  131415525
+#1, 80000036                              PAPI_SR_INS  2512941
+#2, 4000002f    OFFCORE_RESPONSE_0:OTHER:ANY_RESPONSE  0
+Process 0 finishing up
+
+L2_TRANS:L2_WB and OFFCORE_RESPONSE_0:OTHER can not be measured at once...

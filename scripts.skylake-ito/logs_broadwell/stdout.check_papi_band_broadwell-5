@@ -1,0 +1,33 @@
++ icpc -c -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.cpp -I/home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-broadwell/include
+icpc: remark #10397: optimization reports are generated in *.optrpt files in the output location
++ icc -c -Ofast -xHost -no-ipo -qopenmp sub.c
++ icpc -g -xcore-avx2 -Ofast -no-ipo -qopenmp -qopt-report main.o sub.o /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-broadwell/lib/libpapi.a /home/usr5/m70145b/papi/usr_local_papi/papi-5.6.0-broadwell/lib/libpfm.a -L/home/usr5/m70145b/pmlib/usr_local_pmlib/pmlib-broadwell/lib -lPM -lpapi_ext
+icpc: remark #10397: optimization reports are generated in *.optrpt files in the output location
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ ./a.out
+<main> npes=1 max_threads=1
+<PAPI_get_hardware_info>
+	 vendor:1 GenuineIntel model:79 Intel(R) Xeon(R) CPU E7-8880 v4 @ 2.20GHz
+ i= 0: MEM_LOAD_UOPS_RETIRED:HIT_LFB: events:4000002e
+ i= 1: MEM_LOAD_UOPS_RETIRED:L1_HIT: events:4000002f
+ i= 2: MEM_LOAD_UOPS_RETIRED:L1_MISS: events:40000030
+ i= 3: MEM_LOAD_UOPS_RETIRED:L2_MISS: events:40000031
+ i= 4: MEM_LOAD_UOPS_RETIRED:L3_MISS: events:4000000f
+<my_papi_add_events> returned PAPI_OK 
+<my_papi_bind_start> returned PAPI_OK 
+<my_papi_bind_start> papi.num_events=5
+#0, 4000002e 0
+#1, 4000002f 0
+#2, 40000030 0
+#3, 40000031 0
+#4, 4000000f 0
+	 Check print before finishing subkernel()
+	 3.538093e-01, 3.538093e-01 
+The counted events are:
+#0, 4000002e            MEM_LOAD_UOPS_RETIRED:HIT_LFB  158416401
+#1, 4000002f             MEM_LOAD_UOPS_RETIRED:L1_HIT  275462319
+#2, 40000030            MEM_LOAD_UOPS_RETIRED:L1_MISS  73309303
+#3, 40000031            MEM_LOAD_UOPS_RETIRED:L2_MISS  6989496
+#4, 4000000f            MEM_LOAD_UOPS_RETIRED:L3_MISS  0
+Process 0 finishing up
